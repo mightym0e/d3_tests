@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://controller" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controller" xmlns:intf="http://controller" xmlns:tns1="http://data" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://controller" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://data"/>
+   <element name="setHst">
+    <complexType>
+     <sequence>
+      <element name="hst" type="tns1:Haltestelle"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="ArrayOf_tns1_DynamischeFahrgastInfo">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:DynamischeFahrgastInfo"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_Vitrine">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Vitrine"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_Mast">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Mast"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_Bereich">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Bereich"/>
+    </sequence>
+   </complexType>
+   <complexType name="ArrayOf_tns1_Umstiegshaltestelle">
+    <sequence>
+     <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns1:Umstiegshaltestelle"/>
+    </sequence>
+   </complexType>
+   <element name="setHstResponse">
+    <complexType>
+     <sequence>
+      <element name="setHstReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://data" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://controller"/>
+   <complexType name="DynamischeFahrgastInfo">
+    <sequence>
+     <element name="akustik" nillable="true" type="xsd:string"/>
+     <element name="imglnkfoto" nillable="true" type="xsd:string"/>
+     <element name="vorhanden" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="GPSErfassung">
+    <sequence>
+     <element name="koordinatgps_x" nillable="true" type="xsd:double"/>
+     <element name="koordinatgps_x_2" nillable="true" type="xsd:double"/>
+     <element name="koordinatgps_y" nillable="true" type="xsd:double"/>
+     <element name="koordinatgps_y_2" nillable="true" type="xsd:double"/>
+    </sequence>
+   </complexType>
+   <complexType name="Vitrine">
+    <sequence>
+     <element name="anzahl" nillable="true" type="xsd:int"/>
+     <element name="groesse" nillable="true" type="xsd:string"/>
+     <element name="imagelnkfoto" nillable="true" type="xsd:string"/>
+     <element name="vorhanden" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="Mast">
+    <sequence>
+     <element name="contagnr" nillable="true" type="xsd:string"/>
+     <element name="dynFgInfos" nillable="true" type="impl:ArrayOf_tns1_DynamischeFahrgastInfo"/>
+     <element name="gpserfassung" nillable="true" type="tns1:GPSErfassung"/>
+     <element name="id_hstbereich" nillable="true" type="xsd:int"/>
+     <element name="id_mast" nillable="true" type="xsd:string"/>
+     <element name="id_t_hstteil" nillable="true" type="xsd:int"/>
+     <element name="imagelnkfoto" nillable="true" type="xsd:string"/>
+     <element name="vitrinen" nillable="true" type="impl:ArrayOf_tns1_Vitrine"/>
+    </sequence>
+   </complexType>
+   <complexType name="Wartehalle">
+    <sequence>
+     <element name="anzsitz" nillable="true" type="xsd:int"/>
+     <element name="aufstellflaeche" nillable="true" type="xsd:string"/>
+     <element name="beleuchtbarwh" nillable="true" type="xsd:string"/>
+     <element name="dynFgInfos" nillable="true" type="impl:ArrayOf_tns1_DynamischeFahrgastInfo"/>
+     <element name="id_t_aufstellflaeche" nillable="true" type="xsd:int"/>
+     <element name="id_t_hstteil" nillable="true" type="xsd:int"/>
+     <element name="id_t_materialflaecheaf" nillable="true" type="xsd:int"/>
+     <element name="vitrinen" nillable="true" type="impl:ArrayOf_tns1_Vitrine"/>
+     <element name="vorhanden" nillable="true" type="xsd:string"/>
+     <element name="whbreite" nillable="true" type="xsd:double"/>
+     <element name="whlaenge" nillable="true" type="xsd:double"/>
+    </sequence>
+   </complexType>
+   <complexType name="ZugangBarrFrei">
+    <sequence>
+     <element name="artleitstreifen" nillable="true" type="xsd:int"/>
+     <element name="besonderheiten" nillable="true" type="xsd:string"/>
+     <element name="bordsteinfuehrg" nillable="true" type="xsd:string"/>
+     <element name="breitegehweg" nillable="true" type="xsd:double"/>
+     <element name="breitegehwegmin" nillable="true" type="xsd:double"/>
+     <element name="hoehehochbord" nillable="true" type="xsd:double"/>
+     <element name="hoehestufe" nillable="true" type="xsd:double"/>
+     <element name="hoehestufeeinstieg" nillable="true" type="xsd:double"/>
+     <element name="id_t_hochbordart" nillable="true" type="xsd:int"/>
+     <element name="id_t_material" nillable="true" type="xsd:int"/>
+     <element name="infofuerblinde" nillable="true" type="xsd:string"/>
+     <element name="laengehstbereich" nillable="true" type="xsd:double"/>
+     <element name="leitstreifen" nillable="true" type="xsd:double"/>
+     <element name="neigungrampe" nillable="true" type="xsd:double"/>
+     <element name="strassenbreite" nillable="true" type="xsd:double"/>
+     <element name="strmitte" nillable="true" type="xsd:string"/>
+     <element name="strmitteeinstieg" nillable="true" type="xsd:string"/>
+     <element name="stufenfrei" nillable="true" type="xsd:string"/>
+     <element name="stufenfreieinstieg" nillable="true" type="xsd:string"/>
+     <element name="zugangzumhstbereich" nillable="true" type="xsd:int"/>
+    </sequence>
+   </complexType>
+   <complexType name="Bereich">
+    <sequence>
+     <element name="beschreibg" nillable="true" type="xsd:string"/>
+     <element name="dynFgInfos" nillable="true" type="impl:ArrayOf_tns1_DynamischeFahrgastInfo"/>
+     <element name="hstberumlaufsptyp" nillable="true" type="xsd:int"/>
+     <element name="id_hstbereich" nillable="true" type="xsd:string"/>
+     <element name="id_t_hstteil" nillable="true" type="xsd:int"/>
+     <element name="imagelnkfoto" nillable="true" type="xsd:string"/>
+     <element name="masten" nillable="true" type="impl:ArrayOf_tns1_Mast"/>
+     <element name="videoueberwachg" nillable="true" type="xsd:string"/>
+     <element name="vitrinen" nillable="true" type="impl:ArrayOf_tns1_Vitrine"/>
+     <element name="wartehalle" nillable="true" type="tns1:Wartehalle"/>
+     <element name="zugangBarrFrei" nillable="true" type="tns1:ZugangBarrFrei"/>
+    </sequence>
+   </complexType>
+   <complexType name="HSTAdresse">
+    <sequence>
+     <element name="hsthausnr" nillable="true" type="xsd:string"/>
+     <element name="hststrasse" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="Umstiegshaltestelle">
+    <sequence>
+     <element name="akuhilfe" nillable="true" type="xsd:string"/>
+     <element name="bordsteinabsenk" nillable="true" type="xsd:string"/>
+     <element name="gleisquer" nillable="true" type="xsd:string"/>
+     <element name="id_t_hstteil_nach" nillable="true" type="xsd:int"/>
+     <element name="id_t_hstteil_von" nillable="true" type="xsd:int"/>
+     <element name="laenge" nillable="true" type="xsd:double"/>
+     <element name="lichtsignal" nillable="true" type="xsd:string"/>
+     <element name="neigg" nillable="true" type="xsd:double"/>
+     <element name="rolltreppe" nillable="true" type="xsd:string"/>
+     <element name="strquerung" nillable="true" type="xsd:string"/>
+     <element name="stufe" nillable="true" type="xsd:string"/>
+     <element name="treppe" nillable="true" type="xsd:string"/>
+     <element name="umlauf" nillable="true" type="xsd:string"/>
+     <element name="umlaufbarrfrei" nillable="true" type="xsd:string"/>
+     <element name="umlauftyp" nillable="true" type="xsd:int"/>
+     <element name="zebra" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="Verknuepfg">
+    <sequence>
+     <element name="bundr" nillable="true" type="xsd:string"/>
+     <element name="bundrentferng" nillable="true" type="xsd:double"/>
+     <element name="kundr" nillable="true" type="xsd:string"/>
+     <element name="kundrentferng" nillable="true" type="xsd:double"/>
+     <element name="pundr" nillable="true" type="xsd:string"/>
+     <element name="pundrentferng" nillable="true" type="xsd:double"/>
+    </sequence>
+   </complexType>
+   <complexType name="Haltestelle">
+    <sequence>
+     <element name="bereiche" nillable="true" type="impl:ArrayOf_tns1_Bereich"/>
+     <element name="diva_nr" nillable="true" type="xsd:int"/>
+     <element name="dynFgInfos" nillable="true" type="impl:ArrayOf_tns1_DynamischeFahrgastInfo"/>
+     <element name="einrichtgmarkant" nillable="true" type="xsd:string"/>
+     <element name="fotoordner" nillable="true" type="xsd:string"/>
+     <element name="hst_name" nillable="true" type="xsd:string"/>
+     <element name="hstadresse" nillable="true" type="tns1:HSTAdresse"/>
+     <element name="id_hsttyp" nillable="true" type="xsd:int"/>
+     <element name="id_t_gemeinde" nillable="true" type="xsd:int"/>
+     <element name="id_t_hstteil" nillable="true" type="xsd:int"/>
+     <element name="imagelnkfoto" nillable="true" type="xsd:string"/>
+     <element name="strmitte" nillable="true" type="xsd:string"/>
+     <element name="umstiegshaltestellen" nillable="true" type="impl:ArrayOf_tns1_Umstiegshaltestelle"/>
+     <element name="verknuepfg" nillable="true" type="tns1:Verknuepfg"/>
+     <element name="vitrinen" nillable="true" type="impl:ArrayOf_tns1_Vitrine"/>
+     <element name="webservice_pin" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="setHstResponse">
+
+      <wsdl:part element="impl:setHstResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setHstRequest">
+
+      <wsdl:part element="impl:setHst" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="HstService">
+
+      <wsdl:operation name="setHst">
+
+         <wsdl:input message="impl:setHstRequest" name="setHstRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setHstResponse" name="setHstResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="HstServiceSoapBinding" type="impl:HstService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="setHst">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setHstRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setHstResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="HstServiceService">
+
+      <wsdl:port binding="impl:HstServiceSoapBinding" name="HstService">
+
+         <wsdlsoap:address location="http://localhost:8080/HMSWebserviceServer/services/HstService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
