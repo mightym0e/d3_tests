@@ -62,9 +62,28 @@ public class ScatterServlet extends HttpServlet {
 	    out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.x3dom.org/download/dev/x3dom.css\"/>");
 	    out.println("</head>");
 	    out.println ("<body id=\"mainwindow\">"); 
+	    out.println("<script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-latest.min.js\"></script>");
 	    out.println("<script type=\"text/javascript\" src=\"http://d3js.org/d3.v3.min.js\"></script>");
 	    out.println("<script type=\"text/javascript\" src=\"http://x3dom.org/x3dom/dist/x3dom-full.js\"></script>");
 	    out.println("<script type=\"text/javascript\" src=\"js/scatter_plot_3d_demo.js\"></script>");
+	    
+	    out.println("<div id=\"selects\">"
+	    		+ "<select class=\"axis_select\" id=\"x\">"
+//	    		+ 	"<option value=\"1\">Dataset 1</option>"
+	    		+ 	"<option selected=\"selected\" value=\"2\">Dataset 2</option>"
+	    		+ 	"<option value=\"3\">Dataset 3</option>"
+	    		+ "</select>"
+//	    		+ "<select class=\"axis_select\" id=\"y\">"
+//	    		+ 	"<option value=\"1\">Dataset 1</option>"
+//	    		+ 	"<option selected=\"selected\" value=\"2\">Dataset 2</option>"
+//	    		+ 	"<option value=\"3\">Dataset 3</option>"
+//	    		+ "</select>"
+	    		+ "<select class=\"axis_select\" id=\"z\">"
+//	    		+ 	"<option value=\"1\">Dataset 1</option>"
+	    		+ 	"<option value=\"2\">Dataset 2</option>"
+	    		+ 	"<option selected=\"selected\" value=\"3\">Dataset 3</option>"
+	    		+ "</select>"
+	    		+ "</div>");
 	    
 	    out.println("<div id=\"divPlot\"></div>");
 	    

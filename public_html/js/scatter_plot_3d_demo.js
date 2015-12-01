@@ -266,4 +266,38 @@ function scatterPlot3d( parent )
   initializePlot();
   updateData();
   //setInterval( updateData, defaultDuration );
+		
+  var val1=$("#x").val();
+//var val2=$("#y").val();
+  var val3=$("#z").val();
+
+  $(".axis_select").change(function(){
+	  var selected = $(this).val();
+	  var id = $(this).attr("id");
+	  var oldVal;
+
+	  if($(this).attr("id")=='x'){
+		  oldVal=val1;
+		  val1=selected;
+	  } else {
+		  oldVal=val3;
+		  val3=selected;
+	  }
+
+	  $(".axis_select").each(function(){
+		  if($(this).attr("id")!=id){
+			  if($(this).val()==selected){
+				  $(this).val(oldVal);
+			  }
+		  }
+	  });
+	  
+	  var temp = data2;
+	  data2 = data3;
+	  data3 = temp;
+	  initializeDataGrid();
+	  updateData();
+
+  });
+  
 }
