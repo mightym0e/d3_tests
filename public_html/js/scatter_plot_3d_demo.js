@@ -175,7 +175,7 @@ function scatterPlot3d( parent )
 
   // Update the data points (spheres) and stems.
   function plotData( duration ) {
-    
+	//console.log("plot Data"+data2[0]+"---"+data3[0]);
     if (!rows) {
      console.log("no rows to plot.")
      return;
@@ -295,7 +295,7 @@ function scatterPlot3d( parent )
 	  var temp = data2;
 	  data2 = data3;
 	  data3 = temp;
-	  initializeDataGrid();
+	  rows = initializeDataGrid();
 	  updateData();
 
   });
