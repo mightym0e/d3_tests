@@ -11,14 +11,14 @@ public class CSVReader {
   public static void main(String[] args) {
 
 	  CSVReader obj = new CSVReader();
-	  obj.run();
+	  obj.run("");
 
   }
 
-  public ArrayList<String[]> run() {
+  public ArrayList<String[]> run(String filename) {
 	ArrayList<String[]> ret = new ArrayList<String[]>();
 
-	String csvFile = "D:\\Projekte\\IC\\D3\\export.csv";
+	String csvFile = filename;
 	BufferedReader br = null;
 	String line = "";
 	String cvsSplitBy = ";";

@@ -13,10 +13,11 @@ function scatterPlot3d( parent )
      .attr( "fieldOfView", [-25, -25, 35, 25])
      .attr( "orientation", [-0.5, 1, 0.2, 1.12*Math.PI/4])
      .attr( "position", [8, 4, 15])
-     .attr( "zNear", -10 )
+     .attr( "zNear", -15 )
 
   var rows = initializeDataGrid();
-  var axisRange = [0, 20];
+  var rows1 = initializeDataGrid1();
+  var axisRange = [0, 25];
   var scales = [];
   var initialDuration = 0;
   var defaultDuration = 800;
@@ -101,7 +102,7 @@ function scatterPlot3d( parent )
   function drawAxis( axisIndex, key, duration ) {
 
     var scale = d3.scale.linear()
-      .domain( [0,20] ) // demo data range
+      .domain( [0,25] ) // demo data range
       .range( axisRange )
     
     scales[axisIndex] = scale;
@@ -231,6 +232,64 @@ function scatterPlot3d( parent )
         .attr("scale",
            function(row) { return [1, y(row[axisKeys[1]])]; })
   }
+  
+  function plotData1( duration ) {
+		//console.log("plot Data"+data2[0]+"---"+data3[0]);
+	    if (!rows1) {
+	     console.log("no rows to plot.")
+	     return;
+	    }
+
+	    var x = scales[0], y = scales[1], z = scales[2];
+	    var sphereRadius = 0.2;
+
+	    // Draw a sphere at each x,y,z coordinate.
+	    var datapoints = scene.selectAll(".datapoint1").data( rows1 );
+	    datapoints.exit().remove()
+
+	    var newDatapoints = datapoints.enter()
+	      .append("transform")
+	        .attr("class", "datapoint1")
+	        .attr("scale", [sphereRadius, sphereRadius, sphereRadius])
+	      .append("shape");
+	    newDatapoints
+	      .append("appearance")
+	      .append("material");
+	    newDatapoints
+	      .append("sphere")
+	       // Does not work on Chrome; use transform instead
+	       //.attr("radius", sphereRadius)
+
+	    datapoints.selectAll("shape appearance material")
+	        .attr("diffuseColor", 'red' )
+
+	    datapoints.transition().ease(ease).duration(duration)
+	        .attr("translation", function(row) { 
+	          return x(row[axisKeys[0]]) + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])})
+
+	    // Draw a stem from the x-z plane to each sphere at elevation y.
+	    // This convention was chosen to be consistent with x3d primitive ElevationGrid. 
+	    var stems = scene.selectAll(".stem1").data( rows1 );
+	    stems.exit().remove();
+
+	    var newStems = stems.enter()
+	      .append("transform")
+	        .attr("class", "stem1")
+	      .append("shape");
+	    newStems
+	      .append("appearance")
+	      .append("material")
+	        .attr("emissiveColor", "gray")
+	    newStems
+	      .append("polyline2d")
+	        .attr("lineSegments", function(row) { return "0 1, 0 0"; })
+
+	    stems.transition().ease(ease).duration(duration)
+	        .attr("translation", 
+	           function(row) { return x(row[axisKeys[0]]) + " 0 " + z(row[axisKeys[2]]); })
+	        .attr("scale",
+	           function(row) { return [1, y(row[axisKeys[1]])]; })
+	  }
   /*
   function initializeDataGrid() {
     var rows = [];
@@ -251,11 +310,21 @@ function scatterPlot3d( parent )
 	    }
 	    return rows;
 	  }
+  
+  function initializeDataGrid1() {
+	    var rows = [];
+	    // Follow the convention where y(x,z) is elevation.
+	    for (var x=0; x<data1.length; x+=1) {
+	        rows.push({x: data3[x]/100, y: x, z: data2[x]/100});
+	    }
+	    return rows;
+	  }
 
   function updateData() {
     time += Math.PI/8;
     if ( x3d.node() && x3d.node().runtime ) {
       plotData( defaultDuration );
+      plotData1 ( defaultDuration );
     } else {
       setTimeout( updateData, defaultDuration );
       //alert('x3d not ready.');
