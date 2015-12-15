@@ -289,24 +289,24 @@ function scatterPlot3d( parent )
 
 		// Sphere Data Label
 
-		var sphereDatas = scene.selectAll( ".dataLabel" )
-		.data( rows1 );
-		var newSphereData = sphereDatas.enter()
-		.attr("class", ".dataLabel");
-
-		alert("Test1");
+		var sphereDatas = scene.selectAll( ".dataLabel" ).data( rows1 );
 		
 		sphereDatas.exit().remove();  
-
-		alert("Test2");
 		
-		var sphereLabels = sphereDatas.selectAll("billboard shape text");
-		var newSphereLabels = sphereLabels.enter();
+		var sphereLabels = sphereDatas.selectAll("billboard shape text").data(function(row) { return y(row[axisKeys[1]]); });
+		
+		var newSphereLabels = sphereLabels.enter()
+		.append("billboard")
+		.attr("axisOfRotation", "0 0 0")     
+		.append("shape")
+		.call(makeSolid);
+		
 		newSphereLabels.append("text")
 		.attr("translation", function(row) { 
-			return x(row[axisKeys[0]]) + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])})
+			return x(row[axisKeys[0]]) + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])
+		})
 		.attr("string", function(row) { 
-			return y("Test")
+			return y(row[axisKeys[1]]);
 		})
 		.attr("solid", "true")
 		.append("fontstyle")
