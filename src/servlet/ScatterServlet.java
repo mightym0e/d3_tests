@@ -1,10 +1,13 @@
 package servlet;
 
 import generator.ScatterPlot3dGenerator;
+import j2html.attributes.Attr;
+import j2html.tags.Tag;
+import static j2html.TagCreator.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+import java.util.Vector;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,8 +15,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import util.CSVReader;
 
 /**
  * Servlet implementation class ScatterServlet
@@ -56,32 +57,41 @@ public class ScatterServlet extends HttpServlet {
 	    PrintWriter out = response.getWriter();
 	    out.println("<?xml version=\"1.0\"?>");
 	    out.println(DOC_TYPE);
+	    
+	    Tag html = html().attr("xmlns", "http://www.w3.org/1999/xhtml").attr("xml:lang","en").attr(Attr.LANG,"en");
+	    Tag body = body().withId("mainwindow");
+	    
+		out.println(html.renderOpenTag());
+		out.println(head().renderOpenTag());
 		
-	    out.println("<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">");
-	    out.println("<head>");
-	    out.println("<meta http-equiv=\"X-UA-Compatible\" content=\"chrome=1\" />");
-	    out.println("<meta http-equiv=\"cache-control\" content=\"no-cache\" />");
-	    out.println("<meta http-equiv=\"expires\" content=\"0\" />");
-	    out.println("<meta http-equiv=\"pragma\" content=\"no-cache\" />");
+		out.println(meta().attr(Attr.HTTP_EQUIV, "X-UA-Compatible").attr(Attr.CONTENT, "chrome=1").render());
+		out.println(meta().attr(Attr.HTTP_EQUIV, "cache-control").attr(Attr.CONTENT, "no-cache").render());
+		out.println(meta().attr(Attr.HTTP_EQUIV, "expires").attr(Attr.CONTENT, "0").render());
+		out.println(meta().attr(Attr.HTTP_EQUIV, "pragma").attr(Attr.CONTENT, "no-cache").render());
+		
+	    out.println(generator.getD3CSSHeaderStr().render());
+	    out.println(head().renderCloseTag());
 	    
-	    out.println(generator.getD3CSSHeaderStr().toString());
+	    out.println(body.renderOpenTag()); 
 	    
-	    out.println("</head>");
-	    out.println ("<body id=\"mainwindow\">"); 
+	    Vector<Tag> tags = generator.getD3JsHeaderStr();
 	    
-	    out.println(generator.getD3JsHeaderStr());
+	    for(Tag tag : tags){
+	    	out.println(tag.render());
+	    }
 	    
-	    out.println(generator.getFilterStr());
+	    out.println(generator.getFilterStr().render());
 	    
-	    out.println("<div id=\"divPlot\"></div>");
+	    out.println(div().withId("divPlot").render());
 	    
 	    generator.setData("D:\\Projekte\\IC\\D3\\export.csv");
 	    out.println(generator.getJsDataStr()!=null?generator.getJsDataStr().toString():"");
 	    
-	    out.println("<script type=\"text/javascript\" src=\"js/custom_scatter.js\"></script>");
+	    out.println(script().withType("text/javascript").withSrc("js/custom_scatter.js").render());
 	    
-	    out.print(	"</body>" + 
-	    			"</html>");
+	    out.println(body.renderCloseTag());
+	    out.println(html.renderCloseTag());
+	    
 	}
 
 }

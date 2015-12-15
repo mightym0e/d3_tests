@@ -1,9 +1,14 @@
 package generator;
 
+import j2html.attributes.Attr;
+import j2html.tags.Tag;
+
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.IllegalFormatException;
 import java.util.Vector;
 
+import static j2html.TagCreator.*;
 import util.CSVReader;
 
 public class ScatterPlot3dGenerator implements Generator {
@@ -17,16 +22,24 @@ public class ScatterPlot3dGenerator implements Generator {
 	}
 
 	@Override
-	public StringBuffer getD3JsHeaderStr() {
+	public Vector<Tag> getD3JsHeaderStr() {
 		
-		StringBuffer header = new StringBuffer();
+		Vector<Tag> ret = new Vector<Tag>();
 		
-		header.append("<script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-latest.min.js\"></script>");
-	    header.append("<script type=\"text/javascript\" src=\"http://d3js.org/d3.v3.min.js\"></script>");
-	    header.append("<script type=\"text/javascript\" src=\"http://x3dom.org/x3dom/dist/x3dom-full.js\"></script>");
-	    header.append("<script type=\"text/javascript\" src=\"js/scatter_plot_3d_demo.js\"></script>");
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("http://code.jquery.com/jquery-latest.min.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("http://d3js.org/d3.v3.min.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("http://x3dom.org/x3dom/dist/x3dom-full.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("js/scatter_plot_3d_demo.js"));
 		
-		return header;
+		return ret;
 	}
 
 	@Override
@@ -36,17 +49,14 @@ public class ScatterPlot3dGenerator implements Generator {
 	}
 
 	@Override
-	public StringBuffer getD3CSSHeaderStr() {
+	public Tag getD3CSSHeaderStr() {
 
-		StringBuffer cssHeader = new StringBuffer();
+		return link().withRel("stylesheet").withType("text/css").withHref("http://www.x3dom.org/download/dev/x3dom.css");
 		
-		cssHeader.append("<link rel=\"stylesheet\" type=\"text/css\" href=\"http://www.x3dom.org/download/dev/x3dom.css\"/>");
-		
-		return cssHeader;
 	}
 
 	@Override
-	public void setData(String fileName) {
+	public void setData(String fileName) throws IllegalFormatException {
 		CSVReader reader = new CSVReader();
 	    
 	    ArrayList<String[]> data = reader.run(fileName);
@@ -60,29 +70,21 @@ public class ScatterPlot3dGenerator implements Generator {
 	}
 
 	@Override
-	public StringBuffer getFilterStr() {
-
-		StringBuffer filter = new StringBuffer();
+	public Tag getFilterStr() {
 		
-		filter.append("<div id=\"selects\">");
-		filter.append("<select class=\"axis_select\" id=\"x\">");
-//		filter.append(	"<option value=\"1\">Dataset 1</option>");
-		filter.append(	"<option selected=\"selected\" value=\"2\">Dataset 2</option>");
-		filter.append(	"<option value=\"3\">Dataset 3</option>");
-		filter.append("</select>");
-//		filter.append("<select class=\"axis_select\" id=\"y\">");
-//		filter.append(	"<option value=\"1\">Dataset 1</option>");
-//		filter.append(	"<option selected=\"selected\" value=\"2\">Dataset 2</option>");
-//		filter.append(	"<option value=\"3\">Dataset 3</option>");
-//		filter.append("</select>");
-		filter.append("<select class=\"axis_select\" id=\"z\">");
-//		filter.append(	"<option value=\"1\">Dataset 1</option>");
-		filter.append(	"<option value=\"2\">Dataset 2</option>");
-		filter.append(	"<option selected=\"selected\" value=\"3\">Dataset 3</option>");
-		filter.append("</select>");
-		filter.append("</div>");
-		
-		return filter;
+		return div().withId("selects").with
+				(
+						select().withClass("axis_select").withId("x").with
+							(
+								option().attr(Attr.SELECTED, Attr.SELECTED).withValue("2").withText("Dataset 2"),
+								option().withValue("3").withText("Dataset 3")
+							),
+						select().withClass("axis_select").withId("z").with
+							(
+								option().withValue("2").withText("Dataset 2"),
+								option().attr(Attr.SELECTED, Attr.SELECTED).withValue("3").withText("Dataset 3")
+							)
+				);
 	}
 
 }

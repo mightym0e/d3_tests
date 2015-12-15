@@ -1,5 +1,7 @@
 package generator;
 
+import j2html.tags.Tag;
+
 import java.util.HashMap;
 import java.util.Vector;
 
@@ -9,13 +11,13 @@ public interface Generator {
 	
 	public void setData(String fileName);
 	
-	public StringBuffer getD3JsHeaderStr();
+	public Vector<Tag> getD3JsHeaderStr();
 	
-	public StringBuffer getD3CSSHeaderStr();
+	public Tag getD3CSSHeaderStr();
 	
 	public StringBuffer getD3FunctionsStr();
 	
 	public StringBuffer getJsDataStr();
 	
-	public StringBuffer getFilterStr();
+	public Tag getFilterStr();
 }

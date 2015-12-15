@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.IllegalFormatException;
+import java.util.IllegalFormatFlagsException;
 
 public class CSVReader {
 
@@ -54,19 +56,23 @@ public class CSVReader {
 	return ret;
   }
   
-  public StringBuffer getJsString(ArrayList<String[]> input){
+  public StringBuffer getJsString(ArrayList<String[]> input) throws IllegalFormatException {
 	  StringBuffer ret = new StringBuffer();
 	  ret.append("<script type=\"text/javascript\">\n");
 	  ret.append("var data1 = [];\n");
 	  ret.append("var data2 = [];\n");
 	  ret.append("var data3 = [];\n");
 	  
-	  for(String[] arr : input){
-		  ret.append("data1.push('"+arr[0]+"');\n");
-		  ret.append("data2.push('"+arr[1]+"');\n");
-		  ret.append("data3.push('"+arr[2]+"');\n");
+	  try {
+		  for(String[] arr : input){
+			  ret.append("data1.push('"+arr[0]+"');\n");
+			  ret.append("data2.push('"+arr[1]+"');\n");
+			  ret.append("data3.push('"+arr[2]+"');\n");
+		  }
+	  } catch (Exception e) {
+		  throw new IllegalFormatFlagsException("Daten müssen 3-Dimensional formatiert sein!");
 	  }
-	  
+
 	  ret.append("</script>");
 	  return ret;
   }
