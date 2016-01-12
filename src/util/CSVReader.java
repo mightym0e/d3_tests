@@ -28,11 +28,12 @@ public class CSVReader {
 	try {
 
 		br = new BufferedReader(new FileReader(csvFile));
+		br.readLine();
 		while ((line = br.readLine()) != null) {
 
 			String[] data_temp = line.split(cvsSplitBy);
 
-			String[] data = new String[]{data_temp[1],data_temp[2],data_temp[3]};
+			String[] data = new String[]{data_temp[0],data_temp[1],data_temp[2],data_temp[3]};
 			
 			ret.add(data);
 
@@ -59,15 +60,25 @@ public class CSVReader {
   public StringBuffer getJsString(ArrayList<String[]> input) throws IllegalFormatException {
 	  StringBuffer ret = new StringBuffer();
 	  ret.append("<script type=\"text/javascript\">\n");
-	  ret.append("var data1 = [];\n");
-	  ret.append("var data2 = [];\n");
-	  ret.append("var data3 = [];\n");
+//	  ret.append("var data1 = [];\n");
+//	  ret.append("var data2 = [];\n");
+//	  ret.append("var data3 = [];\n");
+	  ret.append("var rowsMap = {};\n");
 	  
 	  try {
 		  for(String[] arr : input){
-			  ret.append("data1.push('"+arr[0]+"');\n");
-			  ret.append("data2.push('"+arr[1]+"');\n");
-			  ret.append("data3.push('"+arr[2]+"');\n");
+			  ret.append("if('"+arr[0]+"' in rowsMap){ "
+			  		   + "rowsMap['"+arr[0]+"'].push({x: "+arr[1]+", y: "+arr[2]+", z: "+arr[3]+"});"
+			  		   + "}"
+			  		   + "else {"
+			  		   + "var rowInside = [];"
+			  		   + "rowInside.push({x: "+arr[1]+", y: "+arr[2]+", z: "+arr[3]+"});"
+			  		   + "rowsMap['"+arr[0]+"'] = rowInside;"
+			  		   + "}");
+			  
+//			  ret.append("data1.push('"+arr[0]+"');\n");
+//			  ret.append("data2.push('"+arr[1]+"');\n");
+//			  ret.append("data3.push('"+arr[2]+"');\n");
 		  }
 	  } catch (Exception e) {
 		  throw new IllegalFormatFlagsException("Daten müssen 3-Dimensional formatiert sein!");

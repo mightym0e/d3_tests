@@ -17,8 +17,7 @@ function scatterPlot3d( parent )
 	.attr( "position", [8, 4, 15])
 	.attr( "zNear", -15 )
 
-	var rows = initializeDataGrid(data1,data2,data3,false);
-	var rows1 = initializeDataGrid(data1,data2,data3,true);
+	//var rows = initializeDataGrid(data1,data2,data3,false);
 	var axisRange = [0, 25];
 	var scales = [];
 	var initialDuration = 0;
@@ -275,13 +274,27 @@ function scatterPlot3d( parent )
 
 	function updateData() {
 		time += Math.PI/8;
-		if ( x3d.node() && x3d.node().runtime ) {
-			plotData( defaultDuration, rows, "red", "1" );
-			plotData( defaultDuration, rows1, "blue", "2" );
-		} else {
-			setTimeout( updateData, defaultDuration );
-			//alert('x3d not ready.');
+		var colors = ["red","blue","green","yellow","purple"];
+		var run = 0;
+		for (var key in rowsMap) {
+			if (rowsMap.hasOwnProperty(key)) {
+				if ( x3d.node() && x3d.node().runtime ) {
+					plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
+				} else {
+					setTimeout( updateData, defaultDuration );
+					break;
+				}
+				plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
+				run++;
+			}
 		}
+//		if ( x3d.node() && x3d.node().runtime ) {
+//			plotData( defaultDuration, rows, "red", "1" );
+//			plotData( defaultDuration, rows1, "blue", "2" );
+//		} else {
+//			setTimeout( updateData, defaultDuration );
+//			//alert('x3d not ready.');
+//		}
 	}
 
 	initializePlot();
@@ -291,32 +304,32 @@ function scatterPlot3d( parent )
 //	var val2=$("#y").val();
 	var val3=$("#z").val();
 
-	$(".axis_select").change(function(){
-		var selected = $(this).val();
-		var id = $(this).attr("id");
-		var oldVal;
-
-		if($(this).attr("id")=='x'){
-			oldVal=val1;
-			val1=selected;
-		} else {
-			oldVal=val3;
-			val3=selected;
-		}
-
-		$(".axis_select").each(function(){
-			if($(this).attr("id")!=id){
-				if($(this).val()==selected){
-					$(this).val(oldVal);
-				}
-			}
-		});
-
-		reverseData=!reverseData;
-		rows = initializeDataGrid(data1,data2,data3,reverseData);
-		rows1 = initializeDataGrid(data1,data2,data3,!reverseData);
-		updateData();
-
-	});
+//	$(".axis_select").change(function(){
+//		var selected = $(this).val();
+//		var id = $(this).attr("id");
+//		var oldVal;
+//
+//		if($(this).attr("id")=='x'){
+//			oldVal=val1;
+//			val1=selected;
+//		} else {
+//			oldVal=val3;
+//			val3=selected;
+//		}
+//
+//		$(".axis_select").each(function(){
+//			if($(this).attr("id")!=id){
+//				if($(this).val()==selected){
+//					$(this).val(oldVal);
+//				}
+//			}
+//		});
+//
+//		reverseData=!reverseData;
+//		rows = initializeDataGrid(data1,data2,data3,reverseData);
+//		rows1 = initializeDataGrid(data1,data2,data3,!reverseData);
+//		updateData();
+//
+//	});
 
 }

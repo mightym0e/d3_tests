@@ -84,7 +84,7 @@ public class ScatterServlet extends HttpServlet {
 	    
 	    out.println(div().withId("divPlot").render());
 	    
-	    generator.setData("D:\\Projekte\\IC\\D3\\export.csv");
+	    generator.setData("D:\\Projekte\\IC\\D3\\export1.csv");
 	    out.println(generator.getJsDataStr()!=null?generator.getJsDataStr().toString():"");
 	    
 	    out.println(script().withType("text/javascript").withSrc("js/custom_scatter.js").render());
