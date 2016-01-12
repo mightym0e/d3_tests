@@ -1,3 +1,5 @@
+var reverseData = false;
+
 function scatterPlot3d( parent )
 {
 	var x3d = parent  
@@ -15,8 +17,8 @@ function scatterPlot3d( parent )
 	.attr( "position", [8, 4, 15])
 	.attr( "zNear", -15 )
 
-	var rows = initializeDataGrid();
-	var rows1 = initializeDataGrid1();
+	var rows = initializeDataGrid(data1,data2,data3,false);
+	var rows1 = initializeDataGrid(data1,data2,data3,true);
 	var axisRange = [0, 25];
 	var scales = [];
 	var initialDuration = 0;
@@ -122,8 +124,8 @@ function scatterPlot3d( parent )
 		// enter + update
 		ticks.transition().duration(duration)
 		.attr("translation", function(tick) { 
-			return constVecWithAxisValue( 0, scale(tick), axisIndex ); })
-			ticks.exit().remove();
+			return constVecWithAxisValue( 0, scale(tick), axisIndex ); });
+		ticks.exit().remove();
 
 		// tick labels
 		var tickLabels = ticks.selectAll("billboard shape text")
@@ -132,7 +134,7 @@ function scatterPlot3d( parent )
 		.append("billboard")
 		.attr("axisOfRotation", "0 0 0")     
 		.append("shape")
-		.call(makeSolid)
+		.call(makeSolid);
 		newTickLabels.append("text")
 		.attr("string", scale.tickFormat(10))
 		.attr("solid", "true")
@@ -141,7 +143,7 @@ function scatterPlot3d( parent )
 		.attr("family", "SANS")
 		.attr("justify", "END MIDDLE" );
 		tickLabels // enter + update
-		.attr("string", scale.tickFormat(10))
+		.attr("string", scale.tickFormat(10));
 		tickLabels.exit().remove();
 
 		// base grid lines
@@ -155,7 +157,7 @@ function scatterPlot3d( parent )
 			.append("transform")
 			.attr("class", axisName("GridLine", axisIndex))
 			.attr("rotation", axisIndex==0 ? [0,1,0, -Math.PI/2] : [0,0,0,0])
-			.append("shape")
+			.append("shape");
 
 			newGridLines.append("appearance")
 			.append("material")
@@ -163,7 +165,7 @@ function scatterPlot3d( parent )
 			newGridLines.append("polyline2d");
 
 			gridLines.selectAll("shape polyline2d").transition().duration(duration)
-			.attr("lineSegments", "0 0, " + axisRange[1] + " 0")
+			.attr("lineSegments", "0 0, " + axisRange[1] + " 0");
 
 			gridLines.transition().duration(duration)
 			.attr("translation", axisIndex==0
@@ -173,10 +175,9 @@ function scatterPlot3d( parent )
 		}  
 	}
 
-	// Update the data points (spheres) and stems.
-	function plotData( duration ) {
+	function plotData( duration, rowsIn, color, index ) {
 		//console.log("plot Data"+data2[0]+"---"+data3[0]);
-		if (!rows) {
+		if (!rowsIn) {
 			console.log("no rows to plot.")
 			return;
 		}
@@ -185,70 +186,12 @@ function scatterPlot3d( parent )
 		var sphereRadius = 0.2;
 
 		// Draw a sphere at each x,y,z coordinate.
-		var datapoints = scene.selectAll(".datapoint").data( rows );
-		datapoints.exit().remove()
-
-		var newDatapoints = datapoints.enter()
-		.append("transform")
-		.attr("class", "datapoint")
-		.attr("scale", [sphereRadius, sphereRadius, sphereRadius])
-		.append("shape");
-		newDatapoints
-		.append("appearance")
-		.append("material");
-		newDatapoints
-		.append("sphere")
-		// Does not work on Chrome; use transform instead
-		//.attr("radius", sphereRadius)
-
-		datapoints.selectAll("shape appearance material")
-		.attr("diffuseColor", 'steelblue' )
-
-		datapoints.transition().ease(ease).duration(duration)
-		.attr("translation", function(row) { 
-			return x(row[axisKeys[0]]) + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])})
-
-			// Draw a stem from the x-z plane to each sphere at elevation y.
-			// This convention was chosen to be consistent with x3d primitive ElevationGrid. 
-			var stems = scene.selectAll(".stem").data( rows );
-		stems.exit().remove();
-
-		var newStems = stems.enter()
-		.append("transform")
-		.attr("class", "stem")
-		.append("shape");
-		newStems
-		.append("appearance")
-		.append("material")
-		.attr("emissiveColor", "gray")
-		newStems
-		.append("polyline2d")
-		.attr("lineSegments", function(row) { return "0 1, 0 0"; })
-
-		stems.transition().ease(ease).duration(duration)
-		.attr("translation", 
-				function(row) { return x(row[axisKeys[0]]) + " 0 " + z(row[axisKeys[2]]); })
-				.attr("scale",
-						function(row) { return [1, y(row[axisKeys[1]])]; })
-	}
-
-	function plotData1( duration ) {
-		//console.log("plot Data"+data2[0]+"---"+data3[0]);
-		if (!rows1) {
-			console.log("no rows to plot.")
-			return;
-		}
-
-		var x = scales[0], y = scales[1], z = scales[2];
-		var sphereRadius = 0.2;
-
-		// Draw a sphere at each x,y,z coordinate.
-		var datapoints = scene.selectAll(".datapoint1").data( rows1 );
+		var datapoints = scene.selectAll(".datapoint"+index).data( rowsIn );
 		datapoints.exit().remove();
 
 		var newDatapoints = datapoints.enter()
 		.append("transform")
-		.attr("class", "datapoint1")
+		.attr("class", "datapoint"+index)
 		.attr("scale", [sphereRadius, sphereRadius, sphereRadius])
 		.append("shape");
 		newDatapoints
@@ -258,7 +201,7 @@ function scatterPlot3d( parent )
 		.append("sphere");
 
 		datapoints.selectAll("shape appearance material")
-		.attr("diffuseColor", 'red' );
+		.attr("diffuseColor", color );
 
 		datapoints.transition().ease(ease).duration(duration)
 		.attr("translation", function(row) { 
@@ -266,12 +209,12 @@ function scatterPlot3d( parent )
 
 		// Draw a stem from the x-z plane to each sphere at elevation y.
 		// This convention was chosen to be consistent with x3d primitive ElevationGrid. 
-		var stems = scene.selectAll(".stem1").data( rows1 );
+		var stems = scene.selectAll(".stem"+index).data( rowsIn );
 		stems.exit().remove();
 
 		var newStems = stems.enter()
 		.append("transform")
-		.attr("class", "stem1")
+		.attr("class", "stem"+index)
 		.append("shape");
 		newStems
 		.append("appearance")
@@ -288,62 +231,44 @@ function scatterPlot3d( parent )
 				function(row) { return [1, y(row[axisKeys[1]])]; });
 
 		// Sphere Data Label
+		
+		var sphereLabels = scene.selectAll(".dataLabel"+index).data( rowsIn );
 
-		var sphereDatas = scene.selectAll( ".dataLabel" ).data( rows1 );
-		
-		sphereDatas.exit().remove();  
-		
-		var sphereLabels = sphereDatas.selectAll("billboard shape text").data(function(row) { return y(row[axisKeys[1]]); });
+		sphereLabels.exit().remove();  
 		
 		var newSphereLabels = sphereLabels.enter()
+		.append("transform")
 		.append("billboard")
 		.attr("axisOfRotation", "0 0 0")     
 		.append("shape")
 		.call(makeSolid);
 		
+		sphereLabels.selectAll("transform billboard shape").attr("class", "dataLabel"+index);
+		
 		newSphereLabels.append("text")
-		.attr("translation", function(row) { 
-			return x(row[axisKeys[0]]) + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])
-		})
 		.attr("string", function(row) { 
 			return y(row[axisKeys[1]]);
 		})
 		.attr("solid", "true")
-		.append("fontstyle")
+		.attr("class", "dataLabel"+index);
+		
+		newSphereLabels.append("fontstyle")
 		.attr("size", 5)
 		.attr("family", "SANS")
 		.attr("justify", "END MIDDLE" );
-
-		sphereLabels.exit().remove(); 
 		
-		alert("Test3");
-	}
-	/*
-  function initializeDataGrid() {
-    var rows = [];
-    // Follow the convention where y(x,z) is elevation.
-    for (var x=-5; x<=5; x+=1) {
-      for (var z=-5; z<=5; z+=1) {
-        rows.push({x: x, y: 0, z: z});
-     }
-    }
-    return rows;
-  }*/
-
-	function initializeDataGrid() {
-		var rows = [];
-		// Follow the convention where y(x,z) is elevation.
-		for (var x=0; x<data1.length; x+=1) {
-			rows.push({x: data2[x]/100, y: x, z: data3[x]/100});
-		}
-		return rows;
+		sphereLabels.transition().ease(ease).duration(duration)
+		.attr("translation", function(row) { 
+			return x(row[axisKeys[0]])+1 + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])+1;
+		});
+		
 	}
 
-	function initializeDataGrid1() {
+	function initializeDataGrid(data1in, data2in, data3in, reverse) {
 		var rows = [];
 		// Follow the convention where y(x,z) is elevation.
-		for (var x=0; x<data1.length; x+=1) {
-			rows.push({x: data3[x]/100, y: x, z: data2[x]/100});
+		for (var x=0; x<data1in.length; x+=1) {
+			rows.push({x: reverse?data3in[x]/100:data2in[x]/100, y: x, z: reverse?data2in[x]/100:data3in[x]/100});
 		}
 		return rows;
 	}
@@ -351,18 +276,16 @@ function scatterPlot3d( parent )
 	function updateData() {
 		time += Math.PI/8;
 		if ( x3d.node() && x3d.node().runtime ) {
-			plotData( defaultDuration );
-			plotData1 ( defaultDuration );
+			plotData( defaultDuration, rows, "red", "1" );
+			plotData( defaultDuration, rows1, "blue", "2" );
 		} else {
 			setTimeout( updateData, defaultDuration );
 			//alert('x3d not ready.');
 		}
 	}
 
-	initializeDataGrid();
 	initializePlot();
 	updateData();
-	//setInterval( updateData, defaultDuration );
 
 	var val1=$("#x").val();
 //	var val2=$("#y").val();
@@ -389,10 +312,9 @@ function scatterPlot3d( parent )
 			}
 		});
 
-		var temp = data2;
-		data2 = data3;
-		data3 = temp;
-		rows = initializeDataGrid();
+		reverseData=!reverseData;
+		rows = initializeDataGrid(data1,data2,data3,reverseData);
+		rows1 = initializeDataGrid(data1,data2,data3,!reverseData);
 		updateData();
 
 	});
