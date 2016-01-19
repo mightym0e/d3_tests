@@ -291,7 +291,6 @@ function scatterPlot3d( parent )
 		time += Math.PI/8;
 		if ( x3d.node() && x3d.node().runtime ) {
 			plotData( defaultDuration, rows, "red", "1" );
-			plotData( defaultDuration, rows1, "blue", "2" );
 		} else {
 			setTimeout( updateData, defaultDuration );
 			//alert('x3d not ready.');
