@@ -1,5 +1,3 @@
-var reverseData = false;
-
 function scatterPlot3d( parent )
 {
 	var x3d = parent  
@@ -17,6 +15,7 @@ function scatterPlot3d( parent )
 	.attr( "position", [8, 4, 15])
 	.attr( "zNear", -15 )
 
+	var rows = initializeDataGrid(data1,data2,data3,false);
 	//var rows = initializeDataGrid(data1,data2,data3,false);
 	var axisRange = [0, 25];
 	var scales = [];
@@ -272,29 +271,31 @@ function scatterPlot3d( parent )
 		return rows;
 	}
 
-	function updateData() {
-		time += Math.PI/8;
-		var colors = ["red","blue","green","yellow","purple"];
-		var run = 0;
-		for (var key in rowsMap) {
-			if (rowsMap.hasOwnProperty(key)) {
-				if ( x3d.node() && x3d.node().runtime ) {
-					plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
-				} else {
-					setTimeout( updateData, defaultDuration );
-					break;
-				}
-				plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
-				run++;
-			}
-		}
+//	function updateData() {
+//		time += Math.PI/8;
+//		var colors = ["red","blue","green","yellow","purple"];
+//		var run = 0;
 //		if ( x3d.node() && x3d.node().runtime ) {
-//			plotData( defaultDuration, rows, "red", "1" );
-//			plotData( defaultDuration, rows1, "blue", "2" );
+//			for (var key in rowsMap) {
+//				if (rowsMap.hasOwnProperty(key)) {
+//					plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
+//				}
+//				run++;
+//			}
 //		} else {
 //			setTimeout( updateData, defaultDuration );
-//			//alert('x3d not ready.');
 //		}
+//	}
+	
+	function updateData() {
+		time += Math.PI/8;
+		if ( x3d.node() && x3d.node().runtime ) {
+			plotData( defaultDuration, rows, "red", "1" );
+			plotData( defaultDuration, rows1, "blue", "2" );
+		} else {
+			setTimeout( updateData, defaultDuration );
+			//alert('x3d not ready.');
+		}
 	}
 
 	initializePlot();
