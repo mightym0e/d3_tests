@@ -15,7 +15,6 @@ function scatterPlot3d( parent )
 	.attr( "position", [8, 4, 15])
 	.attr( "zNear", -15 )
 
-	var rows = initializeDataGrid(data1,data2,data3,false);
 	//var rows = initializeDataGrid(data1,data2,data3,false);
 	var axisRange = [0, 25];
 	var scales = [];
@@ -271,29 +270,19 @@ function scatterPlot3d( parent )
 		return rows;
 	}
 
-//	function updateData() {
-//		time += Math.PI/8;
-//		var colors = ["red","blue","green","yellow","purple"];
-//		var run = 0;
-//		if ( x3d.node() && x3d.node().runtime ) {
-//			for (var key in rowsMap) {
-//				if (rowsMap.hasOwnProperty(key)) {
-//					plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
-//				}
-//				run++;
-//			}
-//		} else {
-//			setTimeout( updateData, defaultDuration );
-//		}
-//	}
-	
 	function updateData() {
 		time += Math.PI/8;
+		var colors = ["red","blue","green","yellow","purple"];
+		var run = 0;
 		if ( x3d.node() && x3d.node().runtime ) {
-			plotData( defaultDuration, rows, "red", "1" );
+			for (var key in rowsMap) {
+				if (rowsMap.hasOwnProperty(key)) {
+					plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
+				}
+				run++;
+			}
 		} else {
 			setTimeout( updateData, defaultDuration );
-			//alert('x3d not ready.');
 		}
 	}
 
