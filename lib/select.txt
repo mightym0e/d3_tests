@@ -1,0 +1,11 @@
+select distinct
+id_messpunkt,
+(EXTRACT(epoch FROM ist_tu-soll_tu)/60)::INTEGER epoche,
+EXTRACT(DOW FROM soll_tu) dayofweek,
+EXTRACT(HOUR FROM soll_tu) hourofday
+from qdababav.puenkt 
+where betriebstag between '07.12.2015' and '13.12.2015'
+and id_messpunkt in (34143,36377,46357)
+and (EXTRACT(epoch FROM ist_tu-soll_tu)/60)::INTEGER>5
+
+order by dayofweek, hourofday, epoche, id_messpunkt
