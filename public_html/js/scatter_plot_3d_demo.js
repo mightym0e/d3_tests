@@ -274,18 +274,24 @@ function scatterPlot3d( parent )
 
 	function updateData() {
 		time += Math.PI/8;
-		var colors = ["red","blue","green","yellow","purple"];
 		var run = 0;
 		if ( x3d.node() && x3d.node().runtime ) {
 			for (var key in rowsMap) {
 				if (rowsMap.hasOwnProperty(key)) {
-					plotData( defaultDuration, rowsMap[key], colors[run], ""+(run+1) );
+					plotData( defaultDuration, rowsMap[key], getColor(run), ""+(run+1) );
 				}
 				run++;
 			}
 		} else {
 			setTimeout( updateData, defaultDuration );
 		}
+	}
+	
+	function getColor(index){
+		var r = (index % 10)/10;
+		var g = ((index+1) % 10)/10;
+		var b = ((index+2) % 10)/10;
+		return r + " " + g + " " + b;
 	}
 
 	initializePlot();
