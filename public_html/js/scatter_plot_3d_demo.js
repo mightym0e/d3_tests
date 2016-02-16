@@ -16,18 +16,18 @@ function scatterPlot3d( parent )
 	.attr( "zNear", -15 )
 
 	//var rows = initializeDataGrid(data1,data2,data3,false);
-	var axisRange = [0, 25];
+	var axisRange = [[0, data_scales[0]],[0, data_scales[1]],[0, data_scales[2]]];
 	var scales = [];
 	var initialDuration = 0;
 	var defaultDuration = 800;
 	var ease = 'linear';
 	var time = 0;
-	var axisKeys = ["x", "y", "z"];
+	var axisKeys = [header["x"], header["y"], header["z"]];
 	var labelFontSize = 0.8;
 
 	// Helper functions for initializeAxis() and drawAxis()
 	function axisName( name, axisIndex ) {
-		return ['x','y','z'][axisIndex] + name;
+		return [header["x"],header["y"],header["z"]][axisIndex] + name;
 	}
 
 	function constVecWithAxisValue( otherValue, axisValue, axisIndex ) {
@@ -56,34 +56,34 @@ function scatterPlot3d( parent )
 		var key = axisKeys[axisIndex];
 		drawAxis( axisIndex, key, initialDuration );
 
-		var scaleMin = axisRange[0];
-		var scaleMax = axisRange[1];
+		var scaleMin = axisRange[axisIndex][0];
+		var scaleMax = axisRange[axisIndex][1];
 
 		// the axis line
 		var newAxisLine = scene.append("transform")
 		.attr("class", axisName("Axis", axisIndex))
 		.attr("rotation", ([[0,0,0,0],[0,0,1,Math.PI/2],[0,1,0,-Math.PI/2]][axisIndex]))
-		.append("shape")
+		.append("shape");
 		newAxisLine
 		.append("appearance")
 		.append("material")
-		.attr("emissiveColor", "lightgray")
+		.attr("emissiveColor", "lightgray");
 		newAxisLine
 		.append("polyline2d")
 		// Line drawn along y axis does not render in Firefox, so draw one
 		// along the x axis instead and rotate it (above).
-		.attr("lineSegments", "0 0," + scaleMax + " 0")
+		.attr("lineSegments", "0 0," + scaleMax + " 0");
 
 		// axis labels
 		var newAxisLabel = scene.append("transform")
 		.attr("class", axisName("AxisLabel", axisIndex))
-		.attr("translation", constVecWithAxisValue( 0, scaleMin + 1.1 * (scaleMax-scaleMin), axisIndex ))
+		.attr("translation", constVecWithAxisValue( 0, 23, axisIndex ));
 
 		var newAxisLabelShape = newAxisLabel
 		.append("billboard")
 		.attr("axisOfRotation", "0 0 0") // face viewer
 		.append("shape")
-		.call(makeSolid)
+		.call(makeSolid);
 
 		newAxisLabelShape
 		.append("text")
@@ -93,19 +93,19 @@ function scatterPlot3d( parent )
 		.append("fontstyle")
 		.attr("size", labelFontSize)
 		.attr("family", "SANS")
-		.attr("justify", "END MIDDLE" )
+		.attr("justify", "END MIDDLE" );
 	}
 
 	// Assign key to axis, creating or updating its ticks, grid lines, and labels.
 	function drawAxis( axisIndex, key, duration ) {
 
 		var scale = d3.scale.linear()
-		.domain( [0,25] ) // demo data range
-		.range( axisRange )
+		.domain( [axisRange[axisIndex][0],axisRange[axisIndex][1]] ) // demo data range
+		.range( [0,23] );
 
 		scales[axisIndex] = scale;
 
-		var numTicks = 10;
+		var numTicks = axisRange[axisIndex][1];
 		var tickSize = 0.1;
 		var tickFontSize = 0.5;
 
@@ -162,7 +162,7 @@ function scatterPlot3d( parent )
 			newGridLines.append("polyline2d");
 
 			gridLines.selectAll("shape polyline2d").transition().duration(duration)
-			.attr("lineSegments", "0 0, " + axisRange[1] + " 0");
+			.attr("lineSegments", "0 0, " + axisRange[axisIndex][1] + " 0");
 
 			gridLines.transition().duration(duration)
 			.attr("translation", axisIndex==0
@@ -227,37 +227,39 @@ function scatterPlot3d( parent )
 		.attr("scale",
 				function(row) { return [1, y(row[axisKeys[1]])]; });
 
-		// Sphere Data Label
+		// Sphere Data Label ---------------------------------------------------------------------------
 		
-		var sphereLabels = scene.selectAll(".dataLabel"+index).data( rowsIn );
-
-		sphereLabels.exit().remove();  
+//		var sphereLabels = scene.selectAll(".dataLabel"+index).data( rowsIn );
+//
+//		sphereLabels.exit().remove();  
+//		
+//		var newSphereLabels = sphereLabels.enter()
+//		.append("transform")
+//		.append("billboard")
+//		.attr("axisOfRotation", "0 0 0")     
+//		.append("shape")
+//		.call(makeSolid);
+//		
+//		sphereLabels.selectAll("transform billboard shape").attr("class", "dataLabel"+index);
+//		
+//		newSphereLabels.append("text")
+//		.attr("string", function(row) { 
+//			return y(row[axisKeys[1]]);
+//		})
+//		.attr("solid", "true")
+//		.attr("class", "dataLabel"+index);
+//		
+//		newSphereLabels.append("fontstyle")
+//		.attr("size", 5)
+//		.attr("family", "SANS")
+//		.attr("justify", "END MIDDLE" );
+//		
+//		sphereLabels.transition().ease(ease).duration(duration)
+//		.attr("translation", function(row) { 
+//			return x(row[axisKeys[0]])+1 + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])+1;
+//		});
 		
-		var newSphereLabels = sphereLabels.enter()
-		.append("transform")
-		.append("billboard")
-		.attr("axisOfRotation", "0 0 0")     
-		.append("shape")
-		.call(makeSolid);
-		
-		sphereLabels.selectAll("transform billboard shape").attr("class", "dataLabel"+index);
-		
-		newSphereLabels.append("text")
-		.attr("string", function(row) { 
-			return y(row[axisKeys[1]]);
-		})
-		.attr("solid", "true")
-		.attr("class", "dataLabel"+index);
-		
-		newSphereLabels.append("fontstyle")
-		.attr("size", 5)
-		.attr("family", "SANS")
-		.attr("justify", "END MIDDLE" );
-		
-		sphereLabels.transition().ease(ease).duration(duration)
-		.attr("translation", function(row) { 
-			return x(row[axisKeys[0]])+1 + " " + y(row[axisKeys[1]]) + " " + z(row[axisKeys[2]])+1;
-		});
+		// END Sphere Data Label ---------------------------------------------------------------------------
 		
 	}
 

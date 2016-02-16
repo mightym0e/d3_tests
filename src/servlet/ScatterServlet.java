@@ -74,7 +74,7 @@ public class ScatterServlet extends HttpServlet {
 	    
 	    out.println(body.renderOpenTag()); 
 	    
-	    generator.setData("D:\\Projekte\\IC\\D3\\export2.csv");
+	    generator.setData("D:\\Projekte\\IC\\D3\\export3.csv");
 	    out.println(generator.getJsDataStr()!=null?generator.getJsDataStr().toString():"");
 	    
 	    Vector<Tag> tags = generator.getD3JsHeaderStr();
@@ -83,7 +83,9 @@ public class ScatterServlet extends HttpServlet {
 	    	out.println(tag.render());
 	    }
 	    
-	    out.println(generator.getFilterStr().render());
+	    out.println(generator.getFilterStr().render()+button().withText("download").withId("exportSvg"));
+	    
+//	    out.println(canvas().withId("canvas").attr("width", "1000px").attr("height", "600px").attr("style", "display:none"));
 	    
 	    out.println(div().withId("divPlot").render());
 	    

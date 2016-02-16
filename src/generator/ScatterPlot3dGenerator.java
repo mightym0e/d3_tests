@@ -38,7 +38,24 @@ public class ScatterPlot3dGenerator implements Generator {
 		ret.add(script()
 				.withType("text/javascript")
 				.withSrc("js/scatter_plot_3d_demo.js"));
-		
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("http://gabelerner.github.io/canvg/rgbcolor.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("http://gabelerner.github.io/canvg/StackBlur.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("http://gabelerner.github.io/canvg/canvg.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("js/jquery.pnglink.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("js/FileSaver.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("js/svgConversion.js"));
 		return ret;
 	}
 

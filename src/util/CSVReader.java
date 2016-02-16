@@ -28,7 +28,8 @@ public class CSVReader {
 	try {
 
 		br = new BufferedReader(new FileReader(csvFile));
-		br.readLine();
+//		line = br.readLine();
+		
 		while ((line = br.readLine()) != null) {
 
 			String[] data_temp = line.split(cvsSplitBy);
@@ -61,18 +62,32 @@ public class CSVReader {
 	  StringBuffer ret = new StringBuffer();
 	  ret.append("<script type=\"text/javascript\">\n");
 	  ret.append("var rowsMap = {};\n");
+	  String[] header = {"x","y","z"};
+	  Double[] scales = {0d,0d,0d};
 	  
 	  try {
-		  for(String[] arr : input){
-			  ret.append("if('"+arr[0]+"' in rowsMap){ "
-			  		   + "rowsMap['"+arr[0]+"'].push({x: "+arr[1]+", y: "+arr[2]+", z: "+arr[3]+"});"
-			  		   + "}"
-			  		   + "else {"
-			  		   + "var rowInside = [];"
-			  		   + "rowInside.push({x: "+arr[1]+", y: "+arr[2]+", z: "+arr[3]+"});"
-			  		   + "rowsMap['"+arr[0]+"'] = rowInside;"
-			  		   + "}");
-			  
+		  boolean first = true;
+		  for(String[] csvRow : input){
+			  if(first){
+				  first = false;
+				  ret.append("var header = {x: '"+csvRow[1]+"', y: '"+csvRow[2]+"', z: '"+csvRow[3]+"'};");
+				  header[0] = csvRow[1];
+				  header[1] = csvRow[2];
+				  header[2] = csvRow[3];
+			  } else {
+				  ret.append("if('"+csvRow[0]+"' in rowsMap){ "
+				  		   + "rowsMap['"+csvRow[0]+"'].push({'"+header[0]+"': "+csvRow[1]+", '"+header[1]+"': "+csvRow[2]+", '"+header[2]+"': "+csvRow[3]+"});"
+				  		   + "}"
+				  		   + "else {"
+				  		   + "var rowInside = [];"
+				  		   + "rowInside.push({'"+header[0]+"': "+csvRow[1]+", '"+header[1]+"': "+csvRow[2]+", '"+header[2]+"': "+csvRow[3]+"});"
+				  		   + "rowsMap['"+csvRow[0]+"'] = rowInside;"
+				  		   + "}");
+				  if(scales[0]<Double.parseDouble(csvRow[1]))scales[0]=Double.parseDouble(csvRow[1]);
+				  if(scales[1]<Double.parseDouble(csvRow[2]))scales[1]=Double.parseDouble(csvRow[2]);
+				  if(scales[2]<Double.parseDouble(csvRow[3]))scales[2]=Double.parseDouble(csvRow[3]);
+			  }
+			  ret.append("var data_scales = ["+scales[0]+","+scales[1]+","+scales[2]+"];");
 		  }
 	  } catch (Exception e) {
 		  throw new IllegalFormatFlagsException("Daten müssen 3-Dimensional formatiert sein!");
