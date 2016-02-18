@@ -21,7 +21,8 @@ function scatterPlot3d( parent )
 	var initialDuration = 0;
 	var defaultDuration = 800;
 	var ease = 'linear';
-	var time = 0;
+	var axisScale = 23;
+	var normalizeScale = false;
 	var axisKeys = [header["x"], header["y"], header["z"]];
 	var labelFontSize = 0.8;
 
@@ -73,11 +74,11 @@ function scatterPlot3d( parent )
 		// Line drawn along y axis does not render in Firefox, so draw one
 		// along the x axis instead and rotate it (above).
 		.attr("lineSegments", "0 0," + scaleMax + " 0");
-
+		
 		// axis labels
 		var newAxisLabel = scene.append("transform")
 		.attr("class", axisName("AxisLabel", axisIndex))
-		.attr("translation", constVecWithAxisValue( 0, 23, axisIndex ));
+		.attr("translation", constVecWithAxisValue( 0, (normalizeScale?axisScale:scaleMax)+1, axisIndex ));
 
 		var newAxisLabelShape = newAxisLabel
 		.append("billboard")
@@ -101,7 +102,7 @@ function scatterPlot3d( parent )
 
 		var scale = d3.scale.linear()
 		.domain( [axisRange[axisIndex][0],axisRange[axisIndex][1]] ) // demo data range
-		.range( [0,23] );
+		.range( normalizeScale?[0,axisScale]:[axisRange[axisIndex][0],axisRange[axisIndex][1]] );
 
 		scales[axisIndex] = scale;
 
@@ -273,7 +274,6 @@ function scatterPlot3d( parent )
 	}
 
 	function updateData() {
-		time += Math.PI/8;
 		var run = 0;
 		if ( x3d.node() && x3d.node().runtime ) {
 			for (var key in rowsMap) {
@@ -289,8 +289,8 @@ function scatterPlot3d( parent )
 	
 	function getColor(index){
 		var r = (index % 10)/10;
-		var g = ((index+1) % 10)/10;
-		var b = ((index+2) % 10)/10;
+		var g = ((index+3) % 10)/10;
+		var b = ((index+6) % 10)/10;
 		return r + " " + g + " " + b;
 	}
 
