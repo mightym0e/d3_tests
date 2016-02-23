@@ -1,3 +1,5 @@
+var scatter_colors;
+
 function scatterPlot3d( parent )
 {
 	var x3d = parent  
@@ -12,7 +14,7 @@ function scatterPlot3d( parent )
 	.attr( "centerOfRotation", [5, 5, 5])
 	.attr( "fieldOfView", [-25, -25, 35, 25])
 	.attr( "orientation", [-0.5, 1, 0.2, 1.12*Math.PI/4])
-	.attr( "position", [8, 4, 15])
+	.attr( "position", [8, 8, 15])
 	.attr( "zNear", -15 )
 
 	//var rows = initializeDataGrid(data1,data2,data3,false);
@@ -22,7 +24,7 @@ function scatterPlot3d( parent )
 	var defaultDuration = 800;
 	var ease = 'linear';
 	var axisScale = 23;
-	var normalizeScale = false;
+	var normalizeScale = true;
 	var axisKeys = [header["x"], header["y"], header["z"]];
 	var labelFontSize = 0.8;
 
@@ -273,12 +275,16 @@ function scatterPlot3d( parent )
 		return rows;
 	}
 
+	scatter_colors = d3.scale.category20();
+	
+	scatter_colors.domain(d3.keys(rowsMap).filter(function(key) { return key; }));
+	
 	function updateData() {
 		var run = 0;
 		if ( x3d.node() && x3d.node().runtime ) {
 			for (var key in rowsMap) {
 				if (rowsMap.hasOwnProperty(key)) {
-					plotData( defaultDuration, rowsMap[key], getColor(run), ""+(run+1) );
+					plotData( defaultDuration, rowsMap[key], scatter_colors(key), ""+(run+1) );
 				}
 				run++;
 			}

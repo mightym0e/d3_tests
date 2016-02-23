@@ -68,8 +68,11 @@ public class ScatterServlet extends HttpServlet {
 		out.println(meta().attr(Attr.HTTP_EQUIV, "cache-control").attr(Attr.CONTENT, "no-cache").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "expires").attr(Attr.CONTENT, "0").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "pragma").attr(Attr.CONTENT, "no-cache").render());
-		
-	    out.println(generator.getD3CSSHeaderStr().render());
+	    
+	    for(Tag tag : generator.getD3CSSHeaderStr()){
+	    	out.println(tag.render());
+	    }
+	    
 	    out.println(head().renderCloseTag());
 	    
 	    out.println(body.renderOpenTag()); 
@@ -87,7 +90,7 @@ public class ScatterServlet extends HttpServlet {
 	    
 //	    out.println(canvas().withId("canvas").attr("width", "1000px").attr("height", "600px").attr("style", "display:none"));
 	    
-	    out.println(div().withId("divPlot").render());
+	    out.println(div().withId("divMain").with(div().withId("divPlot"),div().withId("divDetail")));
 	    
 	    out.println(script().withType("text/javascript").withSrc("js/custom_scatter.js").render());
 	    

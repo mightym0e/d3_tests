@@ -56,6 +56,12 @@ public class ScatterPlot3dGenerator implements Generator {
 		ret.add(script()
 				.withType("text/javascript")
 				.withSrc("js/svgConversion.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("js/legend.js"));
+		ret.add(script()
+				.withType("text/javascript")
+				.withSrc("js/detail.js"));
 		return ret;
 	}
 
@@ -66,9 +72,15 @@ public class ScatterPlot3dGenerator implements Generator {
 	}
 
 	@Override
-	public Tag getD3CSSHeaderStr() {
+	public Vector<Tag> getD3CSSHeaderStr() {
+		
+		Vector<Tag> ret = new Vector<Tag>();
+		
+		ret.add(link().withRel("stylesheet").withType("text/css").withHref("http://www.x3dom.org/download/dev/x3dom.css"));
+		ret.add(link().withRel("stylesheet").withType("text/css").withHref("css/main.css"));
+		ret.add(link().withRel("stylesheet").withType("text/css").withHref("css/detail.css"));
 
-		return link().withRel("stylesheet").withType("text/css").withHref("http://www.x3dom.org/download/dev/x3dom.css");
+		return ret;
 		
 	}
 

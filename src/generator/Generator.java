@@ -13,7 +13,7 @@ public interface Generator {
 	
 	public Vector<Tag> getD3JsHeaderStr();
 	
-	public Tag getD3CSSHeaderStr();
+	public Vector<Tag> getD3CSSHeaderStr();
 	
 	public StringBuffer getD3FunctionsStr();
 	

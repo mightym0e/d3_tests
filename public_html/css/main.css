@@ -3,17 +3,18 @@ body{
   font-family: sans;
   padding: 10px;
 }
+/*
 svg path{
   stroke: #000;
   stroke-width: 1px;
   stroke: rgba(0,0,0,0.2);
 }
+
 svg{
   border: 1px solid #DED8BF;
-  background-color: #f4f4d9;
-  width: 700px;
   height: 400px;
 }
+*/
 h1{
   font-weight: normal;
   margin: 0;
@@ -40,4 +41,14 @@ li{
   padding: 10px;
   margin: 2px;
   color: #fff;
+}
+
+#divMain{
+	width:100%;
+}
+
+#divMain div{
+	width:48%;
+	margin:1%;
+	float:left;
 }
