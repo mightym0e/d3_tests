@@ -37,8 +37,14 @@ d3.svg.legend = function() {
 		.data(legendValues)
 		.enter()
 		.append("g")
+		.on("click", function(d){
+			$(this).parent().parent().find(".line").css("visibility","hidden");
+			$(this).parent().parent().find(".line-"+d.stop[0]).css("stroke-width","4px");
+			$(this).parent().parent().find(".line-"+d.stop[0]).css("visibility","visible");
+		})
 		.attr("class", "legendCells")
 		.attr("transform", function(d,i) {return "translate(" + (i * (cellWidth + cellPadding)) + ",0)" })
+		.style("cursor", "pointer");
 
 		g.selectAll("g.legendCells")
 		.append("rect")
@@ -49,11 +55,18 @@ d3.svg.legend = function() {
 		.style("stroke-width", "2px");
 
 		g.selectAll("g.legendCells")
+		.data(legendValues)
 		.append("text")
 		.attr("class", "breakLabels")
 		.style("pointer-events", "none");
 
-		g.append("text")
+		g.append("g")
+		.on("click", function(d){
+			$(this).parent().parent().find(".line").css("visibility","visible");
+			$(this).parent().parent().find(".line").css("stroke-width","1.5px");
+		})
+		.style("cursor", "pointer")
+		.append("text")
 		.text(labelUnits)
 		.attr("y", -7);
 

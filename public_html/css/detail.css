@@ -14,3 +14,11 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+
+.legend text{
+	font-size: 13px;
+}
+
+.legend .breakLabels{
+	font-size: 12px;
+}

@@ -103,15 +103,26 @@ public class ScatterPlot3dGenerator implements Generator {
 		
 		return div().withId("selects").with
 				(
+						label().withText("x-Achse: "),
 						select().withClass("axis_select").withId("x").with
 							(
-								option().attr(Attr.SELECTED, Attr.SELECTED).withValue("2").withText("Dataset 2"),
-								option().withValue("3").withText("Dataset 3")
+								option().withValue("x").attr(Attr.SELECTED, Attr.SELECTED).withText("Dataset 1"),
+								option().withValue("y").withText("Dataset 2"),
+								option().withValue("z").withText("Dataset 3")
 							),
+						label().withText("y-Achse: "),	
+						select().withClass("axis_select").withId("y").with
+							(
+								option().withValue("x").withText("Dataset 1"),
+								option().withValue("y").attr(Attr.SELECTED, Attr.SELECTED).withText("Dataset 2"),
+								option().withValue("z").withText("Dataset 3")
+							),
+						label().withText("z-Achse: "),	
 						select().withClass("axis_select").withId("z").with
 							(
-								option().withValue("2").withText("Dataset 2"),
-								option().attr(Attr.SELECTED, Attr.SELECTED).withValue("3").withText("Dataset 3")
+								option().withValue("x").withText("Dataset 1"),
+								option().withValue("y").withText("Dataset 2"),
+								option().withValue("z").attr(Attr.SELECTED, Attr.SELECTED).withText("Dataset 3")
 							)
 				);
 	}
