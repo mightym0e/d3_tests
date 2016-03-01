@@ -13,14 +13,18 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/Projekte/IC/j2html/j2html.jar">
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="U:/Public_tool/JDEV Libraries/commons-lang3-3.4.jar">
+	<classpathentry kind="lib" path="lib/commons-lang3-3.4.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/U:/Public_tool/JDEV%20Libraries/commons-lang3-3.4-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/j2html.jar">
+		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>

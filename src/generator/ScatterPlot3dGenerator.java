@@ -101,7 +101,7 @@ public class ScatterPlot3dGenerator implements Generator {
 	@Override
 	public Tag getFilterStr() {
 		
-		return div().withId("selects").with
+		return div().withId("filterBox").with(div().withId("selects").with
 				(
 						label().withText("x-Achse: "),
 						select().withClass("axis_select").withId("x").with
@@ -124,7 +124,15 @@ public class ScatterPlot3dGenerator implements Generator {
 								option().withValue("y").withText("Dataset 2"),
 								option().withValue("z").attr(Attr.SELECTED, Attr.SELECTED).withText("Dataset 3")
 							)
-				);
+				)
+				,div().withId("filterDetail").with(
+						label().withText("Detail Modus: "),
+						select().withClass("mode_select").withId("mode_select").with
+							(
+								option().withValue("line").attr(Attr.SELECTED, Attr.SELECTED).withText("Linie"),
+								option().withValue("dot").withText("Punkt")
+							))
+				,button().withText("download").withId("exportSvg"));
 	}
 
 }

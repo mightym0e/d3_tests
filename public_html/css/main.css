@@ -79,6 +79,10 @@ li{
 	padding-left: 10px;
 }
 
+#selects{
+	float: left;
+}
+
 #exportSvg{
 	position: absolute;
 	right: 10px;

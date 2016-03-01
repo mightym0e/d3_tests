@@ -7,6 +7,8 @@ import static j2html.TagCreator.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Vector;
 
 import javax.servlet.ServletException;
@@ -16,11 +18,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import util.ChartJsWrapper;
+import util.Data;
+import util.Data.ChartType;
+import util.DataSet;
+import util.RadarPolarPieDataset;
+
 /**
  * Servlet implementation class ScatterServlet
  */
-@WebServlet("/ScatterServlet")
-public class ScatterServlet extends HttpServlet {
+@WebServlet("/ChartJsServlet")
+public class ChartJsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
 	private static final String DOC_TYPE = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">";//transitional
@@ -28,7 +36,7 @@ public class ScatterServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ScatterServlet() {
+    public ChartJsServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -44,9 +52,34 @@ public class ScatterServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		HttpSession s = request.getSession(false);
+				
+		String containerName = "chartDiv";
 		
-		ScatterPlot3dGenerator generator = new ScatterPlot3dGenerator();
+		ChartJsWrapper wrapper = new ChartJsWrapper();
+		
+		Collection<DataSet> datasets = new ArrayList<DataSet>();
+		RadarPolarPieDataset set = new RadarPolarPieDataset();
+		set.setColor(250, 0, 0, 1);
+		set.setHighlight(250, 100, 100, 1);
+		set.setLabel("Nummer 1");
+		datasets.add(set);
+		set = new RadarPolarPieDataset();
+		set.setColor(0, 250, 0, 1);
+		set.setHighlight(100, 250, 100, 1);
+		set.setLabel("Nummer 2");
+		datasets.add(set);
+		set = new RadarPolarPieDataset();
+		set.setColor(0, 0, 250, 1);
+		set.setHighlight(100, 100, 250, 1);
+		set.setLabel("Nummer 3");
+		datasets.add(set);
+		
+		Data data = new Data();
+		data.setChartType(ChartType.Pie);
+		data.setDatasets(datasets);
+		
+		wrapper.setData(data);
+		wrapper.setContainerName(containerName);
 		
 		response.setContentType(CONTENT_TYPE);
 	    response.setHeader("Cache-Control", "no-cache");
@@ -69,30 +102,15 @@ public class ScatterServlet extends HttpServlet {
 		out.println(meta().attr(Attr.HTTP_EQUIV, "expires").attr(Attr.CONTENT, "0").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "pragma").attr(Attr.CONTENT, "no-cache").render());
 	    
-	    for(Tag tag : generator.getD3CSSHeaderStr()){
-	    	out.println(tag.render());
-	    }
-	    
+		out.println(ChartJsWrapper.getScriptHeader());
+		
 	    out.println(head().renderCloseTag());
 	    
 	    out.println(body.renderOpenTag()); 
 	    
-	    generator.setData("D:\\Projekte\\IC\\D3\\export5.csv");
-	    out.println(generator.getJsDataStr()!=null?generator.getJsDataStr().toString():"");
+	    out.println(div().withId(containerName));
 	    
-	    Vector<Tag> tags = generator.getD3JsHeaderStr();
-	    
-	    for(Tag tag : tags){
-	    	out.println(tag.render());
-	    }
-	    
-	    out.println(generator.getFilterStr());
-	    
-//	    out.println(canvas().withId("canvas").attr("width", "1000px").attr("height", "600px").attr("style", "display:none"));
-	    
-	    out.println(div().withId("divMain").with(div().withId("divPlot"),div().withId("divDetail")));
-	    
-	    out.println(script().withType("text/javascript").withSrc("js/custom_scatter.js").render());
+	    out.println(wrapper.getJsString());
 	    
 	    out.println(body.renderCloseTag());
 	    out.println(html.renderCloseTag());

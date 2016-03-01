@@ -9,12 +9,11 @@
  * @param filename proposal of the name of the file inside the saveas-dialog
  * @param canvas   auxiliary canvas element, the svg element will be drawn into
  */
-function downloadPng(filename, canvas, scale, svg) {
+function downloadPng(filename, canvas, svg, scale) {
 
 	if (svg) {
-		var oldWidth = svg.width(), oldHeight = svg.height(), oldScale = svg
-		.attr('transform')
-		|| '';
+		var oldWidth = svg.width(), oldHeight = svg.height(), oldScale = svg.attr('transform') || '';
+		
 		//change scale
 		if (scale) {
 			svg.width(scale.width * oldWidth);

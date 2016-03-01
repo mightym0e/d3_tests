@@ -9,6 +9,10 @@
     <servlet-name>ScatterServlet</servlet-name>
     <servlet-class>servlet.ScatterServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ChartJsServlet</servlet-name>
+    <servlet-class>servlet.ChartJsServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>MainServlet</servlet-name>
     <url-pattern>/home</url-pattern>
@@ -16,6 +20,10 @@
   <servlet-mapping>
     <servlet-name>ScatterServlet</servlet-name>
     <url-pattern>/scatter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChartJsServlet</servlet-name>
+    <url-pattern>/chartjs</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>home</welcome-file>

@@ -4,21 +4,6 @@
 //this.de.mli.plot = this.de.mli.plot || {};
 //(function () {
 
-var x3d;
-
-var scene;
-
-var scatter_colors;
-var axisRange;
-var scales = [];
-var initialDuration = 0;
-var defaultDuration = 800;
-var ease = 'linear';
-var axisScale = 23;
-var normalizeScale = true;
-var axisKeys;
-var labelFontSize = 0.8;
-
 function initScatterPlot(parent){
 	x3d = parent  
 	.append("x3d")

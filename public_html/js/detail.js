@@ -1,10 +1,3 @@
-
-var margin = {top: 20, right: 100, bottom: 30, left: 50},
-width_absolute = 600,
-height_absolute = 200,
-width = width_absolute - margin.left - margin.right,
-height = height_absolute - margin.top - margin.bottom;
-
 function buildDetailPlot(xAxisValue,yAxisValue,mode){
 
 	var parseDate = d3.time.format("%Y%m%d").parse;
@@ -74,22 +67,20 @@ function buildDetailPlot(xAxisValue,yAxisValue,mode){
 
 	if(mode=='dot'){
 		
-		for (var key in dimensions) {
-			if (dimensions.hasOwnProperty(key)) {
-				
-				var dimension = svg.selectAll(".dimension-"+key)
-				.data(dimensions[key].values)
-				.enter().append("g")
-				.attr("class", "dimension-"+key);
-				
-				dimension.append("circle")
-			      .attr("class", function(d) { return ("dot dot-"+key); })
-			      .attr("r", 3.5)
-			      .attr("cx", function(d) { return x(d.day); })
-			      .attr("cy", function(d) { return y(d.diff); })
-			      .style("fill", function() { return scatter_colors(key); });
-				
-			}
+		for (var i = 0; i<dimensions.length; i++) {
+			var key = dimensions[i].name;
+
+			var dimension = svg.selectAll(".dimension-"+key)
+			.data(dimensions[i].values)
+			.enter().append("g")
+			.attr("class", "dimension-"+key);
+
+			dimension.append("circle")
+			.attr("class", function(d) { return ("dot dot-"+key); })
+			.attr("r", 3.5)
+			.attr("cx", function(d) { return x(d.day); })
+			.attr("cy", function(d) { return y(d.diff); })
+			.style("fill", function() { return scatter_colors(key); });
 		}
 		
 	} else if (mode=='line'){
@@ -118,13 +109,5 @@ function buildLegends(){
 	.attr("class", "legend")
 	.call(verticalLegend);
 }
-
-$(document).ready(function(){
-
-	buildDetailPlot('y','x','dot');
-	buildDetailPlot('z','x','dot');
-	buildLegends();
-	
-});
 
 
