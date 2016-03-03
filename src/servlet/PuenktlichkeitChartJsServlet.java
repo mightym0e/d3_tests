@@ -72,7 +72,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		
 		ChartJsWrapper wrapper = new ChartJsWrapper();
 		
-		ArrayList<String[]> dataFromCsv = CSVReader.lineChartDataFromPuenktData("u:\\User\\mli\\Diagramm\\puenkt_agM_Kw08.csv",false);
+		ArrayList<String[]> dataFromCsv = CSVReader.lineChartDataFromPuenktData("D:\\Dokumente\\Uni\\WebApplications\\rails\\d3_tests\\lib\\puenkt_agM_Kw08.csv",false);
 		HashMap<String, Integer[]> messPunkte = new HashMap<String, Integer[]>();
 		
 		int run = 0;
@@ -172,7 +172,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		
 		// ------------------- Line and Bar for Zug
 		
-		dataFromCsv = CSVReader.lineChartDataFromPuenktData("u:\\User\\mli\\Diagramm\\puenkt_agM_Kw08_1.csv",true);
+		dataFromCsv = CSVReader.lineChartDataFromPuenktData("D:\\Dokumente\\Uni\\WebApplications\\rails\\d3_tests\\lib\\puenkt_agM_Kw08_1.csv",true);
 		HashMap<String, Integer[]> tage = new HashMap<String, Integer[]>();
 		JSONArray labels_zug = new JSONArray();
 		

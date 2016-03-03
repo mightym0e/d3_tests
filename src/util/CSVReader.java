@@ -23,7 +23,7 @@ public class CSVReader {
 	String csvFile = filename;
 	BufferedReader br = null;
 	String line = "";
-	String cvsSplitBy = ";";
+	String cvsSplitBy = "\t";
 
 	try {
 

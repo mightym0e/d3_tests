@@ -14,7 +14,7 @@ function showDetailData(object, div){
 	    	
 	    	$("#"+div+" table tr.row").remove();
 	    	
-	    	for(var i = 0; i< 10; i++){
+	    	for(var i = 0; i< 100; i++){
 	    		var detail_line = "<tr class=\"row\"><td>"+data[i][0]+"</td><td>"+data[i][1]+"</td><td>"+data[i][2]+"</td><td>"+data[i][3]+"</td></tr>";
 	    		$("#"+div+" table").append(detail_line);
 	    	}

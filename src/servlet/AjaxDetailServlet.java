@@ -61,7 +61,7 @@ public class AjaxDetailServlet extends HttpServlet {
 		JSONArray arr = new JSONArray();
 		
 		if(label!=null && label.length()>0){
-			ArrayList<String[]> dataFromCsv = CSVReader.lineChartDataFromPuenktData("u:\\User\\mli\\Diagramm\\puenkt_agM_Kw08.csv",true);
+			ArrayList<String[]> dataFromCsv = CSVReader.lineChartDataFromPuenktData("D:\\Dokumente\\Uni\\WebApplications\\rails\\d3_tests\\lib\\puenkt_agM_Kw08.csv",true);
 			HashMap<String, Integer[]> messPunkte = new HashMap<String, Integer[]>();
 			
 			int run = 0;
