@@ -77,7 +77,7 @@ public class ScatterServlet extends HttpServlet {
 	    
 	    out.println(body.renderOpenTag()); 
 	    
-	    generator.setData("D:\\Projekte\\IC\\D3\\export5.csv");
+	    generator.setData("c:\\Users\\Moe\\git\\d3_tests\\lib\\export3.csv");
 	    out.println(generator.getJsDataStr()!=null?generator.getJsDataStr().toString():"");
 	    
 	    Vector<Tag> tags = generator.getD3JsHeaderStr();

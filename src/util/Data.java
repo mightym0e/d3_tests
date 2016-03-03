@@ -5,7 +5,7 @@ import java.util.Collection;
 
 import org.json.simple.*;
 
-public class Data {
+public abstract class Data {
 
 	public enum ChartType {
 		Line,Bar,Radar,Polar,Pie,Doughnut
@@ -13,7 +13,7 @@ public class Data {
 
 	private JSONArray labels;
 	private JSONArray datasets;
-	private ChartType chartType = ChartType.Line;
+	protected ChartType chartType;
 
 	public Data(){
 		this.labels = new JSONArray();
@@ -27,11 +27,6 @@ public class Data {
 
 	public void addLabel(String label){
 		this.labels.add(label);
-	}
-
-	public void addDataset(DataSet dataset){
-		JSONObject temp = getJsonObjectFromDataset(dataset);
-		this.labels.add(temp);
 	}
 
 	public void removeDataset(int index){
@@ -48,13 +43,6 @@ public class Data {
 	public JSONArray getDatasets() {
 		return datasets;
 	}
-	public void setDatasets(Collection<DataSet> datasets) {
-		
-		for(DataSet dataset : datasets){
-			JSONObject temp = getJsonObjectFromDataset(dataset);
-			this.labels.add(temp);
-		}
-	}
 
 	public ChartType getChartType() {
 		return chartType;
@@ -62,40 +50,6 @@ public class Data {
 
 	public void setChartType(ChartType chartType) {
 		this.chartType = chartType;
-	}
-	
-	@SuppressWarnings("unchecked")
-	public JSONObject getJsonObjectFromDataset(DataSet dataset){
-		JSONObject ret = new JSONObject();
-		
-		if(dataset instanceof StandardDataset){
-			
-			StandardDataset standard = (StandardDataset) dataset;
-			
-			if(standard.getLabel()!=null)ret.put("label", standard.getLabel());
-			
-			if(standard.getFillColor()!=null)ret.put("fillColor", standard.getFillColor());
-			if(standard.getStrokeColor()!=null)ret.put("strokeColor", standard.getStrokeColor());
-			
-			if(standard.getHighlightFill()!=null)ret.put("highlightFill", standard.getHighlightFill());
-			if(standard.getHighlightStroke()!=null)ret.put("highlightStroke", standard.getHighlightStroke());
-			
-			if(standard.getPointColor()!=null)ret.put("pointColor", standard.getPointColor());
-			if(standard.getPointStrokeColor()!=null)ret.put("pointStrokeColor", standard.getPointStrokeColor());
-			if(standard.getPointHighlightFill()!=null)ret.put("pointHighlightFill", standard.getPointHighlightFill());
-			if(standard.getPointHighlightStroke()!=null)ret.put("pointHighlightStroke", standard.getPointHighlightStroke());
-			
-		} else if(dataset instanceof RadarPolarPieDataset){
-			RadarPolarPieDataset radarPolarPie = (RadarPolarPieDataset) dataset;
-			
-			if(radarPolarPie.getLabel()!=null)ret.put("label", radarPolarPie.getLabel());
-			
-			if(radarPolarPie.getValue()!=null)ret.put("value", radarPolarPie.getValue());
-			if(radarPolarPie.getColor()!=null)ret.put("color", radarPolarPie.getColor());
-			if(radarPolarPie.getHighlight()!=null)ret.put("highlight", radarPolarPie.getHighlight());
-		}
-		
-		return ret;
 	}
 
 }
