@@ -75,6 +75,8 @@ public class ChartJsWrapper {
 		String chartInit = "var chart_"+this.chartId+" = new Chart(ctx_"+this.chartId+").";
 		String chartData = "var data_"+this.chartId+" = ";
 		
+		StringBuffer onclick = new StringBuffer();
+		
 		JSONObject temp = null;
 		
 		String legend = "";
@@ -85,7 +87,7 @@ public class ChartJsWrapper {
 			temp.put("datasets", data.getDatasets());
 			legend = "<ul class=\"<%=name.toLowerCase()%>-legend\">"
 					+ "<% for (var i=0; i<datasets.length; i++){%><li>"
-						+ "<span style=\"background-color:<%=datasets[i].strokeColor%>\">"
+						+ "<span onClick=\"showDetails('<%if(datasets[i].label){%><%=datasets[i].label%><%}%>')\" style=\"background-color:<%=datasets[i].strokeColor%>\">"
 						+ "<%if(datasets[i].label){%><%=datasets[i].label%><%}%>"
 						+ "</span>"
 					+ "</li>"
@@ -110,10 +112,22 @@ public class ChartJsWrapper {
 			case Line:
 				chartInit += "Line";
 				chartData += temp.toJSONString();
+				onclick.append("var holder = document.getElementById('"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("holder.onclick = function(evt){"+System.getProperty("line.separator"));
+				onclick.append("    var activePoints = chart_"+this.chartId+".getPointsAtEvent(evt);"+System.getProperty("line.separator"));
+				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
+				onclick.append("    if(activePoints)showDetailData(activePoints[0], 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("};"+System.getProperty("line.separator"));
 				break;      
 			case Bar:       
 				chartInit += "Bar";
 				chartData += temp.toJSONString();
+				onclick.append("var holder = document.getElementById('"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("holder.onclick = function(evt){"+System.getProperty("line.separator"));
+				onclick.append("    var activePoints = chart_"+this.chartId+".getBarsAtEvent(evt);"+System.getProperty("line.separator"));
+				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
+				onclick.append("    if(activePoints)showDetailData(activePoints[0], 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("};"+System.getProperty("line.separator"));
 				break;      
 			case Radar:     
 				chartInit += "Radar";
@@ -164,6 +178,10 @@ public class ChartJsWrapper {
 			ret.append("document.getElementById(\""+this.containerId+"\").appendChild(legend_"+this.chartId+");");
 			ret.append("document.getElementById(\""+this.chartId+"_legend\").innerHTML = chart_"+this.chartId+".generateLegend();");
 		}
+		
+		// CLICK FUNCTION
+		
+		ret.append(onclick.toString());
 		
 		ret.append(script.renderCloseTag()+System.getProperty("line.separator"));
 		

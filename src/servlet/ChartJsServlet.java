@@ -168,6 +168,7 @@ public class ChartJsServlet extends HttpServlet {
 		out.println(meta().attr(Attr.HTTP_EQUIV, "expires").attr(Attr.CONTENT, "0").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "pragma").attr(Attr.CONTENT, "no-cache").render());
 	    out.println(link().withRel("stylesheet").withType("text/css").withHref("css/chartbuilder.css"));
+	    out.println(script().withType("text/javascript").withSrc("js/chartjs_functions.js"));
 		
 		out.println(ChartJsWrapper.getScriptHeader());
 		

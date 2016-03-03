@@ -13,6 +13,10 @@
     <servlet-name>ChartJsServlet</servlet-name>
     <servlet-class>servlet.ChartJsServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>PuenktlichkeitChartJsServlet</servlet-name>
+    <servlet-class>servlet.PuenktlichkeitChartJsServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>MainServlet</servlet-name>
     <url-pattern>/home</url-pattern>
@@ -20,6 +24,10 @@
   <servlet-mapping>
     <servlet-name>ScatterServlet</servlet-name>
     <url-pattern>/scatter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PuenktlichkeitChartJsServlet</servlet-name>
+    <url-pattern>/puenkt</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>ChartJsServlet</servlet-name>
