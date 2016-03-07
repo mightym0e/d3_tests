@@ -1,0 +1,1554 @@
+Filter;;;;;;;;;
+Datum von:;06.03.2016;;;;;;;;
+Datum bis:;06.03.2016;;;;;;;;
+Stand:;07.03.2016 16:51:32;;;;;;;;
+;;;;;;;;;
+Zugnummer;Linie;Betriebstag;Ursachencode;Ursachen Bezeichnung;Ort;Ort Bezeichung;Uhrzeit;Verspätungsminuten;Verursacher Zugnr.
+39220;S1FR-;06.03.2016;93;Wende;NHS;Hartmannshof;0:05:00;2;39217
+59599;RB121B+;06.03.2016;51;Antrag EVU;MTZ;Tutzing;0:09:00;6;8631
+84217;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRH;Regensburg Hbf;0:11:00;2;1
+3580;SF3BY+;06.03.2016;93;Wende;NSCH;Schwandorf;0:17:00;7;3579
+8126;S1BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MRP;München Rosenheimer Platz;0:18:00;2;
+29380;RE40FR+;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;0:23:00;5;29380
+39490;S4FR+;06.03.2016;57;Keine Meldung durch EVU;NN;Nürnberg Hbf;0:23:00;2;39490
+84322;AG2+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRH;Regensburg Hbf;0:23:00;2;84120
+84378;AG2+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRH;Regensburg Hbf;0:27:00;3;84322
+8226;S30BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MDA;Dachau Bahnhof;0:36:00;2;
+3582;SF3BY+;06.03.2016;57;Keine Meldung durch EVU;NRWU;Regensburg-Wutzlhofen;0:40:00;2;3582
+58173;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;0:40:00;3;
+8630;S6BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP;München Ost Pbf;0:45:00;2;8230
+39392;S3FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NOK;Ochenbruck;0:47:00;3;39391
+4638;;06.03.2016;57;Keine Meldung durch EVU;NVE;Veitshöchheim;0:47:00;2;4638
+8330;S3BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP;München Ost Pbf;0:49:00;2;8730
+8008;S2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MONH;Ottenhofen (Oberbay);0:52:00;2;
+8434;S4BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MEG;Ebersberg (Oberbay);0:53:00;2;
+8431;S4BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MLEU;München Leuchtenbergring;0:54:00;2;
+57174;;06.03.2016;95;Flügeln;MA;Augsburg Hbf;0:55:00;2;57054
+57610;RE30BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBU;Buchloe;0:57:00;2;
+8133;S1BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP;München Ost Pbf;1:11:00;3;
+39694;S2FR-;06.03.2016;51;Antrag EVU;NN;Nürnberg Hbf;1:13:00;12;39694
+84122;ALXN+;06.03.2016;31;Bauarbeiten;MEGM;Eggmühl;1:20:00;2;
+8832;S8BY-;06.03.2016;31;Bauarbeiten;MOP H;München Ost Hultschinerstraße;1:21:00;8;
+39220;S1FR-;06.03.2016;57;Keine Meldung durch EVU;NBD;Baiersdorf;1:22:00;2;39220
+8243;S2BY+;06.03.2016;50;Haltezeitüberschreitung;MAMT;Altomünster;1:23:00;2;8243
+8008;S2BY-;06.03.2016;31;Bauarbeiten;MRI P;München-Riem Pbf;1:26:00;13;
+8846;S8BY-;06.03.2016;2;Pseudominuten;MP  R;München-Pasing Weiche 352;1:27:00;2;
+8334;S3BY-;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;1:29:00;2;8734
+39227;S1FR+;06.03.2016;31;Bauarbeiten;NBD;Baiersdorf;1:32:00;37;
+8134;S1BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP;München Ost Pbf;1:38:00;4;
+4638;;06.03.2016;31;Bauarbeiten;NHEI;Heigenbrücken;1:52:00;11;
+8440;S4BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MEG;Ebersberg (Oberbay);1:53:00;3;8433
+8008;S2BY-;06.03.2016;50;Haltezeitüberschreitung;MMHG;München Hirschgarten             (Plang);1:54:00;2;8008
+8134;S1BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MMHG;München Hirschgarten             (Plang);1:55:00;2;8008
+8836;S8BY-;06.03.2016;31;Bauarbeiten;MOP H;München Ost Hultschinerstraße;1:55:00;3;
+57080;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;2:02:00;2;
+8836;S8BY-;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;2:03:00;2;
+39227;S1FR+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;NN;Nürnberg Hbf;2:09:00;2;39227
+8243;S2BY+;06.03.2016;50;Haltezeitüberschreitung;MDA;Dachau Bahnhof;2:12:00;2;8243
+8234;S30BY-;06.03.2016;95;Flügeln;MDA;Dachau Bahnhof;2:13:00;19;8008
+8134;S1BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOSM;Oberschleißheim;2:15:00;4;
+8140;S1BY-;06.03.2016;31;Bauarbeiten;MSTH;München-Steinhausen;2:27:00;2;
+8640;S6BY-;06.03.2016;50;Haltezeitüberschreitung;MMHG;München Hirschgarten             (Plang);2:40:00;2;8640
+8641;S6BY+;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;2:40:00;2;
+8440;S4BY-;06.03.2016;31;Bauarbeiten;MBAL;München-Berg am Laim;2:43:00;17;
+8641;S6BY+;06.03.2016;31;Bauarbeiten;MLEU;München Leuchtenbergring;2:45:00;2;
+8440;S4BY-;06.03.2016;31;Bauarbeiten;MLEU;München Leuchtenbergring;2:49:00;4;
+8243;S2BY+;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;2:51:00;8;
+8443;S4BY+;06.03.2016;31;Bauarbeiten;MIT;München Isartor;2:52:00;7;
+8843;S8BY+;06.03.2016;31;Bauarbeiten;MRP;München Rosenheimer Platz;2:52:00;10;8243
+8243;S2BY+;06.03.2016;31;Bauarbeiten;MBAL;München-Berg am Laim;3:00:00;5;
+8843;S8BY+;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;3:01:00;6;
+8443;S4BY+;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;3:02:00;7;8843
+8443;S4BY+;06.03.2016;31;Bauarbeiten;MLEU;München Leuchtenbergring;3:07:00;3;
+8243;S2BY+;06.03.2016;31;Bauarbeiten;MRI W;München-Riem West;3:10:00;8;
+8443;S4BY+;06.03.2016;31;Bauarbeiten;MLEU;München Leuchtenbergring;3:14:00;6;
+59110;RE56+;06.03.2016;57;Keine Meldung durch EVU;MGHF;Gersthofen;3:25:00;2;59110
+6902;S1ABY+;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;3:38:00;3;
+59110;RE56+;06.03.2016;57;Keine Meldung durch EVU;MMTG;Mertingen Bahnhof;3:55:00;3;59110
+6106;S1BY-;06.03.2016;31;Bauarbeiten;MOP;München Ost Pbf;4:18:00;4;
+6809;S8BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MLEU;München Leuchtenbergring;4:30:00;2;
+6808;S8BY-;06.03.2016;31;Bauarbeiten;MOP H;München Ost Hultschinerstraße;4:33:00;2;
+59143;;06.03.2016;57;Keine Meldung durch EVU;NN;Nürnberg Hbf;4:41:00;2;59143
+84168;ALXS+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MIMS;Immenstadt;4:50:00;2;
+6813;S8BY+;06.03.2016;64;Triebfahrzeuge;MPB;München-Pasing Bbf;5:00:00;17;
+3400;RB44-;06.03.2016;57;Keine Meldung durch EVU;NBY;Bayreuth Hbf;5:03:00;3;3400
+6906;S1ABY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);5:04:00;5;6106
+6712;S7BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP;München Ost Pbf;5:06:00;2;
+4981;RE42-;06.03.2016;54;Verkehrliche Zugvorbereitung;LH;Halle (Saale) Hbf;5:12:00;12;
+4591;;06.03.2016;31;Bauarbeiten;NLA;Laufach;5:15:00;2;
+6219;S2BY+;06.03.2016;95;Flügeln;MDA;Dachau Bahnhof;5:34:00;4;8001
+3003;RE53+;06.03.2016;57;Keine Meldung durch EVU;NN;Nürnberg Hbf;5:37:00;2;3003
+57435;RE30AS-;06.03.2016;54;Verkehrliche Zugvorbereitung;MBU;Buchloe;5:37:00;4;57435
+23361;RE781R-;06.03.2016;50;Haltezeitüberschreitung;NAH;Aschaffenburg Hbf;5:41:00;2;23361
+59502;RE12-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MWH;Weilheim (Oberbay);5:42:00;2;
+57631;;06.03.2016;50;Haltezeitüberschreitung;MKMZ;Kellmünz;5:47:00;2;57631
+4591;;06.03.2016;31;Bauarbeiten;NWI;Wiesthal;5:48:00;23;
+59233;;06.03.2016;57;Keine Meldung durch EVU;MMB;Moosburg;5:54:00;2;59233
+79458;MER2-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;XAKN;Kufstein;5:54:00;2;484
+6225;S2BY+;06.03.2016;2;Pseudominuten;MAMT;Altomünster;5:55:00;3;
+57630;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MM;Memmingen;5:58:00;2;57631
+6617;S6BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRP;München Rosenheimer Platz;5:59:00;3;6717
+6717;S7BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MOP;München Ost Pbf;5:59:00;3;
+4980;;06.03.2016;29;Sonstiges Technik Netz;NKUE;Küps;6:02:00;5;
+59423;RE12+;06.03.2016;19;Sonstiges Betrieb Netz;MGP;Garmisch-Partenkirchen;6:02:00;2;
+57894;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MA;Augsburg Hbf;6:05:00;2;59405
+39308;S3FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNT;Neumarkt (Oberpf);6:06:00;2;43948
+4053;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPL;Plattling;6:06:00;6;491
+4980;;06.03.2016;29;Sonstiges Technik Netz;NNEU;Neuses (b Kronach);6:06:00;2;
+79403;MER1+;06.03.2016;31;Bauarbeiten;MGB;Grafing Bahnhof;6:08:00;2;
+57631;;06.03.2016;50;Haltezeitüberschreitung;MDRD;Dietmannsried;6:13:00;2;57631
+4980;;06.03.2016;29;Sonstiges Technik Netz;NK;Kronach;6:14:00;4;
+79403;MER1+;06.03.2016;31;Bauarbeiten;MGB;Grafing Bahnhof;6:14:00;2;
+6125;S1BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFR;Freising;6:16:00;2;59233
+57255;;06.03.2016;50;Haltezeitüberschreitung;MNL;Nördlingen;6:18:00;3;57255
+57391;RE33+;06.03.2016;31;Bauarbeiten;TE;Esslingen (Neckar);6:18:00;1;
+58204;;06.03.2016;54;Verkehrliche Zugvorbereitung;NN;Nürnberg Hbf;6:22:00;17;58204
+39309;S3FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;6:23:00;2;
+84352;AG2+;06.03.2016;31;Bauarbeiten;MRFD;Rohrenfeld;6:23:00;2;
+4980;;06.03.2016;29;Sonstiges Technik Netz;NPR;Pressig-Rothenkirchen;6:26:00;2;
+6125;S1BY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);6:26:00;2;6925
+84130;ALXS+;06.03.2016;94;Anschluss;MKP;Kempten (Allgäu) Hbf;6:27:00;2;57631
+3003;RE53+;06.03.2016;50;Haltezeitüberschreitung;NVK;Vilseck;6:28:00;3;3003
+4594;;06.03.2016;31;Bauarbeiten;NLA;Laufach;6:31:00;7;
+84103;ALXN-;06.03.2016;57;Keine Meldung durch EVU;MLA;Landshut (Bay) Hbf;6:31:00;4;84103
+6420;S4BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MOP;München Ost Pbf;6:32:00;2;
+23580;;06.03.2016;93;Wende;TBMR;Bad Mergentheim;6:33:00;2;72077
+3458;RB44-;06.03.2016;51;Antrag EVU;NPZ;Pegnitz;6:33:00;6;3478
+27604;;06.03.2016;50;Haltezeitüberschreitung;NST;Straubing;6:34:00;2;27604
+79458;MER2-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRO;Rosenheim;6:34:00;3;45800
+3002;RE53-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NFRE;Freihung;6:35:00;6;3003
+4981;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;6:36:00;3;
+79403;MER1+;06.03.2016;57;Keine Meldung durch EVU;MRO;Rosenheim;6:37:00;2;79403
+84323;AG2-;06.03.2016;31;Bauarbeiten;NSF;Seubersdorf;6:37:00;2;
+57176;;06.03.2016;50;Haltezeitüberschreitung;MH;München Hbf;6:39:00;2;57176
+79453;MER2+;06.03.2016;93;Wende;MRO;Rosenheim;6:39:00;3;79403
+6820;S8BY-;06.03.2016;85;Fremdeinwirkung;MOP;München Ost Pbf;6:41:00;3;
+4053;;06.03.2016;57;Keine Meldung durch EVU;MATH;Altheim (Niederbay);6:43:00;2;4053
+57334;RE32BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBU;Buchloe;6:44:00;2;
+3880;;06.03.2016;13;Vorbereitung (Betrieb);MFN;Fischen;6:45:00;5;57663
+57496;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MNEW;Nesselwang;6:45:00;5;5471
+58144;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;6:45:00;2;
+8350;S3BY-;06.03.2016;85;Fremdeinwirkung;MOP;München Ost Pbf;6:45:00;6;6820
+4598;;06.03.2016;31;Bauarbeiten;NWH;Würzburg Hbf;6:46:00;9;
+84102;ALXN+;06.03.2016;50;Haltezeitüberschreitung;MH;München Hbf;6:46:00;2;84102
+39113;S1FR+;06.03.2016;50;Haltezeitüberschreitung;NHL;Hersbruck (links Pegnitz);6:47:00;2;39113
+3458;RB44-;06.03.2016;60;Umlauf-Einsatzplanung;NNP;Neuhaus (Pegnitz);6:48:00;2;3458
+59069;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NAN;Ansbach;6:54:00;13;
+57018;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MA;Augsburg Hbf;6:56:00;2;40556
+6129;S1BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFR;Freising;6:56:00;2;84103
+39411;S4FR-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NAN;Ansbach;6:57:00;3;
+3542;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);6:59:00;9;
+58204;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNA;Neustadt (Aisch) Bahnhof;7:00:00;11;784
+6918;S1ABY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);7:00:00;2;6118
+27307;;06.03.2016;93;Wende;NPA G;Passau Gbf;7:02:00;2;
+58506;RB53FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNP;Neuhaus (Pegnitz);7:04:00;3;
+84102;ALXN+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MNF;Neufahrn (b Freising);7:04:00;2;
+6223;S2BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MSB;Markt Schwaben;7:05:00;2;
+5403;RE12+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MMW;Mittenwald;7:07:00;12;
+59025;;06.03.2016;94;Anschluss;NWK;Wicklesgreuth;7:07:00;3;59069
+6323;S3BY+;06.03.2016;84;Behörden;MUHU;Unterhaching                       (Üst);7:08:00;3;6323
+6827;S8BY+;06.03.2016;95;Flügeln;MP;München-Pasing;7:08:00;3;8350
+4205;IRE6+;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;7:09:00;2;4205
+6225;S2BY+;06.03.2016;84;Behörden;MOP;München Ost Pbf;7:09:00;7;6225
+79706;;06.03.2016;60;Umlauf-Einsatzplanung;NWDO;Weiden (Oberpf);7:09:00;4;79706
+58006;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NVE;Veitshöchheim;7:10:00;3;
+6825;S8BY+;06.03.2016;84;Behörden;MOP;München Ost Pbf;7:10:00;6;6225
+39122;S1FR-;06.03.2016;21;Telekommunikationsanlagen;NHS;Hartmannshof;7:11:00;7;
+6125;S1BY+;06.03.2016;84;Behörden;MOP;München Ost Pbf;7:11:00;6;6225
+6325;S3BY+;06.03.2016;84;Behörden;MIT;München Isartor;7:11:00;3;6225
+6425;S4BY+;06.03.2016;84;Behörden;MRP;München Rosenheimer Platz;7:11:00;5;6125
+20872;;06.03.2016;57;Keine Meldung durch EVU;NMR;Marktredwitz;7:13:00;2;20872
+6427;S4BY+;06.03.2016;95;Flügeln;MP;München-Pasing;7:13:00;3;8350
+6931;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;7:13:00;3;
+79462;MER2-;06.03.2016;62;Reisezugwagen;MKI;Kiefersfelden;7:14:00;14;79462
+6825;S8BY+;06.03.2016;84;Behörden;MLEU;München Leuchtenbergring;7:16:00;3;6225
+6425;S4BY+;06.03.2016;84;Behörden;MLEU;München Leuchtenbergring;7:17:00;2;6825
+57101;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGHN;Gessertshausen;7:18:00;3;419
+6525;S6BY+;06.03.2016;84;Behörden;MRP;München Rosenheimer Platz;7:18:00;2;6225
+6725;S7BY+;06.03.2016;84;Behörden;MOP;München Ost Pbf;7:18:00;2;6325
+57391;RE33+;06.03.2016;57;Keine Meldung durch EVU;TU;Ulm Hbf;7:19:00;2;57391
+84533;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;7:20:00;2;84533
+4221;IRE6+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;TP;Plochingen;7:23:00;8;4221
+6131;S1BY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);7:23:00;2;6931
+59086;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;7:24:00;2;1128
+27146;;06.03.2016;31;Bauarbeiten;MMF;Mühldorf (Oberbay);7:26:00;2;
+86906;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;7:28:00;2;86856
+86860;;06.03.2016;61;Zugbildung durch EVU;MBZ;Bayrischzell;7:34:00;2;86860
+27145;;06.03.2016;57;Keine Meldung durch EVU;MTLG;Tüßling;7:37:00;2;27145
+57760;RB33M+;06.03.2016;19;Sonstiges Betrieb Netz;MASI;Altenstadt (Iller);7:37:00;0;
+57809;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;7:37:00;3;3480
+6230;S2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MONH;Ottenhofen (Oberbay);7:37:00;6;6225
+79007;MER1+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRO;Rosenheim;7:38:00;4;79462
+84185;AG1+;06.03.2016;50;Haltezeitüberschreitung;NBE;Beratzhausen;7:38:00;2;84185
+4681;;06.03.2016;51;Antrag EVU;NBA;Bamberg;7:39:00;3;4681
+79457;MER2+;06.03.2016;93;Wende;MRO;Rosenheim;7:39:00;2;79007
+27105;;06.03.2016;50;Haltezeitüberschreitung;MMF;Mühldorf (Oberbay);7:40:00;3;27105
+58824;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;7:40:00;2;
+57069;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOL;Olching;7:42:00;4;
+84534;;06.03.2016;57;Keine Meldung durch EVU;NBI;Bindlach;7:42:00;2;84534
+57760;RB33M+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MASI;Altenstadt (Iller);7:43:00;6;
+3424;RB44-;06.03.2016;57;Keine Meldung durch EVU;NNP;Neuhaus (Pegnitz);7:49:00;2;3424
+63051;;06.03.2016;57;Keine Meldung durch EVU;MTLG;Tüßling;7:49:00;2;63051
+6830;S8BY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;7:50:00;6;
+27556;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MPR;Prien a Chiemsee;7:51:00;3;
+3750;RE41-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHM;Hochstadt-Marktzeuln;7:51:00;2;4981
+5281;;06.03.2016;57;Keine Meldung durch EVU;NNSG;Neusorg;7:56:00;2;5281
+3750;RE41-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NLF;Lichtenfels;7:57:00;3;4981
+27310;;06.03.2016;50;Haltezeitüberschreitung;MPKG;Pocking;7:58:00;2;27310
+27555;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPR;Prien a Chiemsee;7:59:00;5;
+22331;RE3S-;06.03.2016;50;Haltezeitüberschreitung;TRC;Rechtenstein;8:00:00;2;22331
+6832;S8BY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;8:07:00;3;6924
+3857;;06.03.2016;50;Haltezeitüberschreitung;NLF;Lichtenfels;8:08:00;2;3857
+84133;ALXS-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MP  W;München-Pasing West;8:09:00;2;
+58012;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NVE;Veitshöchheim;8:10:00;2;
+3480;SF3BY+;06.03.2016;60;Umlauf-Einsatzplanung;MGNZ;Günzach;8:11:00;2;3480
+4204;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;MENW;Enzisweiler;8:12:00;2;4204
+29352;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;8:13:00;3;29352
+3220;IRE3+;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;8:14:00;3;3220
+4873;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;8:15:00;2;
+5407;RE12+;06.03.2016;93;Wende;MGP;Garmisch-Partenkirchen;8:15:00;13;
+3202;IRE3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TTU;Tuttlingen;8:16:00;4;50751
+58107;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHH;Herrnberchtheim;8:16:00;6;43986
+22707;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MNHN;Nonnenhorn;8:17:00;2;
+57101;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MP;München-Pasing;8:20:00;5;
+6830;S8BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLEU;München Leuchtenbergring;8:21:00;2;
+4205;IRE6+;06.03.2016;10;Fahrplanerstellung (Vertrieb);TF  R;Friedrichshafen Gbf;8:23:00;2;3055
+4223;IRE6+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;TP;Plochingen;8:24:00;7;4221
+84545;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;NLF;Lichtenfels;8:24:00;2;84545
+57643;RE33+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFNS;Neu-Ulm Finninger Straße;8:25:00;2;
+6332;S3BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP;München Ost Pbf;8:28:00;2;6732
+57101;;06.03.2016;29;Sonstiges Technik Netz;MH;München Hbf;8:29:00;2;
+57101;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MH;München Hbf;8:29:00;1;78815
+4983;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;8:30:00;2;
+3403;RB44+;06.03.2016;51;Antrag EVU;NPZ;Pegnitz;8:31:00;7;3403
+4221;IRE6+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;TLW;Laupheim West;8:31:00;3;
+4598;RE60FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FF;Frankfurt (Main) Hbf;8:34:00;2;4506
+4602;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHEI;Heigenbrücken;8:34:00;2;
+5540;RB39A+;06.03.2016;95;Flügeln;MGP;Garmisch-Partenkirchen;8:34:00;6;
+57762;RB33M+;06.03.2016;64;Triebfahrzeuge;MM;Memmingen;8:34:00;17;57762
+57813;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;8:35:00;2;57504
+5413;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;8:36:00;4;
+8951;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;8:36:00;4;
+84186;AG1-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NSUE;Sünching;8:37:00;2;
+3283;SF7BY-;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;8:38:00;7;3283
+57180;;06.03.2016;93;Wende;MH;München Hbf;8:38:00;2;57101
+79409;MER1+;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;8:38:00;2;79409
+4801;RE40FR-;06.03.2016;51;Antrag EVU;NBA;Bamberg;8:39:00;3;4801
+6234;S2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLEU;München Leuchtenbergring;8:39:00;2;
+57642;;06.03.2016;51;Antrag EVU;MKP;Kempten (Allgäu) Hbf;8:40:00;6;57642
+4603;RE60FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FFS A;Frankfurt (Main) Süd Abstellbahnhof;8:41:00;4;674
+5475;;06.03.2016;51;Antrag EVU;MKP;Kempten (Allgäu) Hbf;8:41:00;7;3283
+22857;RB8A+;06.03.2016;50;Haltezeitüberschreitung;TBWA;Bad Waldsee;8:42:00;2;22857
+59470;RE12-;06.03.2016;60;Umlauf-Einsatzplanung;MMW;Mittenwald;8:42:00;6;59470
+27147;;06.03.2016;57;Keine Meldung durch EVU;MTLG;Tüßling;8:44:00;2;27147
+57762;RB33M+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MHMG;Heimertingen;8:44:00;5;57759
+3546;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);8:46:00;3;
+3549;RE55FR+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;8:47:00;2;3549
+59145;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBAE;Baar-Ebenhausen                  (Plang);8:47:00;5;521
+6737;S7BY+;06.03.2016;50;Haltezeitüberschreitung;MHRK;Höllriegelskreuth;8:47:00;2;6737
+20872;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHO;Hof Hbf;8:48:00;3;84403
+4223;IRE6+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;TG;Geislingen (Steige);8:48:00;2;4221
+4603;RE60FR-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FO;Offenbach (Main) Hbf;8:48:00;2;4506
+59429;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKLA;Klais;8:50:00;5;
+6739;S7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MIC;Icking;8:53:00;3;6730
+57391;;06.03.2016;50;Haltezeitüberschreitung;MIMS;Immenstadt;8:54:00;3;57391
+57643;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHMG;Heimertingen;8:55:00;5;57762
+84184;AG1-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNT;Neumarkt (Oberpf);8:55:00;2;
+57505;RE36-;06.03.2016;94;Anschluss;MBIH;Biessenhofen;9:00:00;2;
+57504;RE36+;06.03.2016;94;Anschluss;MKFB;Kaufbeuren;9:02:00;3;
+22806;;06.03.2016;94;Anschluss;MM;Memmingen;9:03:00;3;57643
+5472;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOYM;Oy-Mittelberg;9:05:00;4;5475
+57812;;06.03.2016;64;Triebfahrzeuge;MBOB;Bobingen;9:05:00;4;57813
+3981;RE34BY-;06.03.2016;57;Keine Meldung durch EVU;MRTA;Röthenbach (Allgäu);9:07:00;2;3981
+22710;RB7-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TF  R;Friedrichshafen Gbf;9:09:00;2;3042
+4232;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLI;Lindau Hbf;9:09:00;3;
+57761;RB33M-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSED;Senden;9:10:00;2;57762
+57813;;06.03.2016;64;Triebfahrzeuge;MBOB;Bobingen;9:10:00;13;57813
+4647;RE601-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FFOR;Forsthaus                    (Frankfurt);9:11:00;2;374
+57812;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBOB;Bobingen;9:11:00;5;57813
+27150;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAT;Altötting;9:12:00;2;
+57813;;06.03.2016;64;Triebfahrzeuge;MBOB;Bobingen;9:12:00;2;57813
+6843;S8BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSH;Seefeld-Hechendorf;9:12:00;2;6830
+4012;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAKN;München Kanal;9:13:00;3;
+84132;ALXS+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MIMS;Immenstadt;9:14:00;3;196
+22518;RE/RB5+;06.03.2016;94;Anschluss;TU;Ulm Hbf;9:15:00;2;511
+4221;IRE6+;06.03.2016;64;Triebfahrzeuge;TMO;Mochenwangen;9:15:00;6;4221
+4647;RE601-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FFS;Frankfurt (Main) Süd;9:16:00;2;51165
+58786;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNA;Neustadt (Aisch) Bahnhof;9:17:00;2;
+59302;RE41-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTG;Trebgast;9:17:00;2;84545
+84545;;06.03.2016;57;Keine Meldung durch EVU;NTG;Trebgast;9:17:00;2;84545
+4221;IRE6+;06.03.2016;64;Triebfahrzeuge;TNB;Niederbiegen;9:18:00;1;4221
+57666;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLNW;Langenwang (Schwab);9:19:00;5;
+79459;MER2+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;XAKN;Kufstein;9:19:00;3;
+59470;RE12-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOU;Oberau;9:21:00;4;
+84543;;06.03.2016;50;Haltezeitüberschreitung;NBY;Bayreuth Hbf;9:22:00;3;84543
+4599;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;9:23:00;2;
+4647;RE601-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FO;Offenbach (Main) Hbf;9:23:00;2;772
+57762;RB33M+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TU;Ulm Hbf;9:23:00;2;3883
+84134;ALXS+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MANH;München-Neuhausen;9:23:00;2;
+84551;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;9:23:00;2;84551
+84542;;06.03.2016;94;Anschluss;NKL;Kirchenlaibach;9:24:00;3;3426
+58600;RB531-;06.03.2016;93;Wende;NNKS;Neunkirchen a Sand;9:26:00;3;
+6840;S8BY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;9:26:00;2;6932
+79020;MER1-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFL;Freilassing;9:26:00;2;
+39272;;06.03.2016;95;Flügeln;NBA;Bamberg;9:27:00;2;4844
+29352;RE42+;06.03.2016;31;Bauarbeiten;UR  G;Rudolstadt (Thür) Gbf;9:29:00;3;
+4683;;06.03.2016;51;Antrag EVU;NHN;Höflein;9:29:00;2;4683
+63053;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);9:30:00;3;27150
+84152;ALXSF+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MATS;Altstädten (Allgäu);9:30:00;4;
+87031;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MMDN;München Donnersbergerbrücke;9:31:00;4;
+27319;;06.03.2016;50;Haltezeitüberschreitung;MMF;Mühldorf (Oberbay);9:33:00;2;27319
+5413;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHDF;Hechendorf;9:34:00;2;
+84559;;06.03.2016;57;Keine Meldung durch EVU;NRC;Bad Rodach;9:34:00;2;84559
+57812;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MKFG;Kaufering;9:35:00;3;3482
+57815;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;9:35:00;2;57812
+29352;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;9:36:00;3;
+59145;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MAOZ;München-Obermenzing Abzw;9:37:00;3;
+84449;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;NFO;Forchheim (Oberfr);9:39:00;2;84449
+27109;;06.03.2016;93;Wende;MMF;Mühldorf (Oberbay);9:40:00;3;27108
+4011;;06.03.2016;32;Unregelmäßigkeiten bei Bauarbeiten;MKIG;Kinding (Altmühltal);9:40:00;2;
+79461;MER2+;06.03.2016;57;Keine Meldung durch EVU;MRO;Rosenheim;9:40:00;2;79461
+57405;RE35BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MANH;München-Neuhausen;9:41:00;2;
+4225;IRE6+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TS;Stuttgart Hbf;9:42:00;3;
+80678;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NGM S;Gemünden (Main) Saalebrücke;9:42:00;3;
+39600;S2FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;9:43:00;2;
+58788;;06.03.2016;57;Keine Meldung durch EVU;NJB;NJB;9:44:00;2;58788
+5411;RE12+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MMW;Mittenwald;9:46:00;8;
+83916;WB1-;06.03.2016;50;Haltezeitüberschreitung;NDG;Deggendorf Hbf;9:47:00;2;83916
+57340;RE32BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBU;Buchloe;9:48:00;2;
+63053;;06.03.2016;57;Keine Meldung durch EVU;MTLG;Tüßling;9:51:00;2;63053
+4875;RE12+;06.03.2016;84;Behörden;MWH;Weilheim (Oberbay);9:52:00;3;
+4062;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NWLD;Wallersdorf;9:53:00;5;
+27315;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPA G;Passau Gbf;9:54:00;5;1863
+4873;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKLA;Klais;9:54:00;6;
+59560;;06.03.2016;57;Keine Meldung durch EVU;MBKG;Bad Kohlgrub;9:57:00;2;59560
+6841;S8BY+;06.03.2016;84;Behörden;MJK;München-Johanneskirchen;9:57:00;2;
+57763;RB33M-;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;9:58:00;2;57763
+6242;S2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLEU;München Leuchtenbergring;9:58:00;2;
+87011;;06.03.2016;95;Flügeln;MHO;Holzkirchen;10:00:00;2;87031
+84137;ALXS-;06.03.2016;62;Reisezugwagen;MLI;Lindau Hbf;10:02:00;4;84137
+6245;S2BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MAOZ;München-Obermenzing Abzw;10:03:00;2;
+59513;RE12+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MH;München Hbf;10:05:00;6;
+84538;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NC;Coburg;10:05:00;3;84559
+86517;BRB4+;06.03.2016;58;Verkehrliches Personal EVU;MKIS;Kissing;10:05:00;3;57105
+94480;;06.03.2016;57;Keine Meldung durch EVU;NRH B;Regensburg Bbf;10:05:00;2;94480
+3384;RE37-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSF;Sonthofen;10:06:00;5;2084
+4223;IRE6+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;TMO;Mochenwangen;10:07:00;3;
+57505;RE36-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MANH;München-Neuhausen;10:07:00;4;
+5413;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;10:08:00;5;
+57105;;06.03.2016;58;Verkehrliches Personal EVU;MMR;Mering;10:08:00;12;57105
+86517;BRB4+;06.03.2016;58;Verkehrliches Personal EVU;MKIS;Kissing;10:08:00;2;57105
+5512;RB39A+;06.03.2016;95;Flügeln;MGP;Garmisch-Partenkirchen;10:09:00;5;
+58212;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NF  G;Fürth (Bay) Gbf;10:11:00;2;
+4206;;06.03.2016;93;Wende;MLI;Lindau Hbf;10:12:00;6;4221
+6842;S8BY-;06.03.2016;84;Behörden;MIS;Ismaning;10:12:00;13;
+6843;S8BY+;06.03.2016;84;Behörden;MDFG;München-Daglfing;10:14:00;4;
+6142;S1BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP;München Ost Pbf;10:18:00;4;
+87011;;06.03.2016;95;Flügeln;MSFL;Schaftlach;10:19:00;2;
+87021;;06.03.2016;95;Flügeln;MSFL;Schaftlach;10:19:00;4;87011
+57766;RB33M+;06.03.2016;94;Anschluss;MM;Memmingen;10:20:00;3;191
+6244;S2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP;München Ost Pbf;10:20:00;2;6142
+84137;ALXS-;06.03.2016;62;Reisezugwagen;MHGZ;Hergatz;10:20:00;2;84137
+8674;SF8BY+;06.03.2016;84;Behörden;MOP;München Ost Pbf;10:20:00;3;6142
+22711;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MNHN;Nonnenhorn;10:21:00;5;
+6842;S8BY-;06.03.2016;84;Behörden;MJK;München-Johanneskirchen;10:21:00;3;
+3425;RB44+;06.03.2016;95;Flügeln;NPZ;Pegnitz;10:24:00;2;3405
+79470;MER2-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MARS;Rosenheim Süd;10:24:00;2;79020
+27614;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRA;Radldorf (Niederbay);10:26:00;2;94489
+86864;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;10:26:00;2;87031
+57667;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MIMS;Immenstadt;10:27:00;5;2012
+84157;ALXSF-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOF;Oberstdorf;10:27:00;3;3384
+28624;RB6A-;06.03.2016;54;Verkehrliche Zugvorbereitung;TFH;Friedrichshafen Hafen;10:28:00;2;28624
+6843;S8BY+;06.03.2016;84;Behörden;MIS;Ismaning;10:28:00;2;
+86914;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;10:28:00;2;86864
+23384;RE782+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen Betriebsführung);NSUZ;Sulzbach (Main);10:30:00;1;
+57106;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MAOB;Augsburg-Oberhausen;10:30:00;2;
+4985;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;10:31:00;3;
+57306;;06.03.2016;95;Flügeln;MA;Augsburg Hbf;10:31:00;3;
+3286;SF7BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MA;Augsburg Hbf;10:32:00;2;
+4223;IRE6+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TF  R;Friedrichshafen Gbf;10:32:00;2;
+5542;RB39A+;06.03.2016;95;Flügeln;MGP;Garmisch-Partenkirchen;10:32:00;4;4875
+6747;S7BY+;06.03.2016;50;Haltezeitüberschreitung;MGOI;Großhesselohe Isartalbahnhof;10:32:00;3;6747
+58109;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;10:33:00;3;
+58112;;06.03.2016;50;Haltezeitüberschreitung;MTL;Treuchtlingen;10:33:00;8;58112
+5415;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHDF;Hechendorf;10:34:00;3;5408
+86522;BRB4-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGE;Geltendorf;10:34:00;4;86517
+86866;;06.03.2016;61;Zugbildung durch EVU;MBZ;Bayrischzell;10:34:00;2;86866
+22523;RE/RB5-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TA;Aalen;10:35:00;2;22518
+57763;RB33M-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MASI;Altenstadt (Iller);10:35:00;2;57766
+3082;IRE1-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNHC;Neuenreuth (b Creußen);10:36:00;2;
+3284;SF7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLI;Lindau Hbf;10:36:00;2;
+57307;;06.03.2016;94;Anschluss;MTL;Treuchtlingen;10:37:00;3;59148
+3010;RE53-;06.03.2016;31;Bauarbeiten;NGAH;Großalbershof;10:38:00;3;
+4012;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);10:39:00;2;
+6246;S2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLEU;München Leuchtenbergring;10:39:00;2;
+6844;S8BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP;München Ost Pbf;10:39:00;2;
+57182;;06.03.2016;93;Wende;MH;München Hbf;10:41:00;5;57105
+58025;;06.03.2016;64;Triebfahrzeuge;NS;Schweinfurt Hbf;10:43:00;7;58025
+3010;RE53-;06.03.2016;60;Umlauf-Einsatzplanung;NNS;Neukirchen (b Sulzbach-Rosenberg);10:45:00;2;3010
+3759;RE41+;06.03.2016;57;Keine Meldung durch EVU;NTG;Trebgast;10:46:00;3;3759
+3550;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);10:48:00;3;
+39610;S2FR-;06.03.2016;93;Wende;NAD;Altdorf (b Nürnberg);10:48:00;2;39605
+4647;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NARN;Arnstein (Unterfr);10:49:00;2;
+5282;;06.03.2016;95;Flügeln;NPZ;Pegnitz;10:49:00;2;3082
+57763;RB33M-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MM;Memmingen;10:50:00;2;
+58790;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NF;Fürth (Bay) Hbf;10:50:00;3;1208
+6453;S4BY+;06.03.2016;50;Haltezeitüberschreitung;MGE;Geltendorf;10:52:00;2;6453
+3884;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLNW;Langenwang (Schwab);10:53:00;3;
+20875;;06.03.2016;57;Keine Meldung durch EVU;NMR;Marktredwitz;10:54:00;1;20875
+3883;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MIMS;Immenstadt;10:54:00;2;84157
+84106;ALXN+;06.03.2016;85;Fremdeinwirkung;MFE;München-Feldmoching;10:56:00;3;
+79720;;06.03.2016;94;Anschluss;NRH;Regensburg Hbf;10:58:00;2;84190
+27044;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOP R;München Ost Riedenburger Straße;11:00:00;2;27037
+6951;S1ABY-;06.03.2016;85;Fremdeinwirkung;MFE;München-Feldmoching;11:00:00;2;
+84550;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBY;Bayreuth Hbf;11:00:00;2;3465
+84555;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBY;Bayreuth Hbf;11:00:00;2;
+3804;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBNE;Bad Neustadt (Saale);11:01:00;4;3807
+5410;RE12-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;11:01:00;2;
+39609;S2FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NFT;Feucht;11:02:00;2;
+57028;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MGHF;Gersthofen;11:02:00;2;
+58024;;06.03.2016;54;Verkehrliche Zugvorbereitung;NWH;Würzburg Hbf;11:03:00;2;58024
+58514;RB53FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNP;Neuhaus (Pegnitz);11:03:00;2;5282
+86861;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSCS;Schliersee;11:03:00;2;
+84104;ALXN+;06.03.2016;57;Keine Meldung durch EVU;NNAB;Nabburg;11:04:00;2;84104
+3780;RB44-;06.03.2016;50;Haltezeitüberschreitung;NBY;Bayreuth Hbf;11:05:00;2;3780
+79303;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFL;Freilassing;11:05:00;2;
+3883;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSF;Sonthofen;11:06:00;2;3884
+6951;S1ABY-;06.03.2016;85;Fremdeinwirkung;MFE;München-Feldmoching;11:07:00;6;
+57021;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;11:08:00;2;50595
+80743;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBNE;Bad Neustadt (Saale);11:08:00;2;3807
+86522;BRB4-;06.03.2016;50;Haltezeitüberschreitung;MAHA;Augsburg Haunstetterstraße;11:08:00;2;86522
+8674;SF8BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSH;Seefeld-Hechendorf;11:10:00;2;
+3984;RE34BY+;06.03.2016;57;Keine Meldung durch EVU;MIMS;Immenstadt;11:12:00;2;3984
+3984;RE34BY+;06.03.2016;50;Haltezeitüberschreitung;MIMS;Immenstadt;11:12:00;2;3984
+5415;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKBN;Kaltenbrunn (Oberbay);11:12:00;2;
+4015;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;11:13:00;3;1
+6855;S8BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSH;Seefeld-Hechendorf;11:13:00;3;8674
+39608;S2FR-;06.03.2016;54;Verkehrliche Zugvorbereitung;NN;Nürnberg Hbf;11:14:00;13;39608
+6955;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;11:14:00;4;
+356;ALXNP-;06.03.2016;85;Fremdeinwirkung;MFE;München-Feldmoching;11:15:00;9;
+6951;S1ABY-;06.03.2016;85;Fremdeinwirkung;MMCH;München-Moosach;11:15:00;2;
+6944;S1ABY+;06.03.2016;85;Fremdeinwirkung;MMCH;München-Moosach;11:16:00;18;
+84553;;06.03.2016;50;Haltezeitüberschreitung;NMR;Marktredwitz;11:16:00;2;84553
+6146;S1BY-;06.03.2016;85;Fremdeinwirkung;MMCH;München-Moosach;11:18:00;3;6944
+79723;;06.03.2016;50;Haltezeitüberschreitung;NMR;Marktredwitz;11:18:00;3;79723
+80743;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NMUE;Münnerstadt;11:18:00;2;3807
+57668;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLNW;Langenwang (Schwab);11:19:00;3;
+3555;RE55FR+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);11:20:00;2;3015
+4015;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NRWD;Nürnberg Reichswald;11:20:00;2;
+63054;;06.03.2016;41;Vorheriger EIU;MFL;Freilassing;11:20:00;2;
+19908;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NDB;Dombühl;11:24:00;2;
+59514;RE12-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MWI;Wilzhofen;11:24:00;3;
+6155;S1BY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);11:24:00;3;6955
+84193;AG1+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NSF;Seubersdorf;11:24:00;2;
+79024;MER1-;06.03.2016;50;Haltezeitüberschreitung;MFL;Freilassing;11:26:00;2;79024
+80712;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NOBW;Oberwerrn;11:26:00;5;3807
+84557;;06.03.2016;57;Keine Meldung durch EVU;NSOK;Stockau;11:28:00;2;84557
+356;ALXNP-;06.03.2016;85;Fremdeinwirkung;MAKN;München Kanal;11:29:00;9;
+80683;;06.03.2016;95;Flügeln;NEBH;Ebenhausen (Unterfr);11:30:00;2;80743
+84154;ALXSF+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MATS;Altstädten (Allgäu);11:30:00;2;
+22510;RB5+;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;11:31:00;2;22510
+4066;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLOI;Loiching;11:31:00;2;4067
+29354;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;11:32:00;3;
+3012;RE53-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NVK;Vilseck;11:32:00;3;3015
+79422;MER1-;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;11:32:00;2;79422
+58113;;06.03.2016;64;Triebfahrzeuge;NWH;Würzburg Hbf;11:33:00;52;58113
+86868;;06.03.2016;57;Keine Meldung durch EVU;MBZ;Bayrischzell;11:34:00;2;86868
+4228;IRE6-;06.03.2016;62;Reisezugwagen;TF;Friedrichshafen Stadt;11:35:00;3;4228
+59614;RB121B-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MTZ;Tutzing;11:35:00;3;
+80732;;06.03.2016;95;Flügeln;NEBH;Ebenhausen (Unterfr);11:35:00;2;80712
+5481;;06.03.2016;94;Anschluss;MKP;Kempten (Allgäu) Hbf;11:36:00;2;3884
+29354;RE42+;06.03.2016;31;Bauarbeiten;UZE;Zeutsch;11:37:00;2;
+4018;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPF;Pfaffenhofen (Ilm);11:37:00;2;1588
+39277;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;11:38:00;3;
+22715;RB7+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TF;Friedrichshafen Stadt;11:39:00;6;
+58792;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;11:41:00;2;
+59095;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;11:41:00;3;2068
+3485;SF3BY-;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;11:42:00;2;3485
+57181;RE77-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGZB;Günzburg;11:42:00;2;
+6946;S1ABY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);11:42:00;4;6146
+4015;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);11:43:00;2;
+58115;;06.03.2016;57;Keine Meldung durch EVU;NWH;Würzburg Hbf;11:43:00;2;58115
+4068;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MNF;Neufahrn (b Freising);11:44:00;2;
+6551;S6BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MLEU;München Leuchtenbergring;11:44:00;4;
+3387;RE37+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOF;Oberstdorf;11:46:00;5;84154
+3552;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);11:47:00;4;
+57181;RE77-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGZB;Günzburg;11:47:00;3;513
+22854;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TKG;Kißlegg;11:48:00;3;193
+57362;RE32BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBU;Buchloe;11:48:00;2;
+3555;RE55FR+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;11:49:00;3;3555
+27087;;06.03.2016;57;Keine Meldung durch EVU;MTLG;Tüßling;11:51:00;2;27087
+57969;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAMS;Augsburg Morellstraße;11:51:00;3;
+27319;;06.03.2016;57;Keine Meldung durch EVU;NPA G;Passau Gbf;11:52:00;2;27319
+6959;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;11:53:00;3;6946
+57021;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;11:55:00;2;218
+39143;S1FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHS;Hartmannshof;11:58:00;2;3552
+84554;;06.03.2016;57;Keine Meldung durch EVU;NBY;Bayreuth Hbf;12:00:00;2;84554
+22335;RE3S-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TRI;Riedlingen;12:01:00;2;22334
+57818;;06.03.2016;54;Verkehrliche Zugvorbereitung;MA;Augsburg Hbf;12:01:00;13;57818
+58028;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;12:03:00;2;41597
+3468;RB44-;06.03.2016;54;Verkehrliche Zugvorbereitung;NBY;Bayreuth Hbf;12:04:00;3;3468
+22809;RB8-;06.03.2016;94;Anschluss;TAU;Aulendorf;12:05:00;3;4228
+3386;RE37-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSF;Sonthofen;12:05:00;4;3387
+59621;RB121B+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MTZ;Tutzing;12:05:00;2;
+23585;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;12:06:00;3;
+3467;RB44+;06.03.2016;93;Wende;NN;Nürnberg Hbf;12:07:00;2;3780
+39152;S1FR-;06.03.2016;93;Wende;NHS;Hartmannshof;12:07:00;4;39143
+5514;RB39A+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;12:08:00;4;
+5417;RE12+;06.03.2016;93;Wende;MGP;Garmisch-Partenkirchen;12:09:00;7;
+86867;;06.03.2016;84;Behörden;MH;München Hbf;12:09:00;4;6752
+6255;S2BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRI W;München-Riem West;12:10:00;3;27039
+59458;RE12-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;12:11:00;4;5513
+63054;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;MTLG;Tüßling;12:11:00;2;63054
+86524;BRB4-;06.03.2016;50;Haltezeitüberschreitung;MA;Augsburg Hbf;12:12:00;2;86524
+94361;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMNG;Manching;12:13:00;2;52575
+22854;;06.03.2016;64;Triebfahrzeuge;TWW;Wangen (Allgäu);12:15:00;10;22854
+3287;SF7BY-;06.03.2016;95;Flügeln;MIMS;Immenstadt;12:16:00;2;3387
+6457;S4BY+;06.03.2016;84;Behörden;MMDN;München Donnersbergerbrücke;12:17:00;2;6752
+79727;;06.03.2016;57;Keine Meldung durch EVU;NMR;Marktredwitz;12:17:00;2;79727
+6752;S7BY-;06.03.2016;84;Behörden;MMDN;München Donnersbergerbrücke;12:19:00;22;6752
+84139;ALXS-;06.03.2016;64;Triebfahrzeuge;MHGZ;Hergatz;12:21:00;6;22854
+84360;AG2+;06.03.2016;31;Bauarbeiten;MRFD;Rohrenfeld;12:21:00;2;
+6757;S7BY+;06.03.2016;84;Behörden;MHP;München Heimeranplatz;12:22:00;2;6752
+3427;RB44+;06.03.2016;95;Flügeln;NPZ;Pegnitz;12:24:00;2;3407
+6752;S7BY-;06.03.2016;84;Behörden;MHP;München Heimeranplatz;12:24:00;2;6754
+79474;MER2-;06.03.2016;50;Haltezeitüberschreitung;MARS;Rosenheim Süd;12:24:00;2;79474
+84159;ALXSF-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOF;Oberstdorf;12:24:00;2;
+22854;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHGZ;Hergatz;12:25:00;5;
+4015;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRBI;Rohrbach (Ilm);12:25:00;2;1585
+57182;RE77+;06.03.2016;64;Triebfahrzeuge;MUFH;Unterfahlheim;12:25:00;3;57182
+80682;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NEBH;Ebenhausen (Unterfr);12:25:00;2;80711
+27477;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTS;Traunstein;12:27:00;2;114
+57308;;06.03.2016;54;Verkehrliche Zugvorbereitung;MA;Augsburg Hbf;12:27:00;3;2082
+22861;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TKG;Kißlegg;12:30:00;4;22809
+3014;RE53-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NVK;Vilseck;12:31:00;3;3099
+3099;RE53+;06.03.2016;57;Keine Meldung durch EVU;NVK;Vilseck;12:31:00;2;3099
+4987;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;12:31:00;3;
+79379;AG2-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MUHN;Unterhausen (Bay);12:34:00;2;84360
+3208;IRE3+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TBL;Blaubeuren;12:35:00;4;22335
+84139;ALXS-;06.03.2016;57;Keine Meldung durch EVU;MRTA;Röthenbach (Allgäu);12:35:00;2;84139
+22527;RE/RB5-;06.03.2016;50;Haltezeitüberschreitung;TA;Aalen;12:36:00;1;22527
+22527;RE/RB5-;06.03.2016;60;Umlauf-Einsatzplanung;TA;Aalen;12:36:00;2;22527
+5483;;06.03.2016;94;Anschluss;MKP;Kempten (Allgäu) Hbf;12:37:00;3;3287
+57821;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;12:37:00;3;57818
+57939;;06.03.2016;93;Wende;MBWH;Bad Wörishofen;12:37:00;3;
+39155;S1FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NF;Fürth (Bay) Hbf;12:38:00;3;
+4018;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);12:39:00;2;
+57644;;06.03.2016;94;Anschluss;MKP;Kempten (Allgäu) Hbf;12:39:00;4;3287
+79573;MER3+;06.03.2016;94;Anschluss;MHO;Holzkirchen;12:39:00;3;86867
+86917;;06.03.2016;95;Flügeln;MHO;Holzkirchen;12:40:00;6;86867
+57287;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MWNS;Wörnitzstein;12:41:00;2;65372
+4612;;06.03.2016;50;Haltezeitüberschreitung;NVE;Veitshöchheim;12:43:00;2;4612
+3761;RE41+;06.03.2016;57;Keine Meldung durch EVU;NTG;Trebgast;12:45:00;2;3761
+4611;RE60FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FFS;Frankfurt (Main) Süd;12:45:00;4;27
+22720;;06.03.2016;93;Wende;MLI;Lindau Hbf;12:46:00;9;22854
+20876;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;12:47:00;3;84411
+3430;RB44-;06.03.2016;60;Umlauf-Einsatzplanung;NHO;Hof Hbf;12:47:00;7;3430
+3554;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);12:47:00;4;
+3557;RE54+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;12:47:00;2;3557
+57644;;06.03.2016;50;Haltezeitüberschreitung;MDRD;Dietmannsried;12:48:00;2;57644
+4987;RE42-;06.03.2016;64;Triebfahrzeuge;USAP;Saalfeld Propangasanlage;12:49:00;3;94174
+57025;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;12:49:00;3;
+86967;;06.03.2016;95;Flügeln;MSFL;Schaftlach;12:52:00;4;86917
+20877;;06.03.2016;50;Haltezeitüberschreitung;NMR;Marktredwitz;12:54:00;2;20877
+39338;S3FR-;06.03.2016;50;Haltezeitüberschreitung;NPOH;Postbauer-Heng;12:55:00;2;39338
+57308;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMTG;Mertingen Bahnhof;12:55:00;2;2082
+22721;RB7+;06.03.2016;51;Antrag EVU;TF;Friedrichshafen Stadt;12:56:00;6;3055
+3467;RB44+;06.03.2016;57;Keine Meldung durch EVU;NCRE;Creußen (Oberfr);12:56:00;3;3467
+4209;IRE6+;06.03.2016;94;Anschluss;TAU;Aulendorf;12:56:00;2;22861
+6554;S6BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MTZ;Tutzing;12:57:00;2;
+4225;;06.03.2016;57;Keine Meldung durch EVU;MLI;Lindau Hbf;12:58:00;2;4225
+22720;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MNHN;Nonnenhorn;12:59:00;4;
+3806;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBNE;Bad Neustadt (Saale);13:00:00;3;3809
+5543;RB39A-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;13:00:00;4;
+3209;IRE3-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TRC;Rechtenstein;13:01:00;3;3208
+84567;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBY;Bayreuth Hbf;13:01:00;2;3467
+84662;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NSLZ;Selbitz;13:01:00;2;
+22810;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MM;Memmingen;13:02:00;2;22809
+3771;RE41N+;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;13:03:00;4;3771
+86894;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSCS;Schliersee;13:03:00;4;86867
+57370;RE32BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;13:04:00;2;
+57941;;06.03.2016;93;Wende;MBWH;Bad Wörishofen;13:04:00;2;
+58032;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;13:04:00;3;1224
+6565;S6BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MTZ;Tutzing;13:06:00;2;
+58117;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NMT;Marktbreit;13:07:00;4;1145
+27476;;06.03.2016;57;Keine Meldung durch EVU;MHFG;Hufschlag Abzw;13:08:00;2;27476
+86639;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAHA;Augsburg Haunstetterstraße;13:08:00;2;
+57308;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MMDL;Mündling;13:09:00;2;2082
+4931;;06.03.2016;50;Haltezeitüberschreitung;TL;Lauda;13:11:00;2;4931
+86738;;06.03.2016;51;Antrag EVU;MEB;Eichstätt Bahnhof;13:11:00;4;86738
+27623;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NSNH;Sand (Niederbay) Hafen;13:12:00;2;
+6160;S1BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLEU;München Leuchtenbergring;13:12:00;2;
+20878;;06.03.2016;51;Antrag EVU;NMR;Marktredwitz;13:13:00;5;20878
+84662;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NKI;Köditz;13:13:00;2;
+4068;;06.03.2016;57;Keine Meldung durch EVU;NOS;Osterhofen (Niederbay);13:14:00;2;4068
+4612;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNAN;Nantenbach;13:15:00;3;720
+57033;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MDT;Donauwörth;13:23:00;4;2065
+79026;MER1-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MART;Rosenheim Ost;13:24:00;2;79476
+28632;RB6A-;06.03.2016;93;Wende;TFH;Friedrichshafen Hafen;13:25:00;2;22720
+57184;;06.03.2016;50;Haltezeitüberschreitung;MA;Augsburg Hbf;13:26:00;2;57184
+39276;;06.03.2016;50;Haltezeitüberschreitung;NBA;Bamberg;13:27:00;2;4988
+59307;;06.03.2016;51;Antrag EVU;NNE;Neuenmarkt-Wirsberg;13:28:00;2;3771
+84569;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSOK;Stockau;13:28:00;2;84568
+4769;;06.03.2016;51;Antrag EVU;NHO;Hof Hbf;13:29:00;2;3427
+86944;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;13:29:00;2;86894
+22811;RB8-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TSL;Bad Saulgau;13:31:00;2;3258
+27326;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MPKI;Pfarrkirchen;13:31:00;2;
+22562;RB5+;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;13:32:00;2;22562
+27327;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPKI;Pfarrkirchen;13:32:00;3;
+29356;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;13:32:00;3;
+57033;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMTG;Mertingen Bahnhof;13:33:00;2;2065
+3016;RE53-;06.03.2016;31;Bauarbeiten;NGAH;Großalbershof;13:38:00;3;
+4687;;06.03.2016;50;Haltezeitüberschreitung;NBA;Bamberg;13:38:00;2;4687
+4021;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);13:39:00;2;
+22658;RB6-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TBI;Biberach (Riß);13:41:00;6;3055
+3486;SF3BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBU;Buchloe;13:41:00;2;
+5419;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMW;Mittenwald;13:41:00;3;
+58119;;06.03.2016;50;Haltezeitüberschreitung;NWH;Würzburg Hbf;13:43:00;2;58119
+3086;IRE1-;06.03.2016;51;Antrag EVU;NHO;Hof Hbf;13:44:00;8;4786
+27159;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;13:45:00;2;
+39624;S2FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;13:45:00;4;
+22337;RE3S-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TMG;Mengen;13:46:00;3;3258
+3410;RB44-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPZ;Pegnitz;13:46:00;4;3430
+58219;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;13:46:00;4;27
+84413;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;13:47:00;3;3086
+3556;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);13:48:00;4;
+63055;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;13:51:00;2;
+6767;S7BY+;06.03.2016;50;Haltezeitüberschreitung;MGOI;Großhesselohe Isartalbahnhof;13:51:00;2;6767
+6363;S3BY+;06.03.2016;57;Keine Meldung durch EVU;MDS;Deisenhofen;13:53:00;2;6363
+84106;ALXN+;06.03.2016;50;Haltezeitüberschreitung;NMR;Marktredwitz;13:54:00;2;84106
+86527;BRB4+;06.03.2016;50;Haltezeitüberschreitung;MAHA;Augsburg Haunstetterstraße;13:55:00;1;86527
+22661;RB6+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TLW;Laupheim West;13:56:00;3;22658
+27323;;06.03.2016;57;Keine Meldung durch EVU;NPA G;Passau Gbf;13:56:00;4;27323
+57909;;06.03.2016;95;Flügeln;MBU;Buchloe;13:56:00;2;
+6171;S1BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFR;Freising;13:57:00;3;94193
+83928;WB1-;06.03.2016;57;Keine Meldung durch EVU;NPL;Plattling;13:57:00;3;83928
+23586;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;13:58:00;2;
+3809;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;13:58:00;3;
+84570;;06.03.2016;57;Keine Meldung durch EVU;NBY;Bayreuth Hbf;13:59:00;2;84570
+84139;ALXS-;06.03.2016;57;Keine Meldung durch EVU;MBU;Buchloe;14:00:00;2;84139
+94484;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRH;Regensburg Hbf;14:00:00;2;84196
+29379;;06.03.2016;54;Verkehrliche Zugvorbereitung;NBA;Bamberg;14:02:00;2;29379
+4613;RE60FR-;06.03.2016;85;Fremdeinwirkung;FHW;Hanau West;14:02:00;6;
+5519;RB39A-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;14:02:00;2;
+84412;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NRU;Rehau;14:02:00;2;
+84580;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;14:02:00;2;51723
+27328;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPKG;Pocking;14:03:00;2;27327
+3487;SF3BY-;06.03.2016;64;Triebfahrzeuge;MKP;Kempten (Allgäu) Hbf;14:03:00;22;3487
+39626;S2FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;14:03:00;2;
+58520;RB53FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNP;Neuhaus (Pegnitz);14:03:00;2;3430
+5421;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;14:06:00;4;
+22661;RB6+;06.03.2016;54;Verkehrliche Zugvorbereitung;TLM;Laupheim Stadt;14:07:00;2;22661
+79315;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFL;Freilassing;14:07:00;3;
+27623;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MNFR;Neufahrn (Niederbay);14:08:00;2;
+5518;RB39A+;06.03.2016;95;Flügeln;MGP;Garmisch-Partenkirchen;14:08:00;4;5421
+58043;;06.03.2016;50;Haltezeitüberschreitung;NWH;Würzburg Hbf;14:08:00;2;58043
+27212;;06.03.2016;50;Haltezeitüberschreitung;MGHS;Geisenhausen;14:09:00;2;27212
+29357;RE40FR-;06.03.2016;94;Anschluss;NLF;Lichtenfels;14:10:00;4;4987
+3863;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;14:10:00;4;3863
+59098;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRS;Reichertshausen (Ilm);14:10:00;2;1124
+4808;RE40FR+;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;14:11:00;2;4808
+84196;AG1-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NUDF;Undorf;14:11:00;2;
+3486;SF3BY+;06.03.2016;60;Umlauf-Einsatzplanung;MGNZ;Günzach;14:12:00;2;3486
+29358;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;14:13:00;3;29358
+58846;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSDF;Siegelsdorf;14:13:00;3;
+6473;S4BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGE;Geltendorf;14:16:00;2;84139
+79314;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHAU;Hammerau;14:16:00;3;
+27088;;06.03.2016;31;Bauarbeiten;MMF;Mühldorf (Oberbay);14:19:00;2;
+27118;;06.03.2016;50;Haltezeitüberschreitung;MTG;Töging (Inn);14:19:00;2;27118
+3561;RE54+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);14:20:00;2;3021
+3808;;06.03.2016;57;Keine Meldung durch EVU;NWA;Waigolshausen;14:20:00;2;3808
+58853;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NMER;Markt Erlbach;14:20:00;2;
+6568;S6BY-;06.03.2016;64;Triebfahrzeuge;MSTH;München-Steinhausen;14:20:00;1;
+84575;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NKL;Kirchenlaibach;14:20:00;15;
+57035;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MDT;Donauwörth;14:21:00;2;1145
+80713;;06.03.2016;60;Umlauf-Einsatzplanung;NBKI;Bad Kissingen;14:21:00;7;80713
+84362;AG2+;06.03.2016;93;Wende;MRFD;Rohrenfeld;14:21:00;2;
+22337;RE3S-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TEH;Ehingen (Donau);14:22:00;2;
+27326;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);14:22:00;2;27088
+3781;RB44+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTG;Trebgast;14:22:00;2;
+57412;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;14:23:00;3;
+6271;S2BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MAOZ;München-Obermenzing Abzw;14:23:00;2;
+84197;AG1+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRA;Radldorf (Niederbay);14:23:00;2;
+6767;S7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGI;München-Giesing;14:24:00;2;
+3087;IRE1+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHO;Hof Hbf;14:25:00;2;84412
+3429;RB44+;06.03.2016;95;Flügeln;NPZ;Pegnitz;14:25:00;3;3409
+3558;SF3BY+;06.03.2016;50;Haltezeitüberschreitung;NAM;Amberg;14:25:00;3;3558
+6173;S1BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MNF;Neufahrn (b Freising);14:25:00;3;
+79478;MER2-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MARS;Rosenheim Süd;14:25:00;2;79030
+84575;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NKNN;Kemnath-Neustadt;14:25:00;20;
+84139;ALXS-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MFB;Fürstenfeldbruck;14:26:00;2;
+27481;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTS;Traunstein;14:28:00;3;112
+57824;;06.03.2016;57;Keine Meldung durch EVU;MKFG;Kaufering;14:28:00;2;57824
+58120;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;14:28:00;3;
+6875;S8BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MHI;Herrsching;14:28:00;3;
+84362;AG2+;06.03.2016;50;Haltezeitüberschreitung;MNBD;Neuburg (Donau);14:28:00;2;84362
+59521;RE12+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MTZ;Tutzing;14:29:00;3;
+27327;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MFZL;Fürstenzell;14:30:00;2;
+80686;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NEBH;Ebenhausen (Unterfr);14:30:00;4;80713
+3018;RE53-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NVK;Vilseck;14:31:00;2;3021
+4989;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;14:31:00;2;
+6473;S4BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MBAU;Buchenau (Oberbay);14:31:00;3;
+6571;S6BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGT;Gauting;14:31:00;6;
+80733;;06.03.2016;95;Flügeln;NEBH;Ebenhausen (Unterfr);14:31:00;6;80713
+80750;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NEBH;Ebenhausen (Unterfr);14:31:00;4;80686
+86527;BRB4+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGE;Geltendorf;14:31:00;2;
+59520;RE12-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MUZ;Unterzeismering;14:32:00;7;
+86572;BRB4-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGE;Geltendorf;14:32:00;2;
+27329;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPKI;Pfarrkirchen;14:33:00;3;
+6564;S6BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MST;Starnberg;14:33:00;6;
+79381;AG2-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MUHN;Unterhausen (Bay);14:34:00;3;84362
+3210;IRE3+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TBL;Blaubeuren;14:35:00;4;22337
+5423;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHDF;Hechendorf;14:35:00;2;
+6566;S6BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MPLU;Planegg Üst;14:35:00;2;
+6875;S8BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MSH;Seefeld-Hechendorf;14:35:00;2;
+57825;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;14:36:00;2;57824
+6864;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MUG;Germering-Unterpfaffenhofen;14:36:00;7;
+4615;RE60FR-;06.03.2016;64;Triebfahrzeuge;FF;Frankfurt (Main) Hbf;14:38:00;4;1174
+4807;RE40FR-;06.03.2016;54;Verkehrliche Zugvorbereitung;NBA;Bamberg;14:38:00;2;4807
+59640;RB121B-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MTZ;Tutzing;14:38:00;6;
+84585;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;14:39:00;3;84585
+3808;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NOBW;Oberwerrn;14:40:00;4;
+4022;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);14:40:00;2;
+6573;S6BY+;06.03.2016;93;Wende;MST;Starnberg;14:40:00;6;6654
+84198;AG1-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NSUE;Sünching;14:40:00;3;
+4933;;06.03.2016;94;Anschluss;NWH;Würzburg Hbf;14:43:00;6;1589
+6873;S8BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MWKR;München-Westkreuz;14:44:00;3;6571
+79433;MER2+;06.03.2016;57;Keine Meldung durch EVU;MRO;Rosenheim;14:44:00;5;79433
+3763;RE41+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTG;Trebgast;14:45:00;2;
+4989;RE42-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;USAP;Saalfeld Propangasanlage;14:45:00;1;74084
+84139;ALXS-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MP  W;München-Pasing West;14:46:00;10;
+20878;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;14:47:00;3;84415
+6864;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGCH;Gilching-Argelsried;14:47:00;6;
+6866;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MFH;München-Freiham;14:47:00;3;
+3828;;06.03.2016;95;Flügeln;NEBH;Ebenhausen (Unterfr);14:48:00;5;3808
+57412;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;14:48:00;11;
+79433;MER2+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MARS;Rosenheim Süd;14:48:00;2;44125
+84574;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTG;Trebgast;14:48:00;3;
+39165;S1FR+;06.03.2016;50;Haltezeitüberschreitung;NHL;Hersbruck (links Pegnitz);14:49:00;3;39165
+59451;RE12+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MGT;Gauting;14:49:00;3;
+6573;S6BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MGT;Gauting;14:49:00;2;
+6766;S7BY-;06.03.2016;50;Haltezeitüberschreitung;MEBS;Ebenhausen-Schäftlarn;14:49:00;2;6766
+6473;S4BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MP  W;München-Pasing West;14:51:00;5;
+59451;RE12+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MGT;Gauting;14:52:00;3;
+6466;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;14:53:00;12;
+6475;S4BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MFB;Fürstenfeldbruck;14:53:00;2;
+6775;S7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MIC;Icking;14:53:00;2;6766
+4646;RE601+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FF;Frankfurt (Main) Hbf;14:54:00;2;629
+59640;RB121B-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGT;Gauting;14:54:00;2;
+86655;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MDAG;Dasing;14:54:00;3;
+20879;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NMR;Marktredwitz;14:55:00;2;
+27327;;06.03.2016;57;Keine Meldung durch EVU;NPA G;Passau Gbf;14:55:00;2;27327
+3558;SF3BY+;06.03.2016;60;Umlauf-Einsatzplanung;NHS;Hartmannshof;14:56:00;2;3558
+6875;S8BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MUG;Germering-Unterpfaffenhofen;14:56:00;2;
+57313;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;MDT;Donauwörth;14:57:00;2;57313
+6477;S4BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGE;Geltendorf;14:57:00;3;3487
+86876;;06.03.2016;57;Keine Meldung durch EVU;MSCS;Schliersee;14:57:00;2;86876
+3811;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NBNE;Bad Neustadt (Saale);15:00:00;2;3808
+79433;MER2+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBB;Brannenburg;15:00:00;3;564
+86654;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFDB;Friedberg (b Augsburg);15:00:00;2;86655
+3488;SF3BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MP;München-Pasing;15:02:00;2;
+3831;;06.03.2016;93;Wende;NBKI;Bad Kissingen;15:02:00;2;3828
+4072;;06.03.2016;85;Fremdeinwirkung;NPL;Plattling;15:02:00;2;
+6768;S7BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBAB;Baierbrunn;15:02:00;2;
+79577;MER3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBRM;Bruckmühl;15:02:00;3;
+84581;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBY;Bayreuth Hbf;15:02:00;3;
+27330;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MPKG;Pocking;15:03:00;2;27329
+57310;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MDT;Donauwörth;15:04:00;4;84362
+58522;RB53FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNP;Neuhaus (Pegnitz);15:04:00;3;5286
+58805;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSDF;Siegelsdorf;15:05:00;3;
+86744;;06.03.2016;51;Antrag EVU;MEB;Eichstätt Bahnhof;15:06:00;3;86744
+22531;RE/RB5-;06.03.2016;24;Bahnübergangssicherungsanlagen;THDM;Heidenheim-Mergelstetten;15:07:00;4;
+19918;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NAN;Ansbach;15:08:00;2;
+22724;RB7-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TF  R;Friedrichshafen Gbf;15:09:00;2;
+27482;;06.03.2016;57;Keine Meldung durch EVU;MHFG;Hufschlag Abzw;15:09:00;2;27482
+6466;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGF;Grafrath;15:09:00;2;
+4072;;06.03.2016;85;Fremdeinwirkung;NPL;Plattling;15:10:00;6;
+4649;RE601-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FFOR;Forsthaus                    (Frankfurt);15:11:00;2;1653
+59156;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRS;Reichertshausen (Ilm);15:11:00;3;622
+6879;S8BY+;06.03.2016;93;Wende;MHI;Herrsching;15:11:00;6;6864
+4616;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNAN;Nantenbach;15:13:00;2;626
+3488;SF3BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;15:14:00;4;
+4234;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MNHN;Nonnenhorn;15:14:00;2;
+58222;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NF;Fürth (Bay) Hbf;15:14:00;2;1124
+4614;RE60FR+;06.03.2016;90;Gefährliche Ereignisse;FH  S;Hanau Südseite;15:15:00;11;
+83931;WB1+;06.03.2016;85;Fremdeinwirkung;NPL;Plattling;15:15:00;9;
+6866;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MSH;Seefeld-Hechendorf;15:16:00;4;6879
+3754;RE41-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTG;Trebgast;15:17:00;2;
+94481;;06.03.2016;94;Anschluss;MIH;Ingolstadt Hbf;15:17:00;13;
+4027;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NRWD;Nürnberg Reichswald;15:18:00;2;
+4614;RE60FR+;06.03.2016;90;Gefährliche Ereignisse;FH  M;Hanau Mainbrücke;15:18:00;2;
+27450;;06.03.2016;94;Anschluss;MTS;Traunstein;15:20:00;3;
+3563;RE55FR+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);15:20:00;2;3023
+4072;;06.03.2016;85;Fremdeinwirkung;NOS;Osterhofen (Niederbay);15:20:00;2;
+4858;RE2BY+;06.03.2016;50;Haltezeitüberschreitung;NRH;Regensburg Hbf;15:20:00;2;4858
+4649;RE601-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FO;Offenbach (Main) Hbf;15:21:00;2;
+57569;RE31-;06.03.2016;94;Anschluss;MBU;Buchloe;15:21:00;3;
+6479;S4BY+;06.03.2016;93;Wende;MGE;Geltendorf;15:21:00;7;6466
+58053;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NSB;Rieneck Sinnberg;15:22:00;2;
+59486;RE12-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;15:23:00;2;
+6868;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MWS;Weßling (Oberbay);15:23:00;2;
+80688;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NOBW;Oberwerrn;15:23:00;2;
+84589;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;NLF;Lichtenfels;15:24:00;3;84589
+57037;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MDT;Donauwörth;15:25:00;6;2067
+79034;MER1-;06.03.2016;57;Keine Meldung durch EVU;MFL;Freilassing;15:25:00;2;79034
+84140;ALXS+;06.03.2016;54;Verkehrliche Zugvorbereitung;MH;München Hbf;15:26:00;7;84140
+3412;RB44-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNHC;Neuenreuth (b Creußen);15:28:00;2;3089
+6477;S4BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MP  W;München-Pasing West;15:28:00;2;
+6881;S8BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MHI;Herrsching;15:28:00;3;
+4771;;06.03.2016;51;Antrag EVU;NHO;Hof Hbf;15:29:00;2;3429
+58122;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;15:29:00;4;
+59288;;06.03.2016;57;Keine Meldung durch EVU;NNE;Neuenmarkt-Wirsberg;15:29:00;5;3754
+27627;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRA;Radldorf (Niederbay);15:31:00;2;
+6777;S7BY+;06.03.2016;50;Haltezeitüberschreitung;MGOI;Großhesselohe Isartalbahnhof;15:31:00;2;6777
+27331;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPKI;Pfarrkirchen;15:32:00;2;27330
+3754;RE41-;06.03.2016;51;Antrag EVU;NNE;Neuenmarkt-Wirsberg;15:32:00;2;59288
+58119;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;15:32:00;3;
+22554;RE/RB5+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TLL;Langenau (Württ);15:33:00;3;
+59157;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;15:33:00;2;
+84140;ALXS+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MP;München-Pasing;15:34:00;2;
+8957;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;15:34:00;2;
+29358;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;15:36:00;3;
+57732;;06.03.2016;94;Anschluss;MMH;Mindelheim;15:36:00;3;57412
+57911;;06.03.2016;93;Wende;MBWH;Bad Wörishofen;15:36:00;4;57942
+22813;RB8-;06.03.2016;64;Triebfahrzeuge;TAT;Altshausen;15:38:00;2;22813
+3694;SF3BY+;06.03.2016;57;Keine Meldung durch EVU;NRT;Reuth (b Erbendorf);15:38:00;2;3694
+4026;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);15:38:00;2;
+57827;;06.03.2016;94;Anschluss;MKFG;Kaufering;15:39:00;5;3488
+5420;RE12-;06.03.2016;19;Sonstiges Betrieb Netz;MMW;Mittenwald;15:40:00;2;
+3231;IRE5-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TNS;Niederstotzingen;15:41:00;2;
+4027;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);15:41:00;2;
+6779;S7BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBAB;Baierbrunn;15:41:00;2;
+3489;SF3BY-;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;15:42:00;2;3489
+84580;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBY;Bayreuth Hbf;15:42:00;2;
+4649;RE601-;06.03.2016;90;Gefährliche Ereignisse;FH  M;Hanau Mainbrücke;15:43:00;12;
+6870;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MWS;Weßling (Oberbay);15:43:00;2;
+22339;RE3S-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TMG;Mengen;15:44:00;2;3266
+57114;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MP;München-Pasing;15:44:00;2;514
+57187;RE77-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGZB;Günzburg;15:44:00;3;
+3025;RE53+;06.03.2016;54;Verkehrliche Zugvorbereitung;NN;Nürnberg Hbf;15:45:00;3;3025
+86540;BRB4-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MWH;Weilheim (Oberbay);15:45:00;2;
+22668;RB6-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TBI;Biberach (Riß);15:46:00;10;3047
+4649;RE601-;06.03.2016;90;Gefährliche Ereignisse;FH  S;Hanau Südseite;15:46:00;2;
+57501;RE36-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGF;Grafrath;15:46:00;2;
+57529;RE31-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTHB;Türkheim (Bay) Bahnhof;15:46:00;2;57911
+59156;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MIN;Ingolstadt Nord;15:46:00;2;
+27163;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;15:47:00;2;
+57187;RE77-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGZB;Günzburg;15:47:00;2;5174
+84140;ALXS+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;15:47:00;5;
+3560;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);15:48:00;5;
+6472;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;15:48:00;5;84140
+3563;RE55FR+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;15:49:00;3;3563
+84580;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBI;Bindlach;15:49:00;3;
+86662;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;15:49:00;3;219
+57980;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLLF;Lagerlechfeld;15:51:00;4;57827
+59289;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NH;Harsdorf;15:51:00;3;
+6577;S6BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MMDN;München Donnersbergerbrücke;15:51:00;5;6777
+6777;S7BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MHAB;München Hackerbrücke;15:51:00;6;6777
+83932;WB1-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NDG;Deggendorf Hbf;15:51:00;7;83931
+57828;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;15:52:00;4;
+63057;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;15:52:00;2;
+6879;S8BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MMHG;München Hirschgarten             (Plang);15:52:00;2;
+6179;S1BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;ML;München-Laim Pbf;15:53:00;2;6879
+6279;S2BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MMDN;München Donnersbergerbrücke;15:53:00;5;6777
+86537;BRB4+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;15:53:00;2;
+3231;IRE5-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TU  O;Ulm Hbf Em Ost;15:56:00;2;19227
+58121;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NAN;Ansbach;15:56:00;2;
+6578;S6BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MSTH;München-Steinhausen;15:56:00;0;
+6779;S7BY+;06.03.2016;50;Haltezeitüberschreitung;MGOI;Großhesselohe Isartalbahnhof;15:57:00;6;6779
+84141;ALXS-;06.03.2016;94;Anschluss;MBU;Buchloe;15:57:00;2;
+79734;;06.03.2016;57;Keine Meldung durch EVU;NRH;Regensburg Hbf;15:59:00;3;79734
+3697;RE21-;06.03.2016;57;Keine Meldung durch EVU;NHOB;Wunsiedel-Holenbrunn;16:01:00;2;3697
+58050;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;16:01:00;3;1124
+80690;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSST;Schweinfurt Stadt;16:02:00;2;47160
+3025;RE53+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHR;Hersbruck (rechts Pegnitz);16:03:00;2;
+3232;IRE5+;06.03.2016;93;Wende;TU;Ulm Hbf;16:03:00;3;3231
+22665;RB6+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TLM;Laupheim Stadt;16:04:00;2;22668
+3889;;06.03.2016;50;Haltezeitüberschreitung;MM;Memmingen;16:04:00;3;3889
+4077;;06.03.2016;94;Anschluss;NPL;Plattling;16:04:00;3;83931
+57064;;06.03.2016;50;Haltezeitüberschreitung;MH;München Hbf;16:05:00;2;57064
+86663;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAHZ;Augsburg-Hochzoll;16:05:00;4;
+23589;;06.03.2016;51;Antrag EVU;NWH;Würzburg Hbf;16:06:00;3;23589
+5427;RE12+;06.03.2016;93;Wende;MGP;Garmisch-Partenkirchen;16:07:00;5;5420
+84201;AG1+;06.03.2016;58;Verkehrliches Personal EVU;NRH;Regensburg Hbf;16:08:00;7;84201
+5522;RB39A+;06.03.2016;95;Flügeln;MGP;Garmisch-Partenkirchen;16:09:00;6;
+83933;WB1+;06.03.2016;54;Verkehrliche Zugvorbereitung;NPL;Plattling;16:09:00;3;83933
+27627;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MNFR;Neufahrn (Niederbay);16:10:00;4;27627
+4074;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPL;Plattling;16:10:00;5;27
+6281;S2BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MMDN;München Donnersbergerbrücke;16:10:00;3;
+86748;;06.03.2016;51;Antrag EVU;MEB;Eichstätt Bahnhof;16:10:00;7;86748
+4617;RE60FR-;06.03.2016;64;Triebfahrzeuge;FKLM;Kahl (Main);16:11:00;6;4617
+84112;ALXN+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MAKN;München Kanal;16:12:00;3;
+6780;S7BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MNB;Neubiberg;16:13:00;3;6777
+84115;ALXN-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MNFR;Neufahrn (Niederbay);16:13:00;2;27627
+94366;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MNFR;Neufahrn (Niederbay);16:15:00;3;27627
+59101;;06.03.2016;57;Keine Meldung durch EVU;NPLF;Pleinfeld;16:16:00;2;59101
+57114;;06.03.2016;50;Haltezeitüberschreitung;MAHA;Augsburg Haunstetterstraße;16:18:00;2;57114
+58224;;06.03.2016;64;Triebfahrzeuge;NN;Nürnberg Hbf;16:20:00;15;58224
+86534;BRB4-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;16:20:00;3;2062
+3214;IRE3+;06.03.2016;60;Umlauf-Einsatzplanung;TU  F;Ulm-Söflingen;16:21:00;2;3214
+22533;RE/RB5-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TSON;Sontheim-Brenz;16:22:00;2;3232
+3565;RE54+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);16:22:00;4;3025
+6782;S7BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHSB;Höhenkirchen-Siegertsbrunn;16:23:00;2;6777
+6883;S8BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MWKR;München-Westkreuz;16:23:00;3;
+6476;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;16:24:00;3;
+84364;AG2+;06.03.2016;93;Wende;MRFD;Rohrenfeld;16:24:00;4;
+6485;S4BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGF;Grafrath;16:25:00;3;
+79732;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRT;Reuth (b Erbendorf);16:26:00;2;3697
+6483;S4BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MP  W;München-Pasing West;16:27:00;3;
+6783;S7BY+;06.03.2016;50;Haltezeitüberschreitung;MHRK;Höllriegelskreuth;16:27:00;2;6783
+86671;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSHN;Schrobenhausen;16:30:00;2;86662
+4991;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;16:31:00;3;
+27629;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRA;Radldorf (Niederbay);16:32:00;2;84201
+57056;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMTG;Mertingen Bahnhof;16:32:00;2;2062
+4034;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPF;Pfaffenhofen (Ilm);16:33:00;4;1522
+81024;;06.03.2016;57;Keine Meldung durch EVU;NHO;Hof Hbf;16:33:00;2;81024
+84202;AG1-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRA;Radldorf (Niederbay);16:34:00;2;84201
+84364;AG2+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MUHN;Unterhausen (Bay);16:34:00;2;
+22535;RE/RB5-;06.03.2016;60;Umlauf-Einsatzplanung;TA;Aalen;16:35:00;2;22535
+3022;RE53-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NVK;Vilseck;16:35:00;6;3025
+5491;;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;16:35:00;2;5491
+27626;;06.03.2016;94;Anschluss;NST;Straubing;16:36:00;3;84201
+4649;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NGM;Gemünden (Main);16:36:00;2;
+57414;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;16:36:00;2;
+6779;S7BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MPER;München-Perlach;16:36:00;5;6782
+4619;RE60FR-;06.03.2016;50;Haltezeitüberschreitung;FF;Frankfurt (Main) Hbf;16:37:00;3;4619
+57648;;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;16:37:00;2;57648
+84595;;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;16:37:00;2;84595
+57671;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MATS;Altstädten (Allgäu);16:38:00;2;84163
+3562;SF3BY+;06.03.2016;57;Keine Meldung durch EVU;NNS;Neukirchen (b Sulzbach-Rosenberg);16:39:00;3;3562
+4030;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);16:39:00;2;
+4029;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);16:40:00;2;
+5773;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NROD;Roding;16:41:00;6;352
+59381;RE40FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NF;Fürth (Bay) Hbf;16:41:00;2;1584
+59644;RB121B-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MST;Starnberg;16:41:00;2;
+22378;RB3+;06.03.2016;84;Behörden;TU  F;Ulm-Söflingen;16:42:00;5;22378
+6478;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;16:43:00;2;
+3027;RE53+;06.03.2016;54;Verkehrliche Zugvorbereitung;NN;Nürnberg Hbf;16:44:00;2;3027
+94365;;06.03.2016;50;Haltezeitüberschreitung;NSL;Saal (Donau);16:44:00;2;94365
+27165;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;16:45:00;2;
+79033;MER1+;06.03.2016;50;Haltezeitüberschreitung;MH;München Hbf;16:46:00;2;79033
+20880;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;16:47:00;3;84419
+22865;RB8A+;06.03.2016;50;Haltezeitüberschreitung;TBWA;Bad Waldsee;16:47:00;3;22865
+4617;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWI;Wiesthal;16:47:00;4;
+5431;RE12+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MGT;Gauting;16:47:00;2;
+3562;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);16:49:00;3;
+6489;S4BY+;06.03.2016;93;Wende;MGE;Geltendorf;16:52:00;2;6476
+3565;RE54+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;16:53:00;2;3565
+22339;RE3S-;06.03.2016;84;Behörden;TU  F;Ulm-Söflingen;16:54:00;10;
+22729;RB7+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TF;Friedrichshafen Stadt;16:55:00;5;3059
+84583;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHO;Hof Hbf;16:55:00;2;51717
+22339;RE3S-;06.03.2016;84;Behörden;TU  R;Ulm Rbf;16:56:00;2;22339
+4234;IRE6-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TU;Ulm Hbf;16:56:00;2;117
+4211;IRE6+;06.03.2016;94;Anschluss;TAU;Aulendorf;16:57:00;3;22865
+3773;RE41N+;06.03.2016;50;Haltezeitüberschreitung;NLF;Lichtenfels;17:00:00;2;3773
+84588;;06.03.2016;57;Keine Meldung durch EVU;NBY;Bayreuth Hbf;17:00:00;2;3471
+3213;IRE3-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TRC;Rechtenstein;17:01:00;3;3214
+6487;S4BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;17:01:00;3;
+6480;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;17:03:00;2;
+79734;;06.03.2016;57;Keine Meldung durch EVU;NWDO;Weiden (Oberpf);17:03:00;2;79734
+86752;;06.03.2016;51;Antrag EVU;MEB;Eichstätt Bahnhof;17:05:00;2;86752
+3785;RB44+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;17:06:00;2;629
+4870;RE2BY+;06.03.2016;50;Haltezeitüberschreitung;MMW;Mittenwald;17:06:00;3;4870
+84018;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NMR;Marktredwitz;17:06:00;2;
+3564;SF3BY+;06.03.2016;94;Anschluss;NSCH;Schwandorf;17:07:00;2;
+6891;S8BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MHI;Herrsching;17:07:00;2;
+79775;;06.03.2016;94;Anschluss;NSCH;Schwandorf;17:07:00;3;
+27488;;06.03.2016;57;Keine Meldung durch EVU;MHFG;Hufschlag Abzw;17:08:00;2;27488
+57049;;06.03.2016;95;Flügeln;MA;Augsburg Hbf;17:08:00;2;
+79780;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NFW;Furth im Wald;17:08:00;5;5773
+86671;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAHA;Augsburg Haunstetterstraße;17:08:00;2;
+87008;;06.03.2016;95;Flügeln;MHO;Holzkirchen;17:08:00;4;
+27629;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MNFR;Neufahrn (Niederbay);17:10:00;3;27627
+59160;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRS;Reichertshausen (Ilm);17:10:00;4;528
+3490;SF3BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MPM;Puchheim;17:11:00;2;
+4993;RE42-;06.03.2016;93;Wende;LL;Leipzig Hbf;17:11:00;2;29358
+58057;;06.03.2016;94;Anschluss;NWH;Würzburg Hbf;17:11:00;5;721
+58957;;06.03.2016;94;Anschluss;NRO;Roth;17:11:00;9;59156
+6483;S4BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MZO;Zorneding;17:11:00;2;
+3989;RE34BY-;06.03.2016;57;Keine Meldung durch EVU;MRTA;Röthenbach (Allgäu);17:12:00;4;3989
+58124;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NAN;Ansbach;17:12:00;2;
+86548;BRB4-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MPTO;Peiting Ost;17:12:00;2;
+4863;RE2BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MNFR;Neufahrn (Niederbay);17:13:00;2;27627
+6389;S3BY+;06.03.2016;50;Haltezeitüberschreitung;MMA;Maisach;17:14:00;2;6389
+80692;;06.03.2016;94;Anschluss;NS;Schweinfurt Hbf;17:14:00;3;4649
+23590;;06.03.2016;50;Haltezeitüberschreitung;TL;Lauda;17:15:00;2;23590
+22534;RE/RB5+;06.03.2016;94;Anschluss;TU;Ulm Hbf;17:16:00;3;519
+3213;IRE3-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TEH;Ehingen (Donau);17:17:00;3;22378
+3697;RE21-;06.03.2016;57;Keine Meldung durch EVU;NMXH;Maxhütte-Haidhof;17:17:00;2;3697
+3992;RE34BY+;06.03.2016;95;Flügeln;MIMS;Immenstadt;17:17:00;3;3890
+4690;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRTD;Rottendorf;17:17:00;2;
+58224;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NKN;Kitzingen;17:17:00;5;1584
+58224;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NKN;Kitzingen;17:17:00;4;1584
+84160;ALXSF+;06.03.2016;95;Flügeln;MIMS;Immenstadt;17:17:00;4;84140
+3891;RE33+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TU;Ulm Hbf;17:18:00;2;93382
+6878;S8BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MHI;Herrsching;17:18:00;2;
+3890;;06.03.2016;95;Flügeln;MIMS;Immenstadt;17:20:00;2;3992
+3567;RE55FR+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);17:22:00;4;3027
+3813;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NOBW;Oberwerrn;17:22:00;2;80692
+6889;S8BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MWKR;München-Westkreuz;17:23:00;3;
+84590;;06.03.2016;94;Anschluss;NKL;Kirchenlaibach;17:23:00;2;34345
+6480;S4BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGF;Grafrath;17:24:00;2;
+4940;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;17:25:00;3;1981
+29360;RE42+;06.03.2016;31;Bauarbeiten;UR;Rudolstadt (Thür);17:26:00;2;
+39280;;06.03.2016;95;Flügeln;NBA;Bamberg;17:27:00;2;4992
+57190;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;17:27:00;2;2264
+6682;S6BY-;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MST;Starnberg;17:27:00;2;
+79038;MER1-;06.03.2016;84;Behörden;MFL;Freilassing;17:29:00;5;
+22340;RE3S+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TBL;Blaubeuren;17:30:00;2;3213
+3490;SF3BY+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MGE;Geltendorf;17:30:00;5;
+4773;;06.03.2016;51;Antrag EVU;NHO;Hof Hbf;17:30:00;2;3431
+59311;;06.03.2016;57;Keine Meldung durch EVU;NNE;Neuenmarkt-Wirsberg;17:30:00;3;59311
+57413;RE35BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MP  W;München-Pasing West;17:33:00;2;
+22537;RE/RB5-;06.03.2016;60;Umlauf-Einsatzplanung;TA;Aalen;17:34:00;2;22537
+26477;RB32S-;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;17:34:00;2;
+29360;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;17:34:00;3;
+4870;RE2BY+;06.03.2016;61;Zugbildung durch EVU;MGP;Garmisch-Partenkirchen;17:34:00;3;4870
+79775;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NROD;Roding;17:34:00;3;79780
+79033;MER1+;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;17:35:00;2;79033
+22669;RB6+;06.03.2016;54;Verkehrliche Zugvorbereitung;TU;Ulm Hbf;17:36:00;2;
+3024;RE53-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NVK;Vilseck;17:36:00;7;3027
+3027;RE53+;06.03.2016;57;Keine Meldung durch EVU;NVK;Vilseck;17:36:00;4;3027
+352;ALXNP-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRWA;Regensburg Walhallastraße;17:37:00;2;3697
+57390;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MLNW;Langenwang (Schwab);17:38:00;2;84160
+57593;RE30AS-;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;17:38:00;2;57593
+58905;;06.03.2016;94;Anschluss;NSTN;Steinach (b Rothenburg o d Tauber);17:39:00;4;58124
+4033;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);17:40:00;2;
+4622;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;17:40:00;3;
+4870;RE2BY+;06.03.2016;61;Zugbildung durch EVU;MGP;Garmisch-Partenkirchen;17:40:00;2;4870
+79479;MER2+;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;17:40:00;2;79033
+39283;;06.03.2016;51;Antrag EVU;NWH;Würzburg Hbf;17:41:00;3;39283
+4034;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);17:41:00;2;
+4939;;06.03.2016;50;Haltezeitüberschreitung;NWH;Würzburg Hbf;17:41:00;4;4939
+57831;;06.03.2016;94;Anschluss;MKFG;Kaufering;17:41:00;7;3490
+3295;SF7BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MRTA;Röthenbach (Allgäu);17:42:00;2;84140
+57115;;06.03.2016;57;Keine Meldung durch EVU;MA;Augsburg Hbf;17:42:00;2;41563
+84592;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NKNN;Kemnath-Neustadt;17:42:00;7;
+27216;;06.03.2016;57;Keine Meldung durch EVU;MNR;Neumarkt-St Veit;17:44:00;2;27216
+3024;RE53-;06.03.2016;31;Bauarbeiten;NGAH;Großalbershof;17:44:00;2;
+58127;;06.03.2016;50;Haltezeitüberschreitung;NWH;Würzburg Hbf;17:44:00;3;4939
+84368;AG2+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRH;Regensburg Hbf;17:44:00;2;
+57571;RE31-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MAMS;Augsburg Morellstraße;17:46:00;3;
+58060;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRTD;Rottendorf;17:47:00;2;
+5291;;06.03.2016;94;Anschluss;NKL;Kirchenlaibach;17:48:00;4;84592
+84203;AG1+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPL;Plattling;17:48:00;4;62496
+63059;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;17:51:00;2;
+86678;;06.03.2016;57;Keine Meldung durch EVU;MAHA;Augsburg Haunstetterstraße;17:51:00;4;86678
+22816;RB8+;06.03.2016;50;Haltezeitüberschreitung;TBWA;Bad Waldsee;17:52:00;2;22816
+3564;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);17:52:00;5;
+57360;RE32BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBU;Buchloe;17:53:00;6;
+6995;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;17:53:00;2;
+84590;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NTG;Trebgast;17:53:00;2;
+84593;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NKL;Kirchenlaibach;17:54:00;2;
+57036;;06.03.2016;50;Haltezeitüberschreitung;MA;Augsburg Hbf;17:56:00;2;43246
+4096;;06.03.2016;57;Keine Meldung durch EVU;NPL;Plattling;17:57:00;2;4096
+59582;;06.03.2016;57;Keine Meldung durch EVU;MBKG;Bad Kohlgrub;17:57:00;2;59582
+22340;RE3S+;06.03.2016;60;Umlauf-Einsatzplanung;TRC;Rechtenstein;17:58:00;2;22340
+3392;RE37-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBLH;Blaichach (Allgäu);17:58:00;2;57390
+84204;AG1-;06.03.2016;57;Keine Meldung durch EVU;NRH;Regensburg Hbf;17:58:00;2;84204
+84142;ALXS+;06.03.2016;94;Anschluss;MKFG;Kaufering;17:59:00;3;57879
+27580;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPR;Prien a Chiemsee;18:00:00;3;
+79742;;06.03.2016;57;Keine Meldung durch EVU;NRH;Regensburg Hbf;18:00:00;3;79742
+84597;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBY;Bayreuth Hbf;18:02:00;3;84592
+22534;RE/RB5+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;THDM;Heidenheim-Mergelstetten;18:03:00;2;
+22815;RB8-;06.03.2016;94;Anschluss;TAU;Aulendorf;18:03:00;2;4236
+5493;;06.03.2016;57;Keine Meldung durch EVU;MOYM;Oy-Mittelberg;18:03:00;3;5493
+86679;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MAHZ;Augsburg-Hochzoll;18:03:00;2;
+3474;RB44-;06.03.2016;94;Anschluss;NBY;Bayreuth Hbf;18:04:00;3;84592
+79329;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBRL;Bad Reichenhall;18:04:00;2;2382
+22343;RE3S-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TRI;Riedlingen;18:05:00;4;
+39192;S1FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHS;Hartmannshof;18:05:00;2;3564
+6384;S3BY-;06.03.2016;85;Fremdeinwirkung;MMAM;Mammendorf;18:05:00;8;6393
+5431;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;18:06:00;3;
+84369;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGZB;Günzburg;18:06:00;2;1269
+5528;RB39A+;06.03.2016;95;Flügeln;MGP;Garmisch-Partenkirchen;18:08:00;4;5431
+4214;;06.03.2016;94;Anschluss;MLI;Lindau Hbf;18:09:00;3;84140
+57417;RE35BY-;06.03.2016;50;Haltezeitüberschreitung;MM;Memmingen;18:09:00;2;57417
+57912;;06.03.2016;94;Anschluss;MBU;Buchloe;18:09:00;3;
+58069;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NJS;Jossa;18:09:00;3;
+6390;S3BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MOP;München Ost Pbf;18:09:00;2;6790
+15698;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHEI;Heigenbrücken;18:10:00;3;45398
+3434;RB44-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHR O;Hersbruck (rechts Pegnitz) Ost;18:10:00;4;
+22343;RE3S-;06.03.2016;60;Umlauf-Einsatzplanung;TRC;Rechtenstein;18:13:00;3;22343
+4037;;06.03.2016;93;Wende;NN;Nürnberg Hbf;18:13:00;3;4034
+39653;S2FR+;06.03.2016;57;Keine Meldung durch EVU;NND;Nürnberg-Dutzendteich;18:14:00;2;39653
+57734;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;MIHN;Ichenhausen;18:14:00;14;57734
+6395;S3BY+;06.03.2016;85;Fremdeinwirkung;MMAM;Mammendorf;18:14:00;11;6384
+79331;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHAU;Hammerau;18:15:00;2;
+79583;MER3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBAI;Bad Aibling;18:16:00;5;84
+59104;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPF;Pfaffenhofen (Ilm);18:18:00;5;526
+4872;RE12-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKLA;Klais;18:20:00;3;
+6395;S3BY+;06.03.2016;85;Fremdeinwirkung;MMA A;Maisach Abzw;18:20:00;2;6393
+3433;RB44+;06.03.2016;95;Flügeln;NPZ;Pegnitz;18:24:00;2;
+79040;MER1-;06.03.2016;94;Anschluss;MFL;Freilassing;18:25:00;2;2382
+57119;RE77-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TU;Ulm Hbf;18:27:00;3;599
+58128;;06.03.2016;51;Antrag EVU;MTL;Treuchtlingen;18:27:00;2;58128
+79486;MER2-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MARS;Rosenheim Süd;18:28:00;5;79038
+4692;;06.03.2016;51;Antrag EVU;NBA;Bamberg;18:29:00;2;4692
+6291;S2BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MONH;Ottenhofen (Oberbay);18:29:00;2;
+23394;RE782+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen Betriebsführung);NSUZ;Sulzbach (Main);18:30:00;1;
+3215;IRE3-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TSIG;Sigmaringen;18:30:00;2;3261
+57832;;06.03.2016;85;Fremdeinwirkung;MKFG;Kaufering;18:31:00;3;
+57593;RE30AS-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;18:32:00;3;
+57514;RE36+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKFG;Kaufering;18:33:00;2;
+4622;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NHEI;Heigenbrücken;18:34:00;2;
+4993;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;18:34:00;3;
+27218;;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;18:35:00;2;27218
+22539;RE/RB5-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TA;Aalen;18:36:00;3;22534
+3026;RE53-;06.03.2016;57;Keine Meldung durch EVU;NGAH;Großalbershof;18:37:00;2;3026
+3413;RB44+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NNHC;Neuenreuth (b Creußen);18:37:00;2;
+3090;IRE1-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NNHC;Neuenreuth (b Creußen);18:38:00;2;3413
+57833;;06.03.2016;85;Fremdeinwirkung;MKFG;Kaufering;18:38:00;4;
+3216;IRE3+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TBL;Blaubeuren;18:39:00;8;22343
+4941;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;18:39:00;2;1683
+4038;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NALB;Allersberg (Rothsee);18:40:00;2;
+6899;S8BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MWS;Weßling (Oberbay);18:40:00;2;
+79437;MER1+;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;18:40:00;2;79437
+29381;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NF;Fürth (Bay) Hbf;18:41:00;2;
+58264;;06.03.2016;51;Antrag EVU;NBA;Bamberg;18:41:00;3;58264
+57194;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MALS;München Landsberger Straße;18:42:00;3;992
+4037;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);18:43:00;2;
+6888;S8BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MWS;Weßling (Oberbay);18:43:00;2;6899
+79439;MER2+;06.03.2016;95;Flügeln;MRO;Rosenheim;18:44:00;5;79437
+84121;ALXN-;06.03.2016;57;Keine Meldung durch EVU;NWDO;Weiden (Oberpf);18:45:00;2;84121
+84123;ALXN-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;18:45:00;4;3091
+22382;RB3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;THL;Herrlingen;18:46:00;3;22343
+3031;RE53+;06.03.2016;51;Antrag EVU;NN;Nürnberg Hbf;18:46:00;4;3031
+3234;IRE5+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TON;Oberkochen;18:46:00;2;22539
+3569;RE54+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;18:46:00;2;3569
+6190;S1BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSM;Schleißheim;18:46:00;2;48935
+3566;SF3BY+;06.03.2016;60;Umlauf-Einsatzplanung;NNS;Neukirchen (b Sulzbach-Rosenberg);18:47:00;9;3566
+57194;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MP;München-Pasing;18:47:00;2;992
+84423;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;18:48:00;3;84123
+22343;RE3S-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TU  R;Ulm Rbf;18:51:00;2;19337
+5290;;06.03.2016;95;Flügeln;NPZ;Pegnitz;18:51:00;4;3090
+57833;;06.03.2016;50;Haltezeitüberschreitung;MLLF;Lagerlechfeld;18:51:00;3;57833
+79743;;06.03.2016;57;Keine Meldung durch EVU;NNW;Neustadt (Waldnaab);18:51:00;2;79743
+59586;;06.03.2016;57;Keine Meldung durch EVU;MBKG;Bad Kohlgrub;18:57:00;2;59586
+5530;RB39A+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGP;Garmisch-Partenkirchen;18:58:00;2;5433
+79744;;06.03.2016;57;Keine Meldung durch EVU;NRH;Regensburg Hbf;18:58:00;2;79744
+58228;;06.03.2016;50;Haltezeitüberschreitung;NKN;Kitzingen;18:59:00;2;58228
+3795;RE41N+;06.03.2016;94;Anschluss;NLF;Lichtenfels;19:01:00;2;4843
+6990;S1ABY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);19:01:00;3;6190
+79585;MER3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBRM;Bruckmühl;19:02:00;2;79584
+27584;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPR;Prien a Chiemsee;19:03:00;2;
+84366;AG2+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;MDT;Donauwörth;19:04:00;2;84366
+3215;IRE3-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TRC;Rechtenstein;19:05:00;5;3216
+57286;;06.03.2016;95;Flügeln;MDT;Donauwörth;19:05:00;2;
+58129;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWN;Winterhausen;19:05:00;12;1141
+84422;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NRU;Rehau;19:05:00;6;
+58530;RB53FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNP;Neuhaus (Pegnitz);19:06:00;5;5290
+79335;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFL;Freilassing;19:06:00;2;1066
+57372;RE32BY+;06.03.2016;94;Anschluss;MA;Augsburg Hbf;19:07:00;4;599
+86760;;06.03.2016;94;Anschluss;MEB;Eichstätt Bahnhof;19:08:00;5;59104
+27633;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MNFR;Neufahrn (Niederbay);19:09:00;2;
+84116;ALXN+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MFR;Freising;19:09:00;2;6190
+58069;;06.03.2016;94;Anschluss;NWH;Würzburg Hbf;19:10:00;4;725
+357;ALXNP+;06.03.2016;54;Verkehrliche Zugvorbereitung;NSCH;Schwandorf;19:11:00;2;357
+6497;S4BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MOP;München Ost Pbf;19:11:00;2;
+3294;SF7BY+;06.03.2016;94;Anschluss;MBU;Buchloe;19:12:00;2;
+4039;;06.03.2016;93;Wende;NN;Nürnberg Hbf;19:12:00;2;4038
+4865;RE2BY-;06.03.2016;57;Keine Meldung durch EVU;MNFR;Neufahrn (Niederbay);19:13:00;2;4865
+59453;RE12+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MWH;Weilheim (Oberbay);19:13:00;2;
+4642;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNAN;Nantenbach;19:14:00;2;528
+94485;;06.03.2016;94;Anschluss;MIH;Ingolstadt Hbf;19:14:00;9;
+29376;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NJB;NJB;19:15:00;3;526
+79334;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHAU;Hammerau;19:15:00;2;79335
+8903;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;19:15:00;5;6990
+4811;RE40FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NJB;NJB;19:17:00;2;29376
+58230;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NF;Fürth (Bay) Hbf;19:17:00;5;526
+79585;MER3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBAI;Bad Aibling;19:17:00;5;24706
+20885;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NOKP;Oberkotzau;19:18:00;6;84422
+3894;;06.03.2016;95;Flügeln;MIMS;Immenstadt;19:19:00;2;
+4039;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRWD;Nürnberg Reichswald;19:19:00;2;
+22836;;06.03.2016;50;Haltezeitüberschreitung;TAI;Aichstetten;19:20:00;2;22836
+84145;ALXS-;06.03.2016;50;Haltezeitüberschreitung;MKP;Kempten (Allgäu) Hbf;19:20:00;2;84145
+3698;RE21+;06.03.2016;57;Keine Meldung durch EVU;NWRB;Wernberg;19:21:00;2;3698
+27458;;06.03.2016;51;Antrag EVU;MTS;Traunstein;19:23:00;5;27458
+3571;RE55FR+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);19:23:00;5;3031
+6395;S3BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MDS;Deisenhofen;19:23:00;3;86885
+79042;MER1-;06.03.2016;57;Keine Meldung durch EVU;MFL;Freilassing;19:23:00;2;79042
+59626;RB121B-;06.03.2016;57;Keine Meldung durch EVU;MUZ;Unterzeismering;19:24:00;2;59626
+6497;S4BY+;06.03.2016;50;Haltezeitüberschreitung;MHR;Haar;19:24:00;2;6497
+4085;;06.03.2016;64;Triebfahrzeuge;NSI;Schalding;19:25:00;3;47194
+8103;S1BY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);19:25:00;3;8903
+39282;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBA;Bamberg;19:27:00;2;4994
+57042;;06.03.2016;64;Triebfahrzeuge;MMA A;Maisach Abzw;19:29:00;13;57042
+22538;RE/RB5+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TLL;Langenau (Württ);19:31:00;2;22539
+3698;RE21+;06.03.2016;57;Keine Meldung durch EVU;NWDO;Weiden (Oberpf);19:31:00;2;3698
+3028;RE53-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NVK;Vilseck;19:33:00;4;3031
+22541;RE/RB5-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TA;Aalen;19:34:00;2;22536
+94370;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MABG;Abensberg;19:34:00;6;94485
+29362;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;19:36:00;3;
+57119;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MA;Augsburg Hbf;19:36:00;2;
+57835;;06.03.2016;94;Anschluss;MKFG;Kaufering;19:36:00;2;
+4625;RE60FR-;06.03.2016;54;Verkehrliche Zugvorbereitung;FF;Frankfurt (Main) Hbf;19:37:00;7;4625
+8302;S3BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;19:38:00;2;6395
+86935;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;19:38:00;3;
+4040;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);19:39:00;2;
+59105;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;19:41:00;3;782
+3415;RB44+;06.03.2016;54;Verkehrliche Zugvorbereitung;NN;Nürnberg Hbf;19:43:00;6;3415
+58688;;06.03.2016;51;Antrag EVU;NNA;Neustadt (Aisch) Bahnhof;19:43:00;5;58688
+22342;RE3S+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TEH;Ehingen (Donau);19:44:00;4;
+27171;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;19:44:00;2;
+4039;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);19:44:00;2;
+39474;S4FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;19:45:00;3;2060
+4626;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTHM;Thüngersheim;19:46:00;2;40570
+3698;RE21+;06.03.2016;57;Keine Meldung durch EVU;NRT;Reuth (b Erbendorf);19:48:00;3;3698
+4814;RE40FR+;06.03.2016;57;Keine Meldung durch EVU;NSFN;Bad Staffelstein;19:49:00;2;4814
+57835;;06.03.2016;50;Haltezeitüberschreitung;MLLF;Lagerlechfeld;19:49:00;2;57835
+27095;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;19:50:00;2;
+3568;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);19:51:00;7;
+39474;S4FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNSW;Nürnberg-Schweinau;19:51:00;2;2060
+3294;SF7BY+;06.03.2016;61;Zugbildung durch EVU;MKP;Kempten (Allgäu) Hbf;19:52:00;2;3294
+39194;S1FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NTRU;Forchheim Trubbachbrücke;19:53:00;2;4693
+6499;S4BY+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;MZO;Zorneding;19:53:00;2;6499
+22836;RB8+;06.03.2016;50;Haltezeitüberschreitung;TBWA;Bad Waldsee;19:54:00;2;22836
+8403;S4BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;ML;München-Laim Pbf;19:54:00;2;
+84144;ALXS+;06.03.2016;50;Haltezeitüberschreitung;MKFG;Kaufering;19:57:00;2;84144
+59312;RE41-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NLF;Lichtenfels;19:58:00;2;4993
+39477;S4FR-;06.03.2016;94;Anschluss;NAN;Ansbach;20:00:00;6;58129
+59467;RE12+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTZ;Tutzing;20:00:00;2;
+8207;S2BY+;06.03.2016;2;Pseudominuten;MRMU;Röhrmoos Üst;20:00:00;2;
+59533;RE12+;06.03.2016;57;Keine Meldung durch EVU;MH;München Hbf;20:01:00;2;59533
+3033;RE53+;06.03.2016;95;Flügeln;NHR;Hersbruck (rechts Pegnitz);20:02:00;4;3415
+86886;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSCS;Schliersee;20:02:00;3;
+79586;MER3-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBRM;Bruckmühl;20:03:00;4;
+4086;;06.03.2016;84;Behörden;MMB;Moosburg;20:04:00;6;4086
+4238;IRE6-;06.03.2016;94;Anschluss;TAU;Aulendorf;20:04:00;2;22836
+57836;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBOB;Bobingen;20:04:00;3;57835
+3814;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;20:05:00;4;
+4235;IRE6+;06.03.2016;94;Anschluss;TAU;Aulendorf;20:05:00;3;22836
+5534;RB39A+;06.03.2016;94;Anschluss;MGP;Garmisch-Partenkirchen;20:05:00;2;
+6499;S4BY+;06.03.2016;57;Keine Meldung durch EVU;MGB;Grafing Bahnhof;20:05:00;3;6499
+79587;MER3+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBRM;Bruckmühl;20:05:00;4;79586
+84209;AG1+;06.03.2016;94;Anschluss;NRH;Regensburg Hbf;20:05:00;4;
+3033;RE53+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHR O;Hersbruck (rechts Pegnitz) Ost;20:06:00;2;3415
+58863;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NF  G;Fürth (Bay) Gbf;20:06:00;1;78686
+22345;RE3S-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TRI;Riedlingen;20:07:00;5;
+22837;RB8-;06.03.2016;93;Wende;TAU;Aulendorf;20:07:00;4;22836
+57978;;06.03.2016;94;Anschluss;MA;Augsburg Hbf;20:07:00;4;57042
+57914;;06.03.2016;94;Anschluss;MBU;Buchloe;20:08:00;2;
+84371;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MNFG;Neuoffingen;20:09:00;2;
+22563;RB5-;06.03.2016;54;Verkehrliche Zugvorbereitung;TLL;Langenau (Württ);20:10:00;10;22563
+3294;SF7BY+;06.03.2016;95;Flügeln;MIMS;Immenstadt;20:10:00;2;
+27072;;06.03.2016;50;Haltezeitüberschreitung;MSDG;Schwindegg;20:11:00;2;27072
+4042;;06.03.2016;93;Wende;MIH;Ingolstadt Hbf;20:11:00;6;4039
+57042;;06.03.2016;64;Triebfahrzeuge;MA;Augsburg Hbf;20:12:00;5;86552
+58130;;06.03.2016;94;Anschluss;NAN;Ansbach;20:12:00;2;2060
+3436;RB44-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHR;Hersbruck (rechts Pegnitz);20:13:00;4;
+27385;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGB;Grafing Bahnhof;20:14:00;4;6499
+22345;RE3S-;06.03.2016;60;Umlauf-Einsatzplanung;TRC;Rechtenstein;20:15:00;2;22345
+59699;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MIH;Ingolstadt Hbf;20:15:00;5;881
+3299;SF7BY-;06.03.2016;61;Zugbildung durch EVU;MKP;Kempten (Allgäu) Hbf;20:16:00;5;3299
+8607;S6BY+;06.03.2016;50;Haltezeitüberschreitung;MST;Starnberg;20:16:00;2;8607
+39282;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRTD;Rottendorf;20:18:00;2;
+59467;RE12+;06.03.2016;84;Behörden;MWH;Weilheim (Oberbay);20:19:00;7;
+4626;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NLO;Lohr Bahnhof;20:20:00;4;
+22540;RE/RB5+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TTL;Thalfingen (b Ulm);20:21:00;2;22563
+3573;RE54+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);20:22:00;4;3033
+58865;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NMER;Markt Erlbach;20:22:00;4;
+27637;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NST;Straubing;20:23:00;2;
+4237;IRE6+;06.03.2016;84;Behörden;TP;Plochingen;20:23:00;6;
+57042;;06.03.2016;64;Triebfahrzeuge;MAOB;Augsburg-Oberhausen;20:23:00;8;57042
+57420;;06.03.2016;51;Antrag EVU;MH;München Hbf;20:23:00;3;4865
+8401;S4BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGB;Grafing Bahnhof;20:23:00;3;
+3698;RE21+;06.03.2016;57;Keine Meldung durch EVU;NOKP;Oberkotzau;20:24:00;2;3698
+4088;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;20:26:00;2;
+22342;RE3S+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TMG;Mengen;20:27:00;2;3263
+27634;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRA;Radldorf (Niederbay);20:27:00;3;84209
+58132;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;20:28:00;3;
+23396;RE782+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen Betriebsführung);NSUZ;Sulzbach (Main);20:29:00;3;
+27495;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTS;Traunstein;20:29:00;3;110
+4042;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);20:29:00;2;
+4995;RE42-;06.03.2016;31;Bauarbeiten;UZE;Zeutsch;20:29:00;2;
+4694;;06.03.2016;51;Antrag EVU;NBA;Bamberg;20:30:00;4;4694
+58129;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MTL;Treuchtlingen;20:31:00;2;
+4797;;06.03.2016;94;Anschluss;NHO;Hof Hbf;20:32:00;2;3698
+3294;SF7BY+;06.03.2016;57;Keine Meldung durch EVU;MRTA;Röthenbach (Allgäu);20:33:00;2;3294
+4215;IRE6+;06.03.2016;24;Bahnübergangssicherungsanlagen;TLW S;Lauph Kurve Süd;20:33:00;7;
+4995;RE42-;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;20:34:00;3;
+27173;;06.03.2016;50;Haltezeitüberschreitung;MMF;Mühldorf (Oberbay);20:35:00;2;27173
+59462;RE12-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMU;Murnau;20:35:00;4;59467
+84145;ALXS-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MP  W;München-Pasing West;20:35:00;3;
+3217;IRE3-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TSIG;Sigmaringen;20:36:00;4;22342
+81028;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHO;Hof Hbf;20:37:00;2;4797
+22543;RE/RB5-;06.03.2016;50;Haltezeitüberschreitung;TA;Aalen;20:38:00;3;22543
+27073;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSB;Markt Schwaben;20:38:00;2;27072
+57196;;06.03.2016;57;Keine Meldung durch EVU;MH;München Hbf;20:38:00;2;57196
+8308;S3BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;20:39:00;3;
+19928;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;20:40:00;3;1580
+57320;;06.03.2016;64;Triebfahrzeuge;MSTW;Meitingen Stahlwerk;20:40:00;2;57042
+79781;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NROD;Roding;20:40:00;3;350
+84123;ALXN-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NRH;Regensburg Hbf;20:40:00;2;
+8408;S4BY-;06.03.2016;64;Triebfahrzeuge;MGB;Grafing Bahnhof;20:41:00;2;
+4627;RE60FR-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FFS A;Frankfurt (Main) Süd Abstellbahnhof;20:42:00;2;
+4813;RE40FR-;06.03.2016;51;Antrag EVU;NBA;Bamberg;20:42:00;4;4813
+57418;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TLK;Leutkirch;20:42:00;3;22837
+79090;MER2-;06.03.2016;50;Haltezeitüberschreitung;MRO;Rosenheim;20:43:00;11;41882
+27634;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NST;Straubing;20:44:00;2;
+4042;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NALB;Allersberg (Rothsee);20:45:00;2;
+27131;;06.03.2016;64;Triebfahrzeuge;MMF;Mühldorf (Oberbay);20:46:00;9;27131
+58810;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NJB;NJB;20:46:00;3;
+8205;S2BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSB;Markt Schwaben;20:46:00;3;27072
+84118;ALXN+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;20:46:00;2;
+20884;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NHO;Hof Hbf;20:48:00;4;
+79090;MER2-;06.03.2016;50;Haltezeitüberschreitung;MGKU;Großkarolinenfeld                  (Üst);20:48:00;2;41882
+3570;SF3BY+;06.03.2016;95;Flügeln;NNS;Neukirchen (b Sulzbach-Rosenberg);20:49:00;5;
+59161;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MBAE;Baar-Ebenhausen                  (Plang);20:49:00;2;
+79489;MER2+;06.03.2016;50;Haltezeitüberschreitung;MBB;Brannenburg;20:49:00;2;43809
+94374;;06.03.2016;61;Zugbildung durch EVU;NRH;Regensburg Hbf;20:49:00;3;94374
+3244;RB7-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TMAN;Friedrichshafen-Manzell;20:51:00;5;3053
+8913;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;20:52:00;2;
+57516;RE36+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBU;Buchloe;20:53:00;3;
+58233;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;20:53:00;6;2903
+58233;;06.03.2016;64;Triebfahrzeuge;NWH;Würzburg Hbf;20:53:00;5;1685
+29378;;06.03.2016;19;Sonstiges Betrieb Netz;NBA;Bamberg;20:55:00;2;
+84123;ALXN-;06.03.2016;31;Bauarbeiten;NKOE;Köfering;20:56:00;1;
+59594;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MBKG;Bad Kohlgrub;20:57:00;2;
+22737;RB7+;06.03.2016;94;Anschluss;TF;Friedrichshafen Stadt;20:58:00;5;3053
+58133;;06.03.2016;64;Triebfahrzeuge;NWH;Würzburg Hbf;20:58:00;17;58133
+4627;RE60FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FH  S;Hanau Südseite;20:59:00;2;25148
+57327;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MDT;Donauwörth;21:01:00;2;
+58073;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NWH;Würzburg Hbf;21:01:00;3;
+57046;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;21:02:00;2;1141
+4235;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MLI;Lindau Hbf;21:03:00;2;3294
+8706;S7BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHP;München Heimeranplatz;21:03:00;3;86
+8709;S7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHP;München Heimeranplatz;21:03:00;1;
+27136;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMK;Marktl;21:05:00;4;27131
+8313;S3BY+;06.03.2016;57;Keine Meldung durch EVU;MMAM;Mammendorf;21:05:00;2;8313
+84116;ALXN+;06.03.2016;50;Haltezeitüberschreitung;NSCH;Schwandorf;21:05:00;2;84116
+84123;ALXN-;06.03.2016;31;Bauarbeiten;MEGM;Eggmühl;21:05:00;2;
+4866;RE2BY+;06.03.2016;31;Bauarbeiten;MEGM;Eggmühl;21:06:00;5;
+22868;RB8B+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MM;Memmingen;21:07:00;4;
+84211;AG1+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NROS;Burgweinting;21:07:00;2;
+8609;S6BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMDN;München Donnersbergerbrücke;21:07:00;2;
+57654;;06.03.2016;94;Anschluss;MM;Memmingen;21:09:00;4;
+57655;;06.03.2016;94;Anschluss;MM;Memmingen;21:09:00;3;
+8211;S2BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMDN;München Donnersbergerbrücke;21:09:00;2;8609
+350;ALXNP-;06.03.2016;54;Verkehrliche Zugvorbereitung;NSCH;Schwandorf;21:10:00;4;350
+8207;S2BY+;06.03.2016;57;Keine Meldung durch EVU;MSB;Markt Schwaben;21:10:00;2;8207
+57535;RE31-;06.03.2016;94;Anschluss;MM;Memmingen;21:11:00;4;
+84147;ALXS-;06.03.2016;57;Keine Meldung durch EVU;MKP;Kempten (Allgäu) Hbf;21:11:00;2;84147
+27639;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NSNH;Sand (Niederbay) Hafen;21:12:00;2;
+58234;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NF  G;Fürth (Bay) Gbf;21:12:00;2;
+58860;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSDF;Siegelsdorf;21:12:00;2;
+79589;MER3+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MBAI;Bad Aibling;21:12:00;2;
+3399;RE37+;06.03.2016;93;Wende;MLI;Lindau Hbf;21:13:00;6;3294
+4629;RE60FR-;06.03.2016;50;Haltezeitüberschreitung;FF;Frankfurt (Main) Hbf;21:13:00;5;1073
+4628;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNAN;Nantenbach;21:15:00;3;
+79090;MER2-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MWTR;München-Waldtrudering;21:15:00;2;41882
+86708;;06.03.2016;61;Zugbildung durch EVU;MAI;Aichach;21:15:00;2;86708
+3296;SF7BY+;06.03.2016;94;Anschluss;MBU;Buchloe;21:16:00;2;
+4867;RE2BY-;06.03.2016;31;Bauarbeiten;NKOE;Köfering;21:16:00;15;
+58234;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NF;Fürth (Bay) Hbf;21:16:00;2;522
+4866;RE2BY+;06.03.2016;31;Bauarbeiten;NOT;Obertraubling;21:17:00;2;
+4629;RE60FR-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FMST;Frankfurt Main-Neckar-Brücke;21:18:00;3;292
+22542;RB5+;06.03.2016;94;Anschluss;TU;Ulm Hbf;21:20:00;4;691
+4043;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NRWD;Nürnberg Reichswald;21:20:00;4;727
+22346;RB3+;06.03.2016;94;Anschluss;TU;Ulm Hbf;21:21:00;4;691
+3897;RE33+;06.03.2016;94;Anschluss;TU;Ulm Hbf;21:21:00;2;691
+94487;;06.03.2016;94;Anschluss;MIH;Ingolstadt Hbf;21:21:00;5;
+3817;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NOBW;Oberwerrn;21:22:00;1;
+22547;RE/RB5-;06.03.2016;60;Umlauf-Einsatzplanung;TGL;Goldshöfe;21:23:00;2;22547
+57193;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;21:23:00;2;1
+57954;;06.03.2016;94;Anschluss;MTHB;Türkheim (Bay) Bahnhof;21:23:00;2;57420
+27340;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);21:24:00;2;
+57789;RB33M-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MILT;Illertissen;21:25:00;2;57645
+58624;RB531-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNKS;Neunkirchen a Sand;21:25:00;2;
+27136;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);21:27:00;2;27340
+57051;;06.03.2016;93;Wende;MDT;Donauwörth;21:27:00;13;57042
+8606;S6BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MST;Starnberg;21:27:00;2;
+4626;RE60FR+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FF;Frankfurt (Main) Hbf;21:28:00;2;1659
+27076;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MTMA;Thann-Matzbach;21:29:00;2;
+63061;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);21:30:00;2;27136
+22624;IRE6-;06.03.2016;94;Anschluss;TF;Friedrichshafen Stadt;21:31:00;3;3248
+3249;RB7+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;RLU;Ludwigshafen (Bodensee);21:31:00;2;3244
+29364;RE42+;06.03.2016;31;Bauarbeiten;UUS;Uhlstädt;21:33:00;3;
+4631;RE60FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;FMST;Frankfurt Main-Neckar-Brücke;21:34:00;2;2229
+58077;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NJS;Jossa;21:36:00;4;69536
+94374;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MND;Neustadt (Donau);21:36:00;3;94487
+27176;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);21:37:00;2;72390
+3217;IRE3-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TBL;Blaubeuren;21:37:00;2;22346
+4631;RE60FR-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;FFS A;Frankfurt (Main) Süd Abstellbahnhof;21:37:00;2;
+5498;;06.03.2016;80;Externe Einflüsse nächstes EIU;MPFS;Pfronten-Steinach;21:37:00;4;
+22543;RE/RB5-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TLL;Langenau (Württ);21:38:00;2;22542
+58233;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NNA;Neustadt (Aisch) Bahnhof;21:38:00;6;729
+4869;RE2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;21:39:00;4;2903
+27077;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHLK;Hörlkofen;21:40:00;2;27076
+39211;S1FR+;06.03.2016;59;Sonstige verkehrliche Gründe EVU;NF;Fürth (Bay) Hbf;21:40:00;4;39211
+58819;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNA;Neustadt (Aisch) Bahnhof;21:40:00;3;729
+79748;;06.03.2016;57;Keine Meldung durch EVU;NRH;Regensburg Hbf;21:40:00;2;79748
+86888;;06.03.2016;57;Keine Meldung durch EVU;MDS;Deisenhofen;21:41:00;3;86888
+27076;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHLK;Hörlkofen;21:42:00;3;27077
+59109;;06.03.2016;51;Antrag EVU;NN;Nürnberg Hbf;21:43:00;4;2903
+4043;;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;MKIG;Kinding (Altmühltal);21:44:00;3;
+4628;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NLA;Laufach;21:44:00;3;
+39287;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NRTD;Rottendorf;21:47:00;3;
+22547;RE/RB5-;06.03.2016;60;Umlauf-Einsatzplanung;TKS;Königsbronn;21:49:00;1;22547
+27396;;06.03.2016;57;Keine Meldung durch EVU;MGB;Grafing Bahnhof;21:49:00;2;27396
+58237;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;21:50:00;2;
+58275;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRTD;Rottendorf;21:51:00;2;
+350;ALXNP-;06.03.2016;31;Bauarbeiten;NKOE;Köfering;21:52:00;0;39668
+8919;S1ABY-;06.03.2016;93;Wende;MFHT;München Flughafen Terminal;21:52:00;2;
+57244;;06.03.2016;95;Flügeln;MA;Augsburg Hbf;21:53:00;2;57046
+63061;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;21:53:00;2;
+22346;RB3+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TEH;Ehingen (Donau);21:54:00;2;
+84612;;06.03.2016;57;Keine Meldung durch EVU;NBY;Bayreuth Hbf;21:56:00;3;84612
+39485;S4FR-;06.03.2016;94;Anschluss;NAN;Ansbach;21:58:00;4;58133
+4046;;06.03.2016;50;Haltezeitüberschreitung;MIH;Ingolstadt Hbf;21:58:00;2;4046
+4088;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPL;Plattling;21:59:00;2;56756
+84118;ALXN+;06.03.2016;31;Bauarbeiten;MEGM;Eggmühl;22:03:00;5;
+22864;RB8A-;06.03.2016;94;Anschluss;TAU;Aulendorf;22:04:00;3;4237
+39480;S4FR+;06.03.2016;50;Haltezeitüberschreitung;NAN;Ansbach;22:04:00;2;39480
+3575;RE54+;06.03.2016;60;Umlauf-Einsatzplanung;NIR;Irrenlohe;22:05:00;3;3575
+58492;;06.03.2016;59;Sonstige verkehrliche Gründe EVU;NF;Fürth (Bay) Hbf;22:05:00;2;58492
+86766;;06.03.2016;94;Anschluss;MEB;Eichstätt Bahnhof;22:05:00;2;59166
+57841;;06.03.2016;50;Haltezeitüberschreitung;MKFG;Kaufering;22:06:00;2;57841
+39677;S2FR+;06.03.2016;50;Haltezeitüberschreitung;NN;Nürnberg Hbf;22:07:00;3;39677
+27079;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;22:08:00;2;
+4866;RE2BY+;06.03.2016;31;Bauarbeiten;NNT;Neumarkt (Oberpf);22:08:00;3;
+4869;RE2BY-;06.03.2016;31;Bauarbeiten;NNT;Neumarkt (Oberpf);22:08:00;6;
+84213;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRH;Regensburg Hbf;22:08:00;7;2027
+39384;S3FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNT;Neumarkt (Oberpf);22:10:00;7;4866
+58236;;06.03.2016;93;Wende;NN;Nürnberg Hbf;22:10:00;4;58233
+84215;AG1+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNT;Neumarkt (Oberpf);22:10:00;4;4869
+39208;S1FR-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NERB;Erlangen-Bruck;22:11:00;2;
+79749;;06.03.2016;94;Anschluss;NSCH;Schwandorf;22:11:00;4;3575
+8717;S7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MGOI;Großhesselohe Isartalbahnhof;22:11:00;2;
+59315;;06.03.2016;57;Keine Meldung durch EVU;NSBS;Schwarzenbach (Saale);22:12:00;2;59315
+79748;;06.03.2016;94;Anschluss;NSCH;Schwandorf;22:12:00;2;3575
+79783;;06.03.2016;94;Anschluss;NSCH;Schwandorf;22:12:00;2;3575
+3574;SF3BY+;06.03.2016;93;Wende;NSCH;Schwandorf;22:14:00;3;3575
+29365;RE40FR-;06.03.2016;64;Triebfahrzeuge;NLF;Lichtenfels;22:15:00;9;29365
+39679;S2FR+;06.03.2016;84;Behörden;NRO;Roth;22:15:00;5;39668
+79093;MER2+;06.03.2016;31;Bauarbeiten;MGB;Grafing Bahnhof;22:15:00;5;
+8617;S6BY+;06.03.2016;84;Behörden;MPLU;Planegg Üst;22:16:00;10;8612
+8810;S8BY-;06.03.2016;84;Behörden;MWKR;München-Westkreuz;22:16:00;17;8810
+58236;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NJB;NJB;22:17:00;5;
+80705;;06.03.2016;31;Bauarbeiten;NGM;Gemünden (Main);22:17:00;6;
+8616;S6BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MSTH;München-Steinhausen;22:17:00;2;
+22547;RE/RB5-;06.03.2016;60;Umlauf-Einsatzplanung;TSON;Sontheim-Brenz;22:19:00;1;22547
+4695;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NJB;NJB;22:19:00;3;58819
+80702;;06.03.2016;51;Antrag EVU;NS;Schweinfurt Hbf;22:19:00;5;80702
+58819;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;22:21:00;2;1
+22349;RE3S-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TSIG;Sigmaringen;22:23:00;5;3265
+39484;S4FR+;06.03.2016;51;Antrag EVU;NN;Nürnberg Hbf;22:23:00;2;922
+57791;RB33M-;06.03.2016;50;Haltezeitüberschreitung;MILT;Illertissen;22:25:00;2;57791
+4627;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;22:26:00;2;
+58236;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NFBB;Fürth-Burgfarrnbach;22:27:00;2;
+8716;S7BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MOP;München Ost Pbf;22:27:00;2;
+8819;S8BY+;06.03.2016;84;Behörden;MWKR;München-Westkreuz;22:27:00;7;8617
+26486;RB32S+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TU;Ulm Hbf;22:29:00;2;19248
+4043;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MRBI;Rohrbach (Ilm);22:29:00;7;1685
+8316;S3BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MOP;München Ost Pbf;22:29:00;2;8716
+3574;SF3BY+;06.03.2016;57;Keine Meldung durch EVU;NAM;Amberg;22:30:00;2;3574
+27638;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRA;Radldorf (Niederbay);22:31:00;6;84213
+80762;;06.03.2016;95;Flügeln;NEBH;Ebenhausen (Unterfr);22:32:00;2;80702
+84118;ALXN+;06.03.2016;61;Zugbildung durch EVU;NRH;Regensburg Hbf;22:33:00;6;84118
+27641;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRA;Radldorf (Niederbay);22:34:00;2;
+86891;;06.03.2016;95;Flügeln;MHO;Holzkirchen;22:34:00;2;
+58236;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NSDF;Siegelsdorf;22:35:00;5;922
+3298;SF7BY+;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MA;Augsburg Hbf;22:36:00;4;56440
+86941;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MHO;Holzkirchen;22:36:00;2;86891
+22544;RE/RB5+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;TUE;Unterelchingen;22:38:00;2;22547
+22547;RE/RB5-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;TUE;Unterelchingen;22:39:00;3;22544
+4632;;06.03.2016;31;Bauarbeiten;NWH;Würzburg Hbf;22:39:00;4;
+57636;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MKMZ;Kellmünz;22:39:00;3;57791
+8823;S8BY+;06.03.2016;93;Wende;MWS;Weßling (Oberbay);22:39:00;2;8810
+39681;S2FR+;06.03.2016;84;Behörden;NRO;Roth;22:41:00;11;39668
+4630;;06.03.2016;31;Bauarbeiten;NHEI;Heigenbrücken;22:41:00;7;
+57364;RE32BY+;06.03.2016;94;Anschluss;MBIH;Biessenhofen;22:41:00;5;
+79445;MER1+;06.03.2016;95;Flügeln;MRO;Rosenheim;22:41:00;4;79093
+8912;S1ABY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);22:41:00;3;8112
+27224;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMF;Mühldorf (Oberbay);22:42:00;2;27221
+39668;S2FR-;06.03.2016;84;Behörden;NRO;Roth;22:43:00;73;39668
+57657;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MASI;Altenstadt (Iller);22:45:00;2;57636
+79447;MER1+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MH;München Hbf;22:46:00;2;27179
+8614;S6BY-;06.03.2016;50;Haltezeitüberschreitung;MST;Starnberg;22:46:00;2;8614
+4998;;06.03.2016;57;Keine Meldung durch EVU;NPR;Pressig-Rothenkirchen;22:47:00;2;4998
+39215;S1FR+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NNSE;Steinbühl;22:48:00;2;
+84120;ALXN+;06.03.2016;51;Antrag EVU;MH;München Hbf;22:48:00;4;1288
+27137;;06.03.2016;93;Wende;MMF;Mühldorf (Oberbay);22:49:00;2;27221
+4869;RE2BY-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRH;Regensburg Hbf;22:49:00;3;1
+59380;RE40FR+;06.03.2016;50;Haltezeitüberschreitung;NN;Nürnberg Hbf;22:49:00;2;59380
+84377;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MNFG;Neuoffingen;22:49:00;2;
+94376;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSL;Saal (Donau);22:49:00;3;
+84625;;06.03.2016;57;Keine Meldung durch EVU;NTG;Trebgast;22:50:00;2;84625
+27177;;06.03.2016;31;Bauarbeiten;MTLG;Tüßling;22:51:00;2;
+4631;;06.03.2016;31;Bauarbeiten;NLA;Laufach;22:51:00;24;
+57657;;06.03.2016;57;Keine Meldung durch EVU;MHMG;Heimertingen;22:54:00;2;57657
+84373;AG2-;06.03.2016;50;Haltezeitüberschreitung;NBAB;Bad Abbach;22:55:00;2;84373
+57421;RE35BY-;06.03.2016;94;Anschluss;MBU;Buchloe;22:56:00;5;
+84214;AG1-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRH;Regensburg Hbf;22:57:00;2;4869
+8923;S1ABY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MOSM;Oberschleißheim;22:57:00;3;350
+59380;RE40FR+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NVA;Vach;22:58:00;2;
+8620;S6BY-;06.03.2016;93;Wende;MSTH;München-Steinhausen;22:58:00;0;
+23398;RE781R+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen Betriebsführung);NOBN;Obernau;22:59:00;1;
+39676;S2FR-;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NNRU;Nürnberg-Reichelsdorf              (Üst);22:59:00;5;39681
+20887;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NRU;Rehau;23:00:00;2;
+3249;;06.03.2016;57;Keine Meldung durch EVU;MLI;Lindau Hbf;23:00:00;2;3249
+3439;RB44+;06.03.2016;50;Haltezeitüberschreitung;NKL;Kirchenlaibach;23:00:00;2;3439
+57053;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MAOB;Augsburg-Oberhausen;23:00:00;2;
+22627;IRE6+;06.03.2016;94;Anschluss;TAU;Aulendorf;23:03:00;3;3265
+4631;;06.03.2016;31;Bauarbeiten;NHEIW;Heigenbrücken West;23:03:00;6;
+84373;AG2-;06.03.2016;57;Keine Meldung durch EVU;NMAH;Matting Ausweiche;23:03:00;2;84373
+8723;S7BY+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MBAB;Baierbrunn;23:03:00;2;8716
+39484;S4FR+;06.03.2016;50;Haltezeitüberschreitung;NAN;Ansbach;23:04:00;2;39484
+8125;S1BY+;06.03.2016;95;Flügeln;MNF;Neufahrn (b Freising);23:04:00;2;8925
+86891;;06.03.2016;57;Keine Meldung durch EVU;MSCS;Schliersee;23:04:00;2;86891
+57843;;06.03.2016;50;Haltezeitüberschreitung;MKFG;Kaufering;23:05:00;2;57843
+27346;;06.03.2016;50;Haltezeitüberschreitung;NPA;Passau Hbf;23:06:00;3;27346
+4089;;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MLB;Langenbach (Oberbay);23:06:00;2;
+3577;RE55FR+;06.03.2016;50;Haltezeitüberschreitung;NSCH;Schwandorf;23:07:00;5;3577
+39678;S2FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NN;Nürnberg Hbf;23:07:00;6;39681
+58239;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NWH;Würzburg Hbf;23:07:00;3;2229
+39246;S1FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHS;Hartmannshof;23:08:00;6;3574
+4815;RE40FR-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;NER;Erlangen;23:09:00;8;
+4869;RE2BY-;06.03.2016;31;Bauarbeiten;NKOE;Köfering;23:10:00;6;
+8325;S3BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MMA A;Maisach Abzw;23:10:00;2;
+84118;ALXN+;06.03.2016;54;Verkehrliche Zugvorbereitung;NSCH;Schwandorf;23:10:00;2;84118
+59698;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MPF;Pfaffenhofen (Ilm);23:12:00;2;920
+29388;RE40FR+;06.03.2016;64;Triebfahrzeuge;NSFN;Bad Staffelstein;23:13:00;3;29388
+79750;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NSCH;Schwandorf;23:13:00;6;84118
+3094;IRE1-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHR O;Hersbruck (rechts Pegnitz) Ost;23:14:00;6;3574
+39388;S3FR-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NPOH;Postbauer-Heng;23:14:00;2;42912
+3095;IRE1+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHR;Hersbruck (rechts Pegnitz);23:15:00;3;
+39685;S2FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NBUU;Büchenbach                         (Üst);23:15:00;2;39676
+4868;RE2BY+;06.03.2016;31;Bauarbeiten;NOT;Obertraubling;23:15:00;2;
+8821;S8BY+;06.03.2016;31;Bauarbeiten;MDFG;München-Daglfing;23:15:00;4;8820
+8625;S6BY+;06.03.2016;50;Haltezeitüberschreitung;MST;Starnberg;23:16:00;2;8625
+3579;RE54+;06.03.2016;95;Flügeln;NHR;Hersbruck (rechts Pegnitz);23:19:00;2;3095
+57365;RE32BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMO;Marktoberdorf;23:19:00;2;
+39385;S3FR+;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNT;Neumarkt (Oberpf);23:21:00;6;48996
+4869;RE2BY-;06.03.2016;31;Bauarbeiten;MEGM;Eggmühl;23:21:00;2;
+59499;RE2BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NNT;Neumarkt (Oberpf);23:23:00;4;39385
+84621;;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;NHAL;Hallstadt (b Bamberg);23:24:00;4;1
+84120;ALXN+;06.03.2016;57;Keine Meldung durch EVU;MMB;Moosburg;23:25:00;5;84120
+3399;RE37+;06.03.2016;50;Haltezeitüberschreitung;MAMS;Augsburg Morellstraße;23:26:00;2;3399
+59297;RE41+;06.03.2016;54;Verkehrliche Zugvorbereitung;NLF;Lichtenfels;23:26:00;4;59297
+27640;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NRA;Radldorf (Niederbay);23:27:00;2;
+84149;ALXS-;06.03.2016;60;Umlauf-Einsatzplanung;MKP;Kempten (Allgäu) Hbf;23:27:00;2;84149
+84383;;06.03.2016;84;Behörden;NSBS;Schwarzenbach (Saale);23:28:00;2;
+59225;;06.03.2016;31;Bauarbeiten;NWG;Weißenburg (Bay);23:30:00;3;
+8322;S3BY-;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP;München Ost Pbf;23:31:00;2;
+8823;S8BY+;06.03.2016;31;Bauarbeiten;MDFG;München-Daglfing;23:32:00;2;
+58238;;06.03.2016;51;Antrag EVU;NN;Nürnberg Hbf;23:37:00;2;58238
+8618;S6BY-;06.03.2016;50;Haltezeitüberschreitung;MTZ;Tutzing;23:37:00;2;8618
+58279;;06.03.2016;54;Verkehrliche Zugvorbereitung;NWH;Würzburg Hbf;23:40:00;4;58279
+8623;S6BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP;München Ost Pbf;23:40:00;2;
+8225;S2BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP;München Ost Pbf;23:42:00;2;8623
+4636;;06.03.2016;31;Bauarbeiten;NWH;Würzburg Hbf;23:43:00;3;51749
+58238;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;NF  G;Fürth (Bay) Gbf;23:43:00;2;
+8623;S6BY+;06.03.2016;0;Fehlende Begründung (nur bei Leitsystemen der Betriebsführun;MOP W;München Ost Wendeanlage;23:45:00;4;
+57857;;06.03.2016;57;Keine Meldung durch EVU;MLLF;Lagerlechfeld;23:46:00;3;57857
+59109;;06.03.2016;94;Anschluss;MIH;Ingolstadt Hbf;23:47:00;11;
+84375;AG2-;06.03.2016;94;Anschluss;MIH;Ingolstadt Hbf;23:47:00;9;
+39221;S1FR+;06.03.2016;25;Anlagen Leit- und Sicherungstechnik;NER;Erlangen;23:48:00;4;
+4633;;06.03.2016;31;Bauarbeiten;NLA;Laufach;23:50:00;10;
+27223;;06.03.2016;51;Antrag EVU;MLA;Landshut (Bay) Hbf;23:53:00;13;27223
+27642;;06.03.2016;94;Anschluss;MNFR;Neufahrn (Niederbay);23:54:00;2;84120
+4636;;06.03.2016;31;Bauarbeiten;NVE;Veitshöchheim;23:55:00;6;51749
+86700;;06.03.2016;92;Zugfolge - betroffener Zug war verspätet;MIH;Ingolstadt Hbf;23:55:00;8;59109
+4632;RE60FR+;06.03.2016;51;Antrag EVU;NAH;Aschaffenburg Hbf;23:56:00;7;922
+8122;S1BY-;06.03.2016;91;Zugfolge - wegen Vorrang anderer Züge;MMCH;München-Moosach;23:57:00;2;

@@ -1,39 +1,39 @@
 package servlet;
 
-import generator.ScatterPlot3dGenerator;
+import static j2html.TagCreator.body;
+import static j2html.TagCreator.div;
+import static j2html.TagCreator.head;
+import static j2html.TagCreator.html;
+import static j2html.TagCreator.link;
+import static j2html.TagCreator.meta;
+import static j2html.TagCreator.script;
+import static j2html.TagCreator.table;
 import j2html.attributes.Attr;
 import j2html.tags.Tag;
-import static j2html.TagCreator.*;
 
+import java.awt.Color;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Set;
-import java.util.Vector;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 import util.CSVReader;
 import util.ChartJsWrapper;
-import util.Data;
+import util.Data.ChartType;
 import util.LineBarRadarData;
 import util.LineBarRadarDataset;
-import util.Data.ChartType;
-import util.DataSet;
-import util.RadarPolarPieData;
-import util.RadarPolarPieDataset;
 
 /**
  * Servlet implementation class ScatterServlet
@@ -43,13 +43,20 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
 	private static final String DOC_TYPE = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">";//transitional
-   
+	private String currentDir = null;
+	
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
     public PuenktlichkeitChartJsServlet() {
         super();
         // TODO Auto-generated constructor stub
+    }
+    
+    public void init(ServletConfig config) throws ServletException {
+    	super.init(config);
+    	currentDir = this.getServletContext().getRealPath("");
     }
 
 	/**
@@ -63,7 +70,36 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-				
+		
+		//-------------------- Colors
+		
+		Color green = new Color(0, 1, 0, 0f);
+		Color greenFill = new Color(0, 1, 0, 1f);
+		Color greenStroke = new Color(0, 1, 0, 0.8f);
+		Color greenHighlightFill = new Color(100, 250, 100, 127);
+		Color greenHighlightStroke = new Color(100, 250, 100, 127);
+		Color greenPointColor = new Color(100, 250, 100, 127);
+		Color greenPointHighlightFill = new Color(150, 250, 150, 127);
+		Color greenPointHighlightStroke = new Color(50, 150, 50, 127);
+		
+		Color red = new Color(1, 0, 0, 0f);
+		Color redFill = new Color(1, 0, 0, 1f);
+		Color redStroke = new Color(1, 0, 0, 0.8f);
+		Color redHighlightFill = new Color(250, 100, 100, 127);
+		Color redHighlightStroke = new Color(250, 100, 100, 127);
+		Color redPointColor = new Color(250, 100, 100, 127);
+		Color redPointHighlightFill = new Color(250, 150, 150, 127);
+		Color redPointHighlightStroke = new Color(150, 50, 50, 127);
+		
+		Color yellow = new Color(1, 1, 0, 0f);
+		Color yellowFill = new Color(1, 1, 0, 1f);
+		Color yellowStroke = new Color(1, 1, 0, 0.8f);
+		Color yellowHighlightFill = new Color(250, 250, 100, 127);
+		Color yellowHighlightStroke = new Color(250, 250, 100, 127);
+		Color yellowPointColor = new Color(250, 250, 100, 127);
+		Color yellowPointHighlightFill = new Color(250, 250, 150, 127);
+		Color yellowPointHighlightStroke = new Color(150, 150, 50, 127);
+		
 		// ------------------- Container
 		
 		String containerName = "chartDiv";
@@ -71,8 +107,8 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		String containerName2 = "chartDiv2";
 		
 		ChartJsWrapper wrapper = new ChartJsWrapper();
-		
-		ArrayList<String[]> dataFromCsv = CSVReader.lineChartDataFromPuenktData("D:\\Dokumente\\Uni\\WebApplications\\rails\\d3_tests\\lib\\puenkt_agM_Kw08.csv",false);
+				
+		ArrayList<String[]> dataFromCsv = CSVReader.lineChartDataFromPuenktData(currentDir+"\\puenkt_agM_Kw08.csv",false);
 		HashMap<String, Integer[]> messPunkte = new HashMap<String, Integer[]>();
 		
 		int run = 0;
@@ -116,13 +152,13 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 
 		standard.setLabel("Plan");
 		
-		standard.setFillColor(0, 250, 0, 0.2f);
-		standard.setStrokeColor(0, 250, 0, 0.8f);
-		standard.setHighlightFill(100, 250, 100, 0.5f);
-		standard.setHighlightStroke(100, 250, 100, 0.5f);
-		standard.setPointColor(100, 250, 100, 0.5f);
-		standard.setPointHighlightFill(150, 250, 150, 0.5f);
-		standard.setPointHighlightStroke(50, 150, 50, 0.5f);
+		standard.setFillColor(greenFill);
+		standard.setStrokeColor(greenStroke);
+		standard.setHighlightFill(greenHighlightFill);
+		standard.setHighlightStroke(greenHighlightStroke);
+		standard.setPointColor(greenPointColor);
+		standard.setPointHighlightFill(greenPointHighlightFill);
+		standard.setPointHighlightStroke(greenPointHighlightStroke);
 		standard.setData(dataArr);
 		datasets_standard.add(standard);
 		
@@ -138,13 +174,13 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 
 		standard.setLabel("Leicht Verspätet");
 		
-		standard.setFillColor(250, 250, 0, 0.2f);
-		standard.setStrokeColor(250, 250, 0, 0.8f);
-		standard.setHighlightFill(250, 250, 100, 0.5f);
-		standard.setHighlightStroke(250, 250, 100, 0.5f);
-		standard.setPointColor(250, 250, 100, 0.5f);
-		standard.setPointHighlightFill(250, 250, 150, 0.5f);
-		standard.setPointHighlightStroke(250, 150, 50, 0.5f);
+		standard.setFillColor(yellowFill);
+		standard.setStrokeColor(yellowStroke);
+		standard.setHighlightFill(yellowHighlightFill);
+		standard.setHighlightStroke(yellowHighlightStroke);
+		standard.setPointColor(yellowPointColor);
+		standard.setPointHighlightFill(yellowPointHighlightFill);
+		standard.setPointHighlightStroke(yellowPointHighlightStroke);
 		standard.setData(dataArr);
 		datasets_standard.add(standard);
 		
@@ -160,19 +196,19 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 
 		standard.setLabel("Verspätet");
 		
-		standard.setFillColor(250, 0, 0, 0.2f);
-		standard.setStrokeColor(250, 0, 0, 0.8f);
-		standard.setHighlightFill(250, 100, 100, 0.5f);
-		standard.setHighlightStroke(250, 100, 100, 0.5f);
-		standard.setPointColor(250, 100, 100, 0.5f);
-		standard.setPointHighlightFill(250, 100, 150, 0.5f);
-		standard.setPointHighlightStroke(250, 100, 50, 0.5f);
+		standard.setFillColor(redFill);
+		standard.setStrokeColor(redStroke);
+		standard.setHighlightFill(redHighlightFill);
+		standard.setHighlightStroke(redHighlightStroke);
+		standard.setPointColor(redPointColor);
+		standard.setPointHighlightFill(redPointHighlightFill);
+		standard.setPointHighlightStroke(redPointHighlightStroke);
 		standard.setData(dataArr);
 		datasets_standard.add(standard);
 		
 		// ------------------- Line and Bar for Zug
 		
-		dataFromCsv = CSVReader.lineChartDataFromPuenktData("D:\\Dokumente\\Uni\\WebApplications\\rails\\d3_tests\\lib\\puenkt_agM_Kw08_1.csv",true);
+		dataFromCsv = CSVReader.lineChartDataFromPuenktData(currentDir+"\\puenkt_agM_Kw08_1.csv",true);
 		HashMap<String, Integer[]> tage = new HashMap<String, Integer[]>();
 		JSONArray labels_zug = new JSONArray();
 		
@@ -217,6 +253,8 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 				tage.get(tag)[runTag] = Integer.parseInt(delta_an.split(":")[0])*3600+Integer.parseInt(delta_an.split(":")[1])*60+Integer.parseInt(delta_an.split(":")[2]);
 				runTag++;
 			} else if (delta_an.startsWith("-")){
+				tage.get(tag)[runTag] = Integer.parseInt(delta_an.split(":")[0])*3600+Integer.parseInt(delta_an.split(":")[1])*60+Integer.parseInt(delta_an.split(":")[2]);
+				tage.get(tag)[runTag] = tage.get(tag)[runTag]*-1;
 				runTag++;
 			}
 			if(delta_ab.length()>0&&!delta_ab.startsWith("-")){
@@ -224,6 +262,8 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 				tage.get(tag)[runTag] = Integer.parseInt(delta_ab.split(":")[0])*3600+Integer.parseInt(delta_ab.split(":")[1])*60+Integer.parseInt(delta_ab.split(":")[2]);
 				runTag++;
 			} else if (delta_ab.startsWith("-")){
+				tage.get(tag)[runTag] = Integer.parseInt(delta_ab.split(":")[0])*3600+Integer.parseInt(delta_ab.split(":")[1])*60+Integer.parseInt(delta_ab.split(":")[2]);
+				tage.get(tag)[runTag] = tage.get(tag)[runTag]*-1;
 				runTag++;
 			}
 			run++;
@@ -246,13 +286,13 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 
 		standard_zug.setLabel((String)tage_keys.get(0));
 
-		standard_zug.setFillColor(0, 250, 0, 0.2f);
-		standard_zug.setStrokeColor(0, 250, 0, 0.8f);
-		standard_zug.setHighlightFill(100, 250, 100, 0.5f);
-		standard_zug.setHighlightStroke(100, 250, 100, 0.5f);
-		standard_zug.setPointColor(100, 250, 100, 0.5f);
-		standard_zug.setPointHighlightFill(150, 250, 150, 0.5f);
-		standard_zug.setPointHighlightStroke(50, 150, 50, 0.5f);
+		standard_zug.setFillColor(green);
+		standard_zug.setStrokeColor(greenStroke);
+		standard_zug.setHighlightFill(greenHighlightFill);
+		standard_zug.setHighlightStroke(greenHighlightStroke);
+		standard_zug.setPointColor(greenPointColor);
+		standard_zug.setPointHighlightFill(greenPointHighlightFill);
+		standard_zug.setPointHighlightStroke(greenPointHighlightStroke);
 		standard_zug.setData(dataArr_zug);
 		datasets_standard_zug.add(standard_zug);
 
@@ -266,13 +306,13 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 
 		standard_zug.setLabel((String)tage_keys.get(1));
 
-		standard_zug.setFillColor(250, 250, 0, 0.2f);
-		standard_zug.setStrokeColor(250, 250, 0, 0.8f);
-		standard_zug.setHighlightFill(250, 250, 100, 0.5f);
-		standard_zug.setHighlightStroke(250, 250, 100, 0.5f);
-		standard_zug.setPointColor(250, 250, 100, 0.5f);
-		standard_zug.setPointHighlightFill(250, 250, 150, 0.5f);
-		standard_zug.setPointHighlightStroke(250, 150, 50, 0.5f);
+		standard_zug.setFillColor(yellow);
+		standard_zug.setStrokeColor(yellowStroke);
+		standard_zug.setHighlightFill(yellowHighlightFill);
+		standard_zug.setHighlightStroke(yellowHighlightStroke);
+		standard_zug.setPointColor(yellowPointColor);
+		standard_zug.setPointHighlightFill(yellowPointHighlightFill);
+		standard_zug.setPointHighlightStroke(yellowPointHighlightStroke);
 		standard_zug.setData(dataArr_zug);
 		datasets_standard_zug.add(standard_zug);
 
@@ -286,13 +326,13 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 
 		standard_zug.setLabel((String)tage_keys.get(2));
 
-		standard_zug.setFillColor(250, 0, 0, 0.2f);
-		standard_zug.setStrokeColor(250, 0, 0, 0.8f);
-		standard_zug.setHighlightFill(250, 100, 100, 0.5f);
-		standard_zug.setHighlightStroke(250, 100, 100, 0.5f);
-		standard_zug.setPointColor(250, 100, 100, 0.5f);
-		standard_zug.setPointHighlightFill(250, 100, 150, 0.5f);
-		standard_zug.setPointHighlightStroke(250, 100, 50, 0.5f);
+		standard_zug.setFillColor(red);
+		standard_zug.setStrokeColor(redStroke);
+		standard_zug.setHighlightFill(redHighlightFill);
+		standard_zug.setHighlightStroke(redHighlightStroke);
+		standard_zug.setPointColor(redPointColor);
+		standard_zug.setPointHighlightFill(redPointHighlightFill);
+		standard_zug.setPointHighlightStroke(redPointHighlightStroke);
 		standard_zug.setData(dataArr_zug);
 		datasets_standard_zug.add(standard_zug);
 		
@@ -322,10 +362,10 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 				.withType("text/javascript")
 				.withSrc("http://code.jquery.com/jquery-latest.min.js"));
 	    out.println(link().withRel("stylesheet").withType("text/css").withHref("css/chartbuilder.css"));
-	    out.println(script().withType("text/javascript").withSrc("js/chartjs_functions.js"));
 		
 		out.println(ChartJsWrapper.getScriptHeader());
-		
+		out.println(script().withType("text/javascript").withSrc("js/chartJsExtensions.js"));
+				
 	    out.println(head().renderCloseTag());
 	    
 	    out.println(body.renderOpenTag()); 
@@ -335,7 +375,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	    out.println(div().withId(containerName).withClass("chart"));
 	    out.println(div().withClass("divDetail").withId("divDetail"+containerName).with(
 	    		table().with(
-	    				tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
+	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
 	    				)
 	    		));
 	    
@@ -345,7 +385,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	    out.println(div().withId(containerName1).withClass("chart"));
 	    out.println(div().withClass("divDetail").withId("divDetail"+containerName1).with(
 	    		table().with(
-	    				tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
+	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
 	    				)
 	    		));
 	    
@@ -355,7 +395,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	    out.println(div().withId(containerName2).withClass("chart"));
 	    out.println(div().withClass("divDetail").withId("divDetail"+containerName2).with(
 	    		table().with(
-	    				tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
+	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Delta"))
 	    				)
 	    		));
 	    
@@ -370,6 +410,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		
 		wrapper.setData(data_standard);
 		wrapper.setContainerId(containerName);
+		wrapper.setAddLegend(true);
 		wrapper.setChartId("chart"+containerName);
 		
 		out.println(wrapper.getJsString());

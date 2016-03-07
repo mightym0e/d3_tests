@@ -3,6 +3,9 @@ package util;
 import static j2html.TagCreator.script;
 import static j2html.TagCreator.ul;
 
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 
 import j2html.tags.Tag;
@@ -28,7 +31,23 @@ public class ChartJsWrapper {
 	
 	private boolean addLegend = false;
 	
-	@SuppressWarnings("unchecked")
+	private String detailServlet = "AjaxDetailServlet";
+	
+	public static Collection<Color> generateColors(int count){
+		ArrayList<Color> ret = new ArrayList<Color>();
+		
+		for(int i = 0; i < 360; i += 360 / count) {
+
+		    float hue = i/360f;
+		    float saturation = (90 + (int)(Math.random() * 10))/100f;
+		    float lightness = (50 + (int)(Math.random() * 10))/100f;
+
+		    ret.add(Color.getHSBColor(hue, saturation, lightness));
+		}
+		
+		return ret;
+	}
+	
 	public ChartJsWrapper(){
 		this.options = new JSONObject();
 	}
@@ -107,6 +126,7 @@ public class ChartJsWrapper {
 		
 		this.options.put("legendTemplate", legend);
 		this.options.put("responsive", true);
+		this.options.put("yAxisLabel", "Test Label");
 		
 		switch (data.getChartType()) {
 			case Line:
@@ -115,8 +135,8 @@ public class ChartJsWrapper {
 				onclick.append("var holder = document.getElementById('"+this.containerId+"');"+System.getProperty("line.separator"));
 				onclick.append("holder.onclick = function(evt){"+System.getProperty("line.separator"));
 				onclick.append("    var activePoints = chart_"+this.chartId+".getPointsAtEvent(evt);"+System.getProperty("line.separator"));
-				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
-				onclick.append("    if(activePoints)showDetailData(activePoints[0], 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
+//				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
+				onclick.append("    if(activePoints)showDetailData('"+this.detailServlet+"', activePoints, 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
 				onclick.append("};"+System.getProperty("line.separator"));
 				break;      
 			case Bar:       
@@ -125,8 +145,8 @@ public class ChartJsWrapper {
 				onclick.append("var holder = document.getElementById('"+this.containerId+"');"+System.getProperty("line.separator"));
 				onclick.append("holder.onclick = function(evt){"+System.getProperty("line.separator"));
 				onclick.append("    var activePoints = chart_"+this.chartId+".getBarsAtEvent(evt);"+System.getProperty("line.separator"));
-				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
-				onclick.append("    if(activePoints)showDetailData(activePoints[0], 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
+//				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
+				onclick.append("    if(activePoints)showDetailData('"+this.detailServlet+"', activePoints, 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
 				onclick.append("};"+System.getProperty("line.separator"));
 				break;      
 			case Radar:     
@@ -140,6 +160,12 @@ public class ChartJsWrapper {
 			case Pie:       
 				chartInit += "Pie";
 				chartData += data.getDatasets().toJSONString();
+				onclick.append("var holder = document.getElementById('"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("holder.onclick = function(evt){"+System.getProperty("line.separator"));
+				onclick.append("    var activePoints = chart_"+this.chartId+".getSegmentsAtEvent(evt);"+System.getProperty("line.separator"));
+//				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
+				onclick.append("    if(activePoints)showDetailData('"+this.detailServlet+"', activePoints, 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("};"+System.getProperty("line.separator"));
 				break;      
 			case Doughnut:  
 				chartInit += "Doughnut";
@@ -165,6 +191,7 @@ public class ChartJsWrapper {
 		ret.append("canvas_"+this.chartId+".setAttribute(\"width\", \""+this.width+"\");"+System.getProperty("line.separator"));
 		ret.append("canvas_"+this.chartId+".setAttribute(\"height\", \""+this.height+"\");"+System.getProperty("line.separator"));
 		ret.append("canvas_"+this.chartId+".setAttribute(\"id\", \""+this.chartId+"\");"+System.getProperty("line.separator"));
+		ret.append("canvas_"+this.chartId+".setAttribute(\"style\", \"padding:10px\");"+System.getProperty("line.separator"));
 		
 		ret.append("document.getElementById(\""+this.containerId+"\").appendChild(canvas_"+this.chartId+");"+System.getProperty("line.separator"));
 	
@@ -181,7 +208,7 @@ public class ChartJsWrapper {
 		
 		// CLICK FUNCTION
 		
-		ret.append(onclick.toString());
+		ret.append(onclick.toString()+System.getProperty("line.separator"));
 		
 		ret.append(script.renderCloseTag()+System.getProperty("line.separator"));
 		
@@ -207,5 +234,15 @@ public class ChartJsWrapper {
 	public void setOption(String option, String value) {
 		this.options.put(option, value);
 	}
+
+	public String getDetailServlet() {
+		return detailServlet;
+	}
+
+	public void setDetailServlet(String detailServlet) {
+		this.detailServlet = detailServlet;
+	}
+	
+	
 	
 }

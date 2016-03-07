@@ -9,7 +9,7 @@
  * @param filename proposal of the name of the file inside the saveas-dialog
  * @param canvas   auxiliary canvas element, the svg element will be drawn into
  */
-function downloadPng(filename, canvas, svg, scale) {
+function getPng(filename, canvas, svg, scale) {
 
 	if (svg) {
 		var oldWidth = svg.width(), oldHeight = svg.height(), oldScale = svg.attr('transform') || '';
@@ -38,8 +38,15 @@ function downloadPng(filename, canvas, svg, scale) {
 
 	//save canvas to file
 	var dataURL = canvas.toDataURL('image/png');
-	// convert the dataURL to a blob-string
+	
 	var blob = dataURLtoBlob(dataURL);
+
+	return blob;
+};
+
+function downloadPng(filename, canvas, svg, scale) {
+
+	var blob = getPng(filename, canvas, svg, scale);
 	//call saveas-dialog
 	window.saveAs(blob, filename);
 

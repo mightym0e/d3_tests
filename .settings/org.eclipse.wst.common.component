@@ -2,6 +2,7 @@
     <wb-module deploy-name="d3_tests">
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/" source-path="/public_html"/>
+        <wb-resource deploy-path="/" source-path="/lib"/>
         <property name="context-root" value="d3_tests"/>
         <property name="java-output-path" value="/d3_tests/build/classes"/>
     </wb-module>

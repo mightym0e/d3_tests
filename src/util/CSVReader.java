@@ -105,6 +105,52 @@ public class CSVReader {
 		return ret;
 	  }
   
+  public static ArrayList<String[]> barChartDataFromPuenktData(String filename) {
+		ArrayList<String[]> ret = new ArrayList<String[]>();
+
+		String csvFile = filename;
+		BufferedReader br = null;
+		String line = "";
+		String cvsSplitBy = ";";
+
+		try {
+
+			br = new BufferedReader(new FileReader(csvFile));
+			int line_number = 0;
+			
+			while ((line = br.readLine()) != null) {
+
+				if (line_number>5) {
+					String[] data_temp = line.split(cvsSplitBy);
+					if (data_temp.length>9) {
+						String[] data = null;
+						data = new String[] { data_temp[0], data_temp[1], data_temp[2], data_temp[3], data_temp[4], data_temp[5], data_temp[6], data_temp[7], data_temp[8], data_temp[9] };
+						ret.add(data);
+					}
+				}
+				
+				line_number++;
+
+			}
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		System.out.println("Done");
+		return ret;
+	  }
+  
   public StringBuffer getJsString(ArrayList<String[]> input) throws IllegalFormatException {
 	  StringBuffer ret = new StringBuffer();
 	  ret.append("<script type=\"text/javascript\">\n");
