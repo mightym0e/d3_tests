@@ -8,7 +8,7 @@ import org.json.simple.*;
 public abstract class Data {
 
 	public enum ChartType {
-		Line,Bar,Radar,Polar,Pie,Doughnut
+		Line,Bar,Radar,Polar,Pie,Doughnut,StackedBar
 	};
 
 	private JSONArray labels;

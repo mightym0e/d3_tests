@@ -16,13 +16,16 @@ body{
   right: 0px;
 }
 
-#chartDiv{
-	padding:10px;
-}
-
 .chart{
 	width: auto;
 	float: left;
+	padding:10px;
+}
+
+.chart div{
+	height: auto;
+	width: auto;
+	padding: 10px;
 }
 
 .mainDiv{
@@ -67,5 +70,4 @@ body{
 .pie-legend{
 	color: white;
 	font-weight: bold;	
-}
 }

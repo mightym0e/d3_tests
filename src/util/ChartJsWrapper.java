@@ -1,13 +1,15 @@
 package util;
 
+import static j2html.TagCreator.div;
 import static j2html.TagCreator.script;
-import static j2html.TagCreator.ul;
+import static j2html.TagCreator.table;
 
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
+import java.util.Collections;
 
+import j2html.tags.ContainerTag;
 import j2html.tags.Tag;
 
 import org.json.simple.JSONObject;
@@ -17,6 +19,7 @@ import util.Data.ChartType;
 public class ChartJsWrapper {
 
 	private static String scriptHeader = script().withSrc("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js").render();
+//	private static String scriptHeader = script().withType("text/javascript").withSrc("js/Chart.js").render();
 	
 	private Data data;
 	
@@ -34,16 +37,19 @@ public class ChartJsWrapper {
 	private String detailServlet = "AjaxDetailServlet";
 	
 	public static Collection<Color> generateColors(int count){
+		if(count<1)throw new IllegalArgumentException("Die Anzahl der zu generierenden Farben muss größer als 0 sein.");
 		ArrayList<Color> ret = new ArrayList<Color>();
 		
 		for(int i = 0; i < 360; i += 360 / count) {
 
 		    float hue = i/360f;
-		    float saturation = (90 + (int)(Math.random() * 10))/100f;
+		    float saturation = (80 + (int)(Math.random() * 20))/100f;
 		    float lightness = (50 + (int)(Math.random() * 10))/100f;
 
 		    ret.add(Color.getHSBColor(hue, saturation, lightness));
 		}
+		
+		Collections.shuffle(ret);
 		
 		return ret;
 	}
@@ -96,12 +102,11 @@ public class ChartJsWrapper {
 		
 		StringBuffer onclick = new StringBuffer();
 		
-		JSONObject temp = null;
+		JSONObject temp = new JSONObject();
 		
 		String legend = "";
 		
-		if(data.getChartType()==ChartType.Line||data.getChartType()==ChartType.Bar||data.getChartType()==ChartType.Radar){
-			temp = new JSONObject();
+		if(data.getChartType()==ChartType.Line||data.getChartType()==ChartType.Bar||data.getChartType()==ChartType.StackedBar||data.getChartType()==ChartType.Radar){
 			temp.put("labels", data.getLabels());
 			temp.put("datasets", data.getDatasets());
 			legend = "<ul class=\"<%=name.toLowerCase()%>-legend\">"
@@ -149,6 +154,17 @@ public class ChartJsWrapper {
 				onclick.append("    if(activePoints)showDetailData('"+this.detailServlet+"', activePoints, 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
 				onclick.append("};"+System.getProperty("line.separator"));
 				break;      
+			case StackedBar:       
+				chartInit += "StackedBar";
+				chartData += temp.toJSONString();
+				this.options.put("stacked", "true");
+				onclick.append("var holder = document.getElementById('"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("holder.onclick = function(evt){"+System.getProperty("line.separator"));
+				onclick.append("    var activePoints = chart_"+this.chartId+".getBarsAtEvent(evt);"+System.getProperty("line.separator"));
+//				onclick.append("    console.log(activePoints);"+System.getProperty("line.separator"));
+				onclick.append("    if(activePoints)showDetailData('"+this.detailServlet+"', activePoints, 'divDetail"+this.containerId+"');"+System.getProperty("line.separator"));
+				onclick.append("};"+System.getProperty("line.separator"));
+				break;
 			case Radar:     
 				chartInit += "Radar";
 				chartData += temp.toJSONString();
@@ -243,6 +259,18 @@ public class ChartJsWrapper {
 		this.detailServlet = detailServlet;
 	}
 	
-	
+	public StringBuffer getDetailDiv(){
+		StringBuffer ret = new StringBuffer();
+		
+		ContainerTag div = div().withClass("divDetail").withId("divDetail"+this.containerId).with(
+	    		table().with(
+	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
+	    				)
+	    		);
+		
+		ret.append(div);
+		
+		return ret;
+	}
 	
 }

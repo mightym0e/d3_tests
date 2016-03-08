@@ -9,6 +9,7 @@ import static j2html.TagCreator.meta;
 import static j2html.TagCreator.script;
 import static j2html.TagCreator.table;
 import static j2html.TagCreator.span;
+import static j2html.TagCreator.button;
 import j2html.attributes.Attr;
 import j2html.tags.Tag;
 
@@ -169,8 +170,16 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 	    out.println(link().withRel("stylesheet").withType("text/css").withHref("css/chartbuilder.css"));
 		
 		out.println(ChartJsWrapper.getScriptHeader());
+		out.println(script().withType("text/javascript").withSrc("http://gabelerner.github.io/canvg/rgbcolor.js"));
+		out.println(script().withType("text/javascript").withSrc("http://gabelerner.github.io/canvg/StackBlur.js"));
+		out.println(script().withType("text/javascript").withSrc("http://gabelerner.github.io/canvg/canvg.js"));
+		out.println(script().withType("text/javascript").withSrc("js/jquery.pnglink.js"));
+		out.println(script().withType("text/javascript").withSrc("js/FileSaver.js"));
+		out.println(script().withType("text/javascript").withSrc("js/jszip.js"));
+		out.println(script().withType("text/javascript").withSrc("js/dom-to-image.js"));
+		out.println(script().withType("text/javascript").withSrc("js/svgConversion.js"));		
 		out.println(script().withType("text/javascript").withSrc("js/chartJsExtensions.js"));
-				
+		
 	    out.println(head().renderCloseTag());
 	    
 	    out.println(body.renderOpenTag()); 
@@ -231,6 +240,8 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 		
 		out.println(wrapper.getJsString());
 	    
+		out.println(button().attr("onclick", "downloadAll()").withText("Download"));
+		
 		// -------------------
 		
 	    out.println(body.renderCloseTag());

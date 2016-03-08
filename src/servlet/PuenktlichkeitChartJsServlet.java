@@ -365,6 +365,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		
 		out.println(ChartJsWrapper.getScriptHeader());
 		out.println(script().withType("text/javascript").withSrc("js/chartJsExtensions.js"));
+		out.println(script().withType("text/javascript").withSrc("js/Chart.StackedBar.js"));
 				
 	    out.println(head().renderCloseTag());
 	    
@@ -416,7 +417,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		out.println(wrapper.getJsString());
 		
 		data_standard = new LineBarRadarData();
-		data_standard.setChartType(ChartType.Bar);
+		data_standard.setChartType(ChartType.StackedBar);
 		data_standard.setDatasets(datasets_standard);
 		data_standard.setLabels(labels);
 		
