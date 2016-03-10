@@ -164,21 +164,9 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 		out.println(meta().attr(Attr.HTTP_EQUIV, "cache-control").attr(Attr.CONTENT, "no-cache").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "expires").attr(Attr.CONTENT, "0").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "pragma").attr(Attr.CONTENT, "no-cache").render());
-		out.println(script()
-				.withType("text/javascript")
-				.withSrc("http://code.jquery.com/jquery-latest.min.js"));
 	    out.println(link().withRel("stylesheet").withType("text/css").withHref("css/chartbuilder.css"));
 		
 		out.println(ChartJsWrapper.getScriptHeader());
-		out.println(script().withType("text/javascript").withSrc("http://gabelerner.github.io/canvg/rgbcolor.js"));
-		out.println(script().withType("text/javascript").withSrc("http://gabelerner.github.io/canvg/StackBlur.js"));
-		out.println(script().withType("text/javascript").withSrc("http://gabelerner.github.io/canvg/canvg.js"));
-		out.println(script().withType("text/javascript").withSrc("js/jquery.pnglink.js"));
-		out.println(script().withType("text/javascript").withSrc("js/FileSaver.js"));
-		out.println(script().withType("text/javascript").withSrc("js/jszip.js"));
-		out.println(script().withType("text/javascript").withSrc("js/dom-to-image.js"));
-		out.println(script().withType("text/javascript").withSrc("js/svgConversion.js"));		
-		out.println(script().withType("text/javascript").withSrc("js/chartJsExtensions.js"));
 		
 	    out.println(head().renderCloseTag());
 	    
@@ -197,29 +185,11 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 	    out.println(div().renderCloseTag());
 	    out.println(div().withClass("mainDiv").renderOpenTag()); 
 	    
-	    out.println(span().withText("Absolut"));
-	    out.println(div().withId(containerName1).withClass("chart"));
-	    out.println(div().withClass("divDetail").withId("divDetail"+containerName1).with(
-	    		table().with(
-	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
-	    				)
-	    		));
+	    //---------------------------Chart1
 	    
-	    out.println(div().renderCloseTag());
-	    out.println(div().withClass("mainDiv").renderOpenTag()); 
-	    
-	    out.println(div().withId(containerName2).withClass("chart"));
-	    out.println(div().withClass("divDetail").withId("divDetail"+containerName2).with(
-	    		table().with(
-	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Delta"))
-	    				)
-	    		));
-	    
-	    out.println(div().renderCloseTag());
-		
-		//---------------------------Chart
-		
 	    wrapper.setAddLegend(true);
+	    wrapper.setAddDownload(true);
+	    wrapper.setAddLegendInteraction(true);
 	    RadarPolarPieData data = new RadarPolarPieData();
 		data.setChartType(ChartType.Pie);
 		data.setDatasets(datasets);
@@ -228,7 +198,16 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 		wrapper.setContainerId(containerName);
 		wrapper.setChartId("chart"+containerName);
 		
+	    out.println(span().withText("Absolut"));
+	    out.println(div().withId(containerName1).withClass("chart"));
+		
+	    out.println(wrapper.getDetailDiv());
+	    
 		out.println(wrapper.getJsString());
+		
+		out.println(div().renderCloseTag());
+	    
+		//---------------------------Chart2
 		
 		data = new RadarPolarPieData();
 		data.setChartType(ChartType.Pie);
@@ -238,10 +217,16 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 		wrapper.setContainerId(containerName1);
 		wrapper.setChartId("chart"+containerName1);
 		
-		out.println(wrapper.getJsString());
+		out.println(div().withClass("mainDiv").renderOpenTag()); 
 	    
-		out.println(button().attr("onclick", "downloadAll()").withText("Download"));
+	    out.println(div().withId(containerName2).withClass("chart"));
+	    
+	    out.println(wrapper.getDetailDiv());
 		
+		out.println(wrapper.getJsString());		
+		
+	    out.println(div().renderCloseTag());
+
 		// -------------------
 		
 	    out.println(body.renderCloseTag());

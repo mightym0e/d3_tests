@@ -5,20 +5,23 @@ import static j2html.TagCreator.script;
 import static j2html.TagCreator.table;
 
 import java.awt.Color;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Properties;
 
 import j2html.tags.ContainerTag;
 import j2html.tags.Tag;
 
+import org.json.simple.JSONAware;
 import org.json.simple.JSONObject;
 
 import util.Data.ChartType;
 
 public class ChartJsWrapper {
 
-	private static String scriptHeader = script().withSrc("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js").render();
 //	private static String scriptHeader = script().withType("text/javascript").withSrc("js/Chart.js").render();
 	
 	private Data data;
@@ -34,6 +37,12 @@ public class ChartJsWrapper {
 	
 	private boolean addLegend = false;
 	
+	private boolean addDownload = false;
+	
+	private boolean addLegendInteraction = false;
+	
+	private boolean alwaysShowTooltip = false;
+	
 	private String detailServlet = "AjaxDetailServlet";
 	
 	public static Collection<Color> generateColors(int count){
@@ -44,7 +53,7 @@ public class ChartJsWrapper {
 
 		    float hue = i/360f;
 		    float saturation = (80 + (int)(Math.random() * 20))/100f;
-		    float lightness = (50 + (int)(Math.random() * 10))/100f;
+		    float lightness = (25 + (int)(Math.random() * 50))/100f;
 
 		    ret.add(Color.getHSBColor(hue, saturation, lightness));
 		}
@@ -59,7 +68,28 @@ public class ChartJsWrapper {
 	}
 
 	public static String getScriptHeader() {
-		return scriptHeader;
+		
+		StringBuffer scriptHeaderStr = new StringBuffer();
+		Properties props = new Properties();
+		InputStream input = null;
+		
+		try {
+			String resource = ChartJsWrapper.class.getResource("../files.properties").toString();
+			resource = resource.toString().substring("file:/".length(),resource.length());
+			input = new FileInputStream(resource);
+			props.load(input);
+			
+			scriptHeaderStr.append(script().withType("text/javascript").withSrc(props.getProperty("jquery")));
+			scriptHeaderStr.append(script().withType("text/javascript").withSrc(props.getProperty("chartjs")));
+			scriptHeaderStr.append(script().withType("text/javascript").withSrc(props.getProperty("domtoimage")));
+			scriptHeaderStr.append(script().withType("text/javascript").withSrc(props.getProperty("chartJsExtensions")));
+			scriptHeaderStr.append(script().withType("text/javascript").withSrc(props.getProperty("stackedBar")));
+			
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		}
+		
+		return scriptHeaderStr.toString();
 	}
 
 	public Data getData() {
@@ -104,6 +134,8 @@ public class ChartJsWrapper {
 		
 		JSONObject temp = new JSONObject();
 		
+		//---------------------------DATASETS, TOOLTIP AND LEGEND INTERACTION
+		
 		String legend = "";
 		
 		if(data.getChartType()==ChartType.Line||data.getChartType()==ChartType.Bar||data.getChartType()==ChartType.StackedBar||data.getChartType()==ChartType.Radar){
@@ -117,6 +149,15 @@ public class ChartJsWrapper {
 					+ "</li>"
 				+ "<%}%>"
 				+ "</ul>";
+			if(this.addDownload){
+				StringBuffer onAnimationCompleteFunction = new StringBuffer();
+				onAnimationCompleteFunction.append("function(){addDownloadButton('"+this.containerId+"');");
+				if(this.addLegendInteraction){
+					onAnimationCompleteFunction.append("addLegendInteraction(chart_"+this.chartId+",legend_"+this.chartId+",'datasets');");
+				}
+				onAnimationCompleteFunction.append("}");
+				this.options.put("onAnimationComplete", new JSONVariable(onAnimationCompleteFunction.toString()));
+			}
 		} else {
 			legend = "<ul class=\"<%=name.toLowerCase()%>-legend\">"
 				+ "<% for (var i=0; i<segments.length; i++){%>"
@@ -127,11 +168,22 @@ public class ChartJsWrapper {
 					+ "</li>"
 				+ "<%}%>"
 				+ "</ul>";
+			if(this.addDownload){
+				StringBuffer onAnimationCompleteFunction = new StringBuffer();
+				onAnimationCompleteFunction.append("function(){addDownloadButton('"+this.containerId+"');");
+				if(this.addLegendInteraction){
+					onAnimationCompleteFunction.append("addLegendInteraction(chart_"+this.chartId+",legend_"+this.chartId+",'segments');");
+				}
+				onAnimationCompleteFunction.append("}");
+				this.options.put("onAnimationComplete", new JSONVariable(onAnimationCompleteFunction.toString()));
+			}
 		}
 		
 		this.options.put("legendTemplate", legend);
 		this.options.put("responsive", true);
 		this.options.put("yAxisLabel", "Test Label");
+		
+		//---------------------------CHART DATA BY TYPE
 		
 		switch (data.getChartType()) {
 			case Line:
@@ -199,6 +251,8 @@ public class ChartJsWrapper {
 		
 		StringBuffer ret = new StringBuffer();
 		
+		//---------------------------CHART INITIALIZATION
+		
 		Tag script = script().withType("text/javascript");
 		
 		ret.append(script.renderOpenTag()+System.getProperty("line.separator"));
@@ -215,6 +269,8 @@ public class ChartJsWrapper {
 		ret.append(chartData+System.getProperty("line.separator"));
 		ret.append(chartInit+System.getProperty("line.separator"));
 		
+		//---------------------------LEGEND
+		
 		if(this.addLegend){
 			ret.append("var legend_"+this.chartId+" = document.createElement(\"div\");"+System.getProperty("line.separator"));
 			ret.append("legend_"+this.chartId+".setAttribute(\"id\", \""+this.chartId+"_legend\");"+System.getProperty("line.separator"));
@@ -222,7 +278,7 @@ public class ChartJsWrapper {
 			ret.append("document.getElementById(\""+this.chartId+"_legend\").innerHTML = chart_"+this.chartId+".generateLegend();");
 		}
 		
-		// CLICK FUNCTION
+		//---------------------------CLICK FUNCTION
 		
 		ret.append(onclick.toString()+System.getProperty("line.separator"));
 		
@@ -247,7 +303,8 @@ public class ChartJsWrapper {
 		this.addLegend = addLegend;
 	}
 	
-	public void setOption(String option, String value) {
+	@SuppressWarnings("unchecked")
+	public void setOption(Object option, Object value) {
 		this.options.put(option, value);
 	}
 
@@ -271,6 +328,43 @@ public class ChartJsWrapper {
 		ret.append(div);
 		
 		return ret;
+	}
+
+	public boolean isAddDownload() {
+		return addDownload;
+	}
+
+	public void setAddDownload(boolean addDownload) {
+		this.addDownload = addDownload;
+	}
+	
+	private static class JSONVariable implements JSONAware { // implements JSONAware with com.googlecode.json-simple
+	    private final String name;
+
+	    public JSONVariable(String name) {
+	        this.name = name;
+	    }
+
+	    @Override
+	    public String toJSONString() {
+	        return name;
+	    }
+	}
+
+	public boolean isAddLegendInteraction() {
+		return addLegendInteraction;
+	}
+
+	public void setAddLegendInteraction(boolean addLegendInteraction) {
+		this.addLegendInteraction = addLegendInteraction;
+	}
+
+	public boolean isAlwaysShowTooltip() {
+		return alwaysShowTooltip;
+	}
+
+	public void setAlwaysShowTooltip(boolean alwaysShowTooltip) {
+		this.alwaysShowTooltip = alwaysShowTooltip;
 	}
 	
 }

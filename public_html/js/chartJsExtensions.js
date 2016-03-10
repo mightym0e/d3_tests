@@ -83,71 +83,108 @@ function appendDetailData(data, container, columnType, cssClass){
 	
 }
 
-$(document).ready(function(){
-	
-	var div = document.getElementById("chartchartDiv_legend");
+function addDownloadButton(chartContainerId){
+	var div = document.getElementById(chartContainerId);
 	domtoimage.toPng(div).then(function (pngDataUrl) {
-		while (div.firstChild) {
-			div.removeChild(div.firstChild);
-		}
 		var img = new Image();
-        img.src = pngDataUrl;
-        div.appendChild(img);
+		img.src = pngDataUrl;
+		img.style.display = "none";
+		div.appendChild(img);
+		var button = document.createElement('a');
+		button.innerHTML = 'Download';
+		button.href = document.getElementById(chartContainerId).getElementsByTagName('img')[0].src;
+		button.download = 'diagramm.png';
+		document.getElementById(chartContainerId).appendChild(button);
 	});
-	
-	var div1 = document.getElementById("chartchartDiv1_legend");
-	domtoimage.toPng(div1).then(function (pngDataUrl) {
-		while (div1.firstChild) {
-			div1.removeChild(div1.firstChild);
-		}
-		var img = new Image();
-        img.src = pngDataUrl;
-        div1.appendChild(img);
-	});
-	
-});
-
-function downloadAll(){
-	
-	var elements = [];
-	var zip = new JSZip();
-	
-	var count = 0;
-	var canvas = document.getElementById("chartchartDiv");
-	var img = document.getElementById("chartchartDiv_legend").children[0];
-	var canvas1 = document.getElementById("chartchartDiv1");
-	var img1 = document.getElementById("chartchartDiv1_legend").children[0];
-	
-	canvas = canvas.toDataURL('image/png');
-	canvas = canvas.split('base64,')[1];
-	var png = img.src.substr(img.src.indexOf(',')+1);
-	canvas1 = canvas1.toDataURL('image/png');
-	canvas1 = canvas1.split('base64,')[1];
-	var png1 = img1.src.substr(img1.src.indexOf(',')+1);
-	
-	elements.push(canvas);
-	elements.push(png);
-	elements.push(canvas1);
-	elements.push(png1);
-	
-//	$(".chart").each(function(){
-//		var canvas = $(this).children("canvas").eq(0);
-//		var div = $(this).children("div").eq(0);
-//		var png;
-//		domtoimage.toBlob(div)
-//	    .then(function (blob) {
-//	    	png = blob;
-//	    });
-//		elements.push(getPng('canvas_'+count,canvas));
-//		elements.push(png);
-//		count++;
-//	});
-	
-	for(var i = 0; i<elements.length; i++){
-		zip.file("image"+i+".png", elements[i],{base64: true});
-	}
-	
-	var blob = zip.generate({type:"blob"});
-	window.saveAs(blob, "test.zip");
-	
 }
+
+function addLegendInteraction(chartObject,chartLegend,type){
+	var helpers = Chart.helpers;
+	helpers.each(chartLegend.firstChild.childNodes, function(legendNode, index){
+	    helpers.addEvent(legendNode, 'mouseover', function(){
+	            if (type=='segments') {
+					var activeSegment = chartObject.segments[index];
+					activeSegment.save();
+					activeSegment.fillColor = activeSegment.highlightColor;
+					chartObject.showTooltip([ activeSegment ]);
+					activeSegment.restore();
+				} else {
+//					var activeSegment = chartObject.datasets[index];
+//					var color = activeSegment.fillColor;
+//					activeSegment.fillColor = activeSegment.highlightColor;
+//					chartObject.showTooltip([ activeSegment ]);
+//					setTimeout(function(){activeSegment.fillColor = color;chartObject.showTooltip([ activeSegment ]);}, 2000);
+				}
+	    });
+	});
+}
+
+//$(document).ready(function(){
+//	
+//	//TODO: mainDiv in Image konvertieren, um Diagramm und Legende zusammen zu exportieren
+//	
+//	var div = document.getElementById("chartDiv");
+//	domtoimage.toPng(div).then(function (pngDataUrl) {
+////		while (div.getElementsByTagName('img')[0]) {
+////			div.removeChild(div.getElementsByTagName('img')[0]);
+////		}
+//		var img = new Image();
+//        img.src = pngDataUrl;
+//        img.style.visibility = "hidden";
+//        div.appendChild(img);
+//	});
+//	
+//	var div1 = document.getElementById("chartDiv1");
+//	domtoimage.toPng(div1).then(function (pngDataUrl) {
+////		while (div1.getElementsByTagName('img')[0]) {
+////			div1.removeChild(div1.getElementsByTagName('img')[0]);
+////		}
+//		var img = new Image();
+//        img.src = pngDataUrl;
+//        img.style.visibility = "hidden";
+//        div1.appendChild(img);
+//	});
+//	
+//});
+//
+//function downloadAll(){
+//	
+//	var elements = [];
+//	var zip = new JSZip();
+//	
+//	var count = 0;
+//	var img = document.getElementById("chartDiv").getElementsByTagName('img')[0];
+//	var img1 = document.getElementById("chartDiv1").getElementsByTagName('img')[0];
+//	
+//
+//	var png = img.src.substr(img.src.indexOf(',')+1);
+//
+//	var png1 = img1.src.substr(img1.src.indexOf(',')+1);
+//	
+//	elements.push(png);
+//	elements.push(png1);
+//	
+////	$(".chart").each(function(){
+////		var canvas = $(this).children("canvas").eq(0);
+////		var div = $(this).children("div").eq(0);
+////		var png;
+////		domtoimage.toBlob(div)
+////	    .then(function (blob) {
+////	    	png = blob;
+////	    });
+////		elements.push(getPng('canvas_'+count,canvas));
+////		elements.push(png);
+////		count++;
+////	});
+//	
+//	for(var i = 0; i<elements.length; i++){
+//		zip.file("image"+i+".png", elements[i],{base64: true});
+//	}
+//	
+//	var blob = zip.generate({type:"blob"});
+//	window.saveAs(blob, "test.zip");
+//	
+//}
+//
+////TODO: Legend hovers interacting with diagramm
+//

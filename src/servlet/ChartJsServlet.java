@@ -1,32 +1,33 @@
 package servlet;
 
-import generator.ScatterPlot3dGenerator;
+import static j2html.TagCreator.body;
+import static j2html.TagCreator.br;
+import static j2html.TagCreator.div;
+import static j2html.TagCreator.head;
+import static j2html.TagCreator.html;
+import static j2html.TagCreator.link;
+import static j2html.TagCreator.meta;
 import j2html.attributes.Attr;
 import j2html.tags.Tag;
-import static j2html.TagCreator.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Vector;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.json.simple.JSONArray;
 
 import util.ChartJsWrapper;
-import util.Data;
+import util.Data.ChartType;
 import util.LineBarRadarData;
 import util.LineBarRadarDataset;
-import util.Data.ChartType;
-import util.DataSet;
 import util.RadarPolarPieData;
 import util.RadarPolarPieDataset;
 
@@ -57,6 +58,7 @@ public class ChartJsServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@SuppressWarnings("unchecked")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 				
 		// ------------------- Container
@@ -168,8 +170,7 @@ public class ChartJsServlet extends HttpServlet {
 		out.println(meta().attr(Attr.HTTP_EQUIV, "expires").attr(Attr.CONTENT, "0").render());
 		out.println(meta().attr(Attr.HTTP_EQUIV, "pragma").attr(Attr.CONTENT, "no-cache").render());
 	    out.println(link().withRel("stylesheet").withType("text/css").withHref("css/chartbuilder.css"));
-		out.println(script().withType("text/javascript").withSrc("js/chartJsExtensions.js"));
-		
+	    
 		out.println(ChartJsWrapper.getScriptHeader());
 		
 	    out.println(head().renderCloseTag());

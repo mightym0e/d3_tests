@@ -364,47 +364,19 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	    out.println(link().withRel("stylesheet").withType("text/css").withHref("css/chartbuilder.css"));
 		
 		out.println(ChartJsWrapper.getScriptHeader());
-		out.println(script().withType("text/javascript").withSrc("js/chartJsExtensions.js"));
-		out.println(script().withType("text/javascript").withSrc("js/Chart.StackedBar.js"));
 				
 	    out.println(head().renderCloseTag());
 	    
 	    out.println(body.renderOpenTag()); 
 	    
+	    wrapper.setAddLegend(true);
+	    wrapper.setAddLegendInteraction(true);
+	    wrapper.setAddDownload(true);
+	    //---------------------------Chart1
+	    
 	    out.println(div().withClass("mainDiv").renderOpenTag()); 
 	    
-	    out.println(div().withId(containerName).withClass("chart"));
-	    out.println(div().withClass("divDetail").withId("divDetail"+containerName).with(
-	    		table().with(
-	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
-	    				)
-	    		));
-	    
-	    out.println(div().renderCloseTag());
-	    out.println(div().withClass("mainDiv").renderOpenTag()); 
-	    
-	    out.println(div().withId(containerName1).withClass("chart"));
-	    out.println(div().withClass("divDetail").withId("divDetail"+containerName1).with(
-	    		table().with(
-	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
-	    				)
-	    		));
-	    
-	    out.println(div().renderCloseTag());
-	    out.println(div().withClass("mainDiv").renderOpenTag()); 
-	    
-	    out.println(div().withId(containerName2).withClass("chart"));
-	    out.println(div().withClass("divDetail").withId("divDetail"+containerName2).with(
-	    		table().with(
-	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Delta"))
-	    				)
-	    		));
-	    
-	    out.println(div().renderCloseTag());
-		
-		//---------------------------Chart
-		
-		LineBarRadarData data_standard = new LineBarRadarData();
+	    LineBarRadarData data_standard = new LineBarRadarData();
 		data_standard.setChartType(ChartType.Line);
 		data_standard.setDatasets(datasets_standard);
 		data_standard.setLabels(labels);
@@ -413,10 +385,21 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		wrapper.setContainerId(containerName);
 		wrapper.setAddLegend(true);
 		wrapper.setChartId("chart"+containerName);
-		
-		out.println(wrapper.getJsString());
-		
-		data_standard = new LineBarRadarData();
+	    
+	    out.println(div().withId(containerName).withClass("chart"));
+	    out.println(wrapper.getDetailDiv());
+	    
+	    out.println(wrapper.getJsString());
+	    
+	    out.println(div().renderCloseTag());
+	    
+	    //---------------------------Chart2
+	    
+	    out.println(div().withClass("mainDiv").renderOpenTag()); 
+	    
+	    out.println(div().withId(containerName1).withClass("chart"));
+	    
+	    data_standard = new LineBarRadarData();
 		data_standard.setChartType(ChartType.StackedBar);
 		data_standard.setDatasets(datasets_standard);
 		data_standard.setLabels(labels);
@@ -424,20 +407,32 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 		wrapper.setData(data_standard);
 		wrapper.setContainerId(containerName1);
 		wrapper.setChartId("chart"+containerName1);
-		
-		out.println(wrapper.getJsString());
-		
-		data_standard = new LineBarRadarData();
+	    
+	    out.println(wrapper.getDetailDiv());
+	    
+	    out.println(wrapper.getJsString());
+	    
+	  //---------------------------Chart3
+	    
+	    out.println(div().renderCloseTag());
+	    out.println(div().withClass("mainDiv").renderOpenTag()); 
+	    
+	    out.println(div().withId(containerName2).withClass("chart"));
+	    
+	    data_standard = new LineBarRadarData();
 		data_standard.setChartType(ChartType.Line);
 		data_standard.setDatasets(datasets_standard_zug);
 		data_standard.setLabels(labels_zug);
 		
 		wrapper.setData(data_standard);
-		wrapper.setAddLegend(true);
 		wrapper.setContainerId(containerName2);
 		wrapper.setChartId("chart"+containerName2);
-		
-		out.println(wrapper.getJsString());
+	    
+	    out.println(wrapper.getDetailDiv());
+	    
+	    out.println(wrapper.getJsString());
+	    
+	    out.println(div().renderCloseTag());
 	    
 		// -------------------
 		
