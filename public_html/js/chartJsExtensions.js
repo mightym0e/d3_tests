@@ -44,16 +44,13 @@ function showDetailData(servlet, object, div){
 	var dataset = object[0].label;
 	var datasetLabel = object[0].datasetLabel;
 	
-	$.ajax({
-	    type: 'POST',
-	    url: servlet,
-	    dataType: "json",
-	    data: { 
-	        'dataset': dataset,
-	        'datasetLabel': datasetLabel
-	    },
-	    success: function(data, msg){
-	    	
+	var xmlhttp = new XMLHttpRequest();
+	var url = servlet;
+	var parameters="dataset="+encodeURIComponent(dataset)+"&datasetLabel="+encodeURIComponent(datasetLabel)
+
+	xmlhttp.onreadystatechange = function() {
+	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	    	var data = JSON.parse(xmlhttp.responseText);
 	    	if (data.length>0) {
 	    		$("#"+div+" table tr").remove();
 		    	
@@ -63,10 +60,36 @@ function showDetailData(servlet, object, div){
 		    		appendDetailData(data[i], "#"+div+" table", "td", "tr "+(i%2==0?"odd":"even"));
 		    	}
 			}
-	    	
-//	    	console.log(data);
 	    }
-	});
+	};
+	xmlhttp.open("POST", url, true);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.setRequestHeader("Content-length", parameters.length);
+	xmlhttp.send(parameters);
+	
+//	$.ajax({
+//	    type: 'POST',
+//	    url: servlet,
+//	    dataType: "json",
+//	    data: { 
+//	        'dataset': dataset,
+//	        'datasetLabel': datasetLabel
+//	    },
+//	    success: function(data, msg){
+//	    	
+//	    	if (data.length>0) {
+//	    		$("#"+div+" table tr").remove();
+//		    	
+//	    		appendDetailData(data[0], "#"+div+" table", "th", "head");
+//		    	
+//		    	for(var i = 1; i< (data.length>100?100:data.length); i++){
+//		    		appendDetailData(data[i], "#"+div+" table", "td", "tr "+(i%2==0?"odd":"even"));
+//		    	}
+//			}
+//	    	
+////	    	console.log(data);
+//	    }
+//	});
 }
 
 function appendDetailData(data, container, columnType, cssClass){

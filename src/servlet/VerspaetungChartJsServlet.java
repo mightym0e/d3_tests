@@ -172,19 +172,6 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 	    
 	    out.println(body.renderOpenTag()); 
 	    
-	    out.println(div().withClass("mainDiv").renderOpenTag()); 
-	    
-	    out.println(span().withText("Minuten"));
-	    out.println(div().withId(containerName).withClass("chart"));
-	    out.println(div().withClass("divDetail").withId("divDetail"+containerName).with(
-	    		table().with(
-	    				//tr().withClass("head").with(th("Kurz"),th("Lang"),th("Datum"),th("Abfahrt"))
-	    				)
-	    		));
-	    
-	    out.println(div().renderCloseTag());
-	    out.println(div().withClass("mainDiv").renderOpenTag()); 
-	    
 	    //---------------------------Chart1
 	    
 	    wrapper.setAddLegend(true);
@@ -198,8 +185,10 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 		wrapper.setContainerId(containerName);
 		wrapper.setChartId("chart"+containerName);
 		
-	    out.println(span().withText("Absolut"));
-	    out.println(div().withId(containerName1).withClass("chart"));
+		out.println(div().withClass("mainDiv").renderOpenTag()); 
+		
+	    out.println(span().withText("Minuten"));
+	    out.println(div().withId(containerName).withClass("chart"));
 		
 	    out.println(wrapper.getDetailDiv());
 	    
@@ -219,7 +208,8 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 		
 		out.println(div().withClass("mainDiv").renderOpenTag()); 
 	    
-	    out.println(div().withId(containerName2).withClass("chart"));
+		out.println(span().withText("Absolut"));
+	    out.println(div().withId(containerName1).withClass("chart"));
 	    
 	    out.println(wrapper.getDetailDiv());
 		

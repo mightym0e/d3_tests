@@ -58,6 +58,8 @@ public class AjaxDetailServlet extends HttpServlet {
 		response.setDateHeader("Expires", 0);
 		response.setHeader("Pragma", "no-cache");
 		response.setDateHeader("Max-Age", 0);
+		
+		if(request.getParameter("dataset")==null)return;
 
 		String label = request.getParameter("dataset").replace("\"", "");
 		String datasetLabel = request.getParameter("datasetLabel").replace("\"", "");
