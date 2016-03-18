@@ -372,6 +372,7 @@ public class PuenktlichkeitChartJsServlet extends HttpServlet {
 	    wrapper.setAddLegend(true);
 	    wrapper.setAddLegendInteraction(true);
 	    wrapper.setAddDownload(true);
+	    wrapper.setAlwaysShowTooltip(true);
 	    //---------------------------Chart1
 	    
 	    out.println(div().withClass("mainDiv").renderOpenTag()); 

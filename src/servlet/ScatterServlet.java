@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Vector;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,7 +25,8 @@ public class ScatterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
 	private static final String DOC_TYPE = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">";//transitional
-   
+    private String currentDir = null;
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -33,6 +35,11 @@ public class ScatterServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+    public void init(ServletConfig config) throws ServletException {
+    	super.init(config);
+    	currentDir = this.getServletContext().getRealPath("");
+    }
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -77,7 +84,7 @@ public class ScatterServlet extends HttpServlet {
 	    
 	    out.println(body.renderOpenTag()); 
 	    
-	    generator.setData("c:\\Users\\Moe\\git\\d3_tests\\lib\\export3.csv");
+	    generator.setData(currentDir+"\\export3.csv");
 	    out.println(generator.getJsDataStr()!=null?generator.getJsDataStr().toString():"");
 	    
 	    Vector<Tag> tags = generator.getD3JsHeaderStr();

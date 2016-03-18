@@ -177,6 +177,8 @@ public class VerspaetungChartJsServlet extends HttpServlet {
 	    wrapper.setAddLegend(true);
 	    wrapper.setAddDownload(true);
 	    wrapper.setAddLegendInteraction(true);
+	    wrapper.setAlwaysShowTooltip(true);
+	    
 	    RadarPolarPieData data = new RadarPolarPieData();
 		data.setChartType(ChartType.Pie);
 		data.setDatasets(datasets);
