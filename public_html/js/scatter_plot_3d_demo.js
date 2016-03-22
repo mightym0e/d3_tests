@@ -18,7 +18,7 @@ function initScatterPlot(parent){
 	.attr( "fieldOfView", [-25, -25, 35, 25])
 	.attr( "orientation", [-0.5, 1, 0.2, 1.12*Math.PI/4])
 	.attr( "position", [10, 10, 12])
-	.attr( "zNear", -15 );
+	.attr( "zNear", -25 );
 	
 	scatter_colors = d3.scale.category20();
 	
@@ -122,16 +122,15 @@ function drawAxis( axisIndex, key, duration ) {
 
 	scales[axisIndex] = scale;
 
-	var numTicks = axisRange[axisIndex][1];
+	var numTicks = 20;
 	var tickSize = 0.1;
 	var tickFontSize = 0.5;
 
 	// ticks along each axis
-	var ticks = scene.selectAll( "."+axisName("Tick", axisIndex) )
-	.data( scale.ticks( numTicks ));
-	var newTicks = ticks.enter()
-	.append("transform")
-	.attr("class", axisName("Tick", axisIndex));
+	var ticks = scene.selectAll( "."+axisName("Tick", axisIndex) ).data( scale.ticks( numTicks ));
+	
+	var newTicks = ticks.enter().append("transform").attr("class", axisName("Tick", axisIndex));
+	
 	newTicks.append("shape").call(makeSolid)
 	.append("box")
 	.attr("size", tickSize + " " + tickSize + " " + tickSize);
@@ -197,7 +196,7 @@ function plotData( duration, rowsIn, color, index ) {
 	}
 
 	var x = scales[0], y = scales[1], z = scales[2];
-	var sphereRadius = 0.2;
+	var sphereRadius = 0.5;
 
 	// Draw a sphere at each x,y,z coordinate.
 	var datapoints = scene.selectAll(".datapoint"+index).data( rowsIn );
@@ -215,7 +214,16 @@ function plotData( duration, rowsIn, color, index ) {
 	.append("sphere");
 
 	datapoints.selectAll("shape appearance material")
-	.attr("diffuseColor", color );
+	.attr("diffuseColor", function(row){
+		
+		var colorR = row.Dataset1.toString(16);
+		var colorG = row.Dataset2.toString(16);
+		var colorB = row.Dataset3.toString(16);
+		
+		var color = "#"+(colorR.length==1?"0"+colorR:colorR)+(colorG.length==1?"0"+colorG:colorG)+(colorB.length==1?"0"+colorB:colorB);
+		
+		return color;
+	} );
 
 	datapoints.transition().ease(ease).duration(duration)
 	.attr("translation", function(row) { 

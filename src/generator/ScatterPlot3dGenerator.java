@@ -85,10 +85,12 @@ public class ScatterPlot3dGenerator implements Generator {
 	}
 
 	@Override
-	public void setData(String fileName) throws IllegalFormatException {
+	public void setData(String fileName, String delimiter, int rowBegin, int[] columns, boolean firstRowTitle) throws IllegalFormatException {
+		if(columns.length!=3)throw new IllegalArgumentException("Die Spaltendefinition muss mindestens 3 Elemente besitzen.");
+		
 		CSVReader reader = new CSVReader();
 	    
-	    ArrayList<String[]> data = reader.run(fileName);
+	    ArrayList<String[]> data = reader.readDataFromCsv(fileName, delimiter, rowBegin, columns, firstRowTitle);
 	    
 	    this.jsDataStr = reader.getJsString(data);
 	}

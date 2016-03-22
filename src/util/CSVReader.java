@@ -12,31 +12,42 @@ public class CSVReader {
 
   public static void main(String[] args) {
 
-	  CSVReader obj = new CSVReader();
-	  obj.run("");
-
   }
 
-  public ArrayList<String[]> run(String filename) {
+  public ArrayList<String[]> readDataFromCsv(String filename, String delimiter, int rowBegin, int[] columns, boolean firstRowTitle) {
 	ArrayList<String[]> ret = new ArrayList<String[]>();
 
 	String csvFile = filename;
 	BufferedReader br = null;
 	String line = "";
-	String cvsSplitBy = "\t";
+	String cvsSplitBy = delimiter!=null?delimiter:"\t";
 
 	try {
 
+		int currentLine = 0;
+		
 		br = new BufferedReader(new FileReader(csvFile));
-//		line = br.readLine();
+
+		while(rowBegin>0&&rowBegin>currentLine){
+			line = br.readLine();
+			currentLine++;
+		}
+		
+		if(!firstRowTitle){
+			String[] data = new String[]{"", "Dataset1", "Dataset2", "Dataset3"};
+			
+			ret.add(data);
+		}
 		
 		while ((line = br.readLine()) != null) {
 
 			String[] data_temp = line.split(cvsSplitBy);
 
-			String[] data = new String[]{data_temp[0],data_temp[1],data_temp[2],data_temp[3]};
+			String[] data = new String[]{"Color",data_temp[columns[0]],data_temp[columns[1]],data_temp[columns[2]]};
 			
 			ret.add(data);
+			
+			currentLine++;
 
 		}
 

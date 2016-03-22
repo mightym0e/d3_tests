@@ -9,7 +9,7 @@ public interface Generator {
 	
 	public void setData(HashMap<String, Vector<Object>> data);
 	
-	public void setData(String fileName);
+	public void setData(String fileName, String delimiter, int rowBegin, int[] columns, boolean firstRowTitle);
 	
 	public Vector<Tag> getD3JsHeaderStr();
 	
